@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "Nexa-bold";
+    src: url(../fonts/Nexa-Bold.otf)format(opentype);
+}
+
+@font-face {
+    font-family: "Nexa-light";
+    src: url(../fonts/Nexa-Light.otf)format(opentype);
+}
+
+:root {
+    --iconsColor: #525659;
+    --skyBlue: #93bede;
+    --darkBlue: #021433;
+    --lightGrey: #636668;
+    --lime: #cccccc;
+    --blue: #3792f3;
+    --lightLime: #f3f3f3;
+    --greyishBlue: #0173b2;
+    --lightGreyishBlue:#7ab0d4;
+    --minSize: 430px;
+}
+
+body {
+    background-color: white;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: var(--darkBlue);
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: var(--darkBlue);
+}
+
+h3 {
+    color: var(--darkBlue);
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-family: sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--darkBlue);
+}
+
+h6 {
+    font-size: .5rem;
+}
+
+p {
+    font-size: 1.3rem;
+    color: var(--darkBlue);
+    font-family: sans-serif;
+    opacity: .5;
+    font-weight: lighter;
+    line-height: 1.4rem;
+}
+
+a,
+button {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.alignHead {
+    text-align: center;
+}
+
+
+.HeadAPara {
+    padding: 0px;
+    height: max-content;
+    display: grid;
+    grid-template: 0.5fr 1fr 0px/1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.HeadAPara h1 {
+    grid-area: 1/1/1/2;
+}
+
+.hap1P {
+    padding: 20px 0px;
+    grid-area: 2/1/2/2;
+}
+
+.hap2P {
+    grid-area: 3/1/3/2;
+    visibility: hidden;
+}
+
+
+@media only screen and (min-width:768px) {
+    :root {
+        --minSize: 800px;
+    }
+
+}
+
+@media only screen and (min-width:1024px) {
+
+    :root {
+        --minSize: 1024px;
+    }
+
+    .alignHead {
+        text-align: left;
+    }
+
+    p {
+        opacity: .8;
+        font-size: 1.2rem;
+    }
+
+    .HeadAPara {
+        justify-items: start;
+    }
+
+    .hap1P {
+        grid-area: 3/1/3/2;
+        visibility: hidden;
+    }
+
+    .hap2P {
+        padding: 20px 0px;
+        grid-area: 2/1/2/2;
+        visibility: visible;
+        text-align: left;
+    }
+}
+

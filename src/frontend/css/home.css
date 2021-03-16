@@ -1,0 +1,999 @@
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Mobile View Starts Here  */
+
+/* Task 02 Nav section */
+
+nav {
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    min-width: var(--minSize);
+    height: max-content;
+}
+
+.top-logo {
+    width: 180px;
+    height: 40px;
+}
+
+.navMenu {
+    color: var(--iconsColor);
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.navDeskDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation,
+.navbtn {
+    visibility: hidden;
+}
+
+
+/* Task 03 Header Section */
+
+header {
+    background-color: var(--skyBlue);
+    padding: 40px 20px;
+    height: max-content;
+    min-width: var(--minSize);
+}
+
+header h1 {
+    padding: 1rem 0;
+}
+
+.searchSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.input-box1,
+.input-box2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: white;
+    width: 360px;
+    height: 50px;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+input[type=text] {
+    border: 1px solid white;
+    width: 100%;
+    height: 45px;
+    font-size: .9rem;
+    color: var(--lightGrey);
+    opacity: 0.8;
+    padding-left: 3px;
+}
+
+
+#locationSign,
+#targetSign {
+    font-size: 1.1rem;
+}
+
+.btn button {
+    background-color: var(--darkBlue);
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+
+/* Task 04 How it works section css starts here */
+
+.howItWorks {
+    padding: 40px 20px;
+    min-width: var(--minSize);
+}
+
+.hiw-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstbox,
+.otherbox {
+    border: 1.5px solid var(--darkBlue);
+    width: 360px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 0.7rem;
+    color: var(--darkBlue);
+    padding: 10px;
+    background-color: white;
+}
+
+.firstbox span {
+    color: var(--skyBlue);
+}
+
+.firstbox span,
+.otherbox span {
+    padding-right: 10px;
+}
+
+.otherbox {
+    opacity: 0.3;
+    color: var(--darkBlue);
+    margin-bottom: 15px;
+}
+
+.hiw-main img {
+    width: 350px;
+    height: 350px;
+    padding: 25px 0;
+}
+
+.fixConsultationInner {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.fixConsultationInner h3 {
+    padding-bottom: 20px;
+}
+
+/* Task 05 World Class Expert Doctors Section  */
+
+.doctorsPanel {
+    padding: 40px 20px;
+    background-color: var(--darkBlue);
+    height: max-content;
+    min-width: var(--minSize);
+}
+
+.doctorsPanel h1,
+.doctorsPanel p {
+    color: white;
+}
+
+.doc-div {
+    padding: 20px 0px;
+    display: grid;
+    height: max-content;
+    grid-template: repeat(4, 1fr) / 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 25px;
+}
+
+.docName1,
+.docName2,
+.docName3,
+.docName4 {
+    box-shadow: 0px 4px 0px var(--skyBlue);
+    background-color: white;
+    height: 510px;
+    width: 360px;
+}
+
+.docName1,
+.docName1 h4,
+.docName1 h5 {
+    grid-area: 1/1/1/2
+}
+
+.docName2,
+.docName2 h4,
+.docName2 h5 {
+    grid-area: 2/1/2/2
+}
+
+.docName3,
+.docName3 h4,
+.docName3 h5 {
+    grid-area: 3/1/3/2
+}
+
+.docName4,
+.docName4 h4,
+.docName4 h5 {
+    grid-area: 4/1/4/2
+}
+
+.doc-div img {
+    width: 360px;
+    height: 400px;
+}
+
+.docName1 h4,
+.docName2 h4,
+.docName3 h4,
+.docName4 h4 {
+    color: var(--blue);
+    position: relative;
+    left: 35px;
+    bottom: 10px;
+}
+
+.docName1 h5,
+.docName2 h5,
+.docName3 h5,
+.docName4 h5 {
+    padding-left: 35px;
+    line-height: 15px;
+    opacity: 0.8;
+    font-weight: lighter;
+}
+
+.line {
+    width: 30px;
+    height: 20px;
+    border-bottom: 2px solid var(--blue);
+    position: relative;
+}
+
+/* Task 06 Featured Medical Treatment */
+
+.treatment {
+    padding: 40px 20px;
+    background-color: white;
+    height: min-content;
+    min-width: var(--minSize);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.treatmentImgs {
+    display: grid;
+    width: 360px;
+    height: max-content;
+    grid-template: repeat(6, 1fr) / 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 30px 0;
+    grid-gap: 20px;
+}
+
+.treatmentImgs img {
+    width: 360px;
+    height: 400px;
+}
+
+.treatImgs1,
+.shadow1,
+.s1 {
+    grid-area: 1/1/1/2;
+}
+
+.treatImgs2,
+.shadow2,
+.s2 {
+    grid-area: 2/1/2/2;
+}
+
+.treatImgs3,
+.shadow3,
+.s3 {
+    grid-area: 3/1/3/2;
+}
+
+.treatImgs4,
+.shadow4,
+.s4 {
+    grid-area: 4/1/4/2;
+}
+
+.treatImgs5,
+.shadow5,
+.s5 {
+    grid-area: 5/1/5/2;
+}
+
+.treatImgs6,
+.shadow6,
+.s6 {
+    grid-area: 6/1/6/2;
+
+}
+
+.shadow1,
+.shadow2,
+.shadow3,
+.shadow4,
+.shadow5,
+.shadow6 {
+    box-shadow: inset 0px -100px 50px;
+    -moz-box-shadow: inset 0px -100px 50px;
+    -webkit-box-shadow: inset 0px -100px 50px;
+    width: 360px;
+    height: 400px;
+    opacity: 0.9;
+}
+
+.specialization {
+    position: relative;
+}
+
+
+.s1,
+.s2,
+.s3,
+.s4,
+.s5,
+.s6 {
+    top: 10rem;
+}
+
+.s1,
+.s2 {
+    right: 6.8rem;
+}
+
+.s3 {
+    right: 3rem;
+}
+
+.s4 {
+    right: 2.7rem;
+}
+
+.s5 {
+    right: 3.4rem;
+}
+
+.s6 {
+    right: 3.8rem;
+}
+
+.treatmentImgs h3 {
+    color: white;
+    font-weight: 600;
+}
+
+.treatmentImgs h4 {
+    color: var(--lightLime);
+    padding-top: 6px;
+    font-family: serif;
+    font-weight: lighter;
+}
+
+
+/* Task 07 Exclusive Services  */
+
+.ex-services {
+    min-width: var(--minSize);
+    padding: 30px 20px;
+    height: max-content;
+    background-color: var(--lightLime);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serviceImgs {
+    display: grid;
+    height: max-content;
+    grid-template: repeat(3, 1fr) 0px /1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 10px;
+}
+
+.sI,
+.ambulance {
+    background-color: white;
+    width: 180px;
+    height: 140px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sI h4,
+.ambulance h4 {
+    text-transform: uppercase;
+    opacity: 0.6;
+    font-weight: 800;
+}
+
+.sI1 {
+    grid-area: 1/1/1/2;
+}
+
+.sI2 {
+    grid-area: 1/2/1/3;
+}
+
+.sI3 {
+    grid-area: 2/1/2/2;
+}
+
+.sI4 {
+    grid-area: 2/2/2/3;
+}
+
+.sI5 {
+    grid-area: 3/1/3/2;
+}
+
+.ambulance {
+    grid-area: 3/2/3/3;
+}
+
+.other {
+    visibility: hidden;
+}
+
+
+/* Task 08 Need Help Section */
+
+.container {
+    padding: 40px 20px;
+    background-color: var(--skyBlue);
+    height: max-content;
+    text-align: center;
+    min-width: var(--minSize);
+}
+
+.container h1 {
+    color: white;
+}
+
+.container p {
+    padding: 15px 0;
+}
+
+.container button {
+    background-color: var(--greyishBlue);
+    color: var(--lime);
+    width: 200px;
+    height: 60px;
+    font-size: 1.2rem;
+}
+
+/* Task 09 Footer Section  */
+
+footer {
+    min-width: var(--minSize);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--darkBlue);
+}
+
+.innerfooter {
+    display: grid;
+    height: max-content;
+    grid-template: 70px 1fr 50px 60px / 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.innerfooter img {
+    width: 200px;
+    height: 50px;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer li {
+    padding: 10px 0;
+}
+
+.navlist a {
+    font-weight: lighter;
+    font-size: 20px;
+    color: var(--lime);
+    opacity: 0.7;
+    font-family: sans-serif;
+}
+
+.socialLogos a {
+    padding: 0 15px;
+    color: white;
+    opacity: 0.8;
+}
+
+footer p {
+    font-family: serif;
+    color: var(--lime);
+    opacity: 0.9;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* TABLET VIEW SECTION STARTS HERE */
+
+
+
+@media only screen and (min-width:768px) {
+
+    /*Tablet view nav section  */
+
+
+    nav {
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Task 10 Tablet view header */
+
+    header {
+        padding: 40px 30px;
+    }
+
+    .searchSection {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .input-box1 {
+        width: 150px;
+        border-right: 1px solid var(--darkBlue);
+        flex-grow: 1;
+    }
+
+    .input-box2 {
+        width: 200px;
+        flex-grow: 2;
+    }
+
+    .btn button {
+        width: 140px;
+        position: relative;
+        bottom: 13px;
+        flex-grow: 2;
+    }
+
+    /* Task 11 Tablet view How it works section */
+
+    .howItWorks {
+        padding: 40px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hiw-main {
+        height: max-content;
+        display: grid;
+        align-items: start;
+        justify-items: center;
+        grid-template: 1fr / 1fr 1fr;
+        padding: 20px 0;
+        grid-column-gap: 2.5rem;
+    }
+
+    .firstbox {
+        grid-area: 1/1/1/2;
+    }
+
+    .otherboxDiv {
+        grid-area: 1/1/1/2;
+        margin-top: 75px;
+    }
+
+    .hiw-main img {
+        padding: 0;
+    }
+
+    .firstB-img {
+        grid-area: 1/2/1/3;
+    }
+
+    .fixConsultationInner {
+        grid-area: 1/2/1/3;
+        position: relative;
+        top: 23.5rem;
+    }
+
+
+    /* Task 12 Tablet view Doctors section */
+
+    .doctorsPanel {
+        padding: 40px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .doc-div {
+        grid-template: 500px 500px/ 360px 360px;
+    }
+
+    .docName1,
+    .docName1 h4,
+    .docName1 h5 {
+        grid-area: 1/1/1/2
+    }
+
+    .docName2,
+    .docName2 h4,
+    .docName2 h5 {
+        grid-area: 1/2/1/3
+    }
+
+    .docName3,
+    .docName3 h4,
+    .docName3 h5 {
+        grid-area: 2/1/2/2
+    }
+
+    .docName4,
+    .docName4 h4,
+    .docName4 h5 {
+        grid-area: 2/2/2/3
+    }
+
+    /*  Task 13 Tablet view Featured medical treatment */
+
+    .treatment {
+        padding: 40px 30px;
+    }
+
+    .treatmentImgs {
+        width: max-content;
+        grid-template: 400px 400px / 360px 360px;
+    }
+
+    .treatImgs1,
+    .shadow1,
+    .s1 {
+        grid-area: 1/1/1/2;
+    }
+
+    .treatImgs2,
+    .shadow2,
+    .s2 {
+        grid-area: 1/2/1/3;
+    }
+
+    .treatImgs3,
+    .shadow3,
+    .s3 {
+        grid-area: 2/1/2/2;
+    }
+
+    .treatImgs4,
+    .shadow4,
+    .s4 {
+        grid-area: 2/2/2/3;
+    }
+
+    .treatImgs5,
+    .shadow5,
+    .s5 {
+        grid-area: 3/1/3/2;
+    }
+
+    .treatImgs6,
+    .shadow6,
+    .s6 {
+        grid-area: 3/2/3/3;
+    }
+
+
+    /* Task 14 Tablet view exclusive services section */
+
+    .ex-services {
+        padding: 40px 30px;
+    }
+
+    .serviceImgs {
+        grid-template: 1fr 1fr 0px/ repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sI,
+    .ambulance {
+        width: 230px;
+    }
+
+    .sI1 {
+        grid-area: 1/1/1/2;
+    }
+
+    .sI2 {
+        grid-area: 1/2/1/3;
+    }
+
+    .sI3 {
+        grid-area: 1/3/1/4;
+    }
+
+    .sI4 {
+        grid-area: 2/1/2/2;
+    }
+
+    .sI5 {
+        grid-area: 2/2/2/3;
+    }
+
+    .ambulance {
+        grid-area: 2/3/2/4;
+    }
+
+    /* Tablet View Need Help Section */
+
+    .container {
+        padding: 40px 30px;
+    }
+
+    /* Task 15 Tablet view Footer section  */
+    footer {
+        padding: 40px 30px;
+        background-color: white;
+    }
+
+    .innerfooter {
+        width: 100%;
+        grid-template: 1fr 1fr/2fr 1fr;
+        justify-items: start;
+        align-items: center;
+        grid-gap: 1.5rem;
+    }
+
+    .innerfooter img {
+        grid-area: 1/2/1/3;
+        justify-self: end;
+        width: 200px;
+        height: 45px;
+        padding-right: 15px;
+    }
+
+    footer p {
+        padding: 0px;
+        color: var(--darkBlue);
+    }
+
+    .navlist {
+        grid-area: 1/1/1/2;
+        flex-direction: row;
+    }
+
+    .navlist a {
+        margin-right: 20px;
+        color: var(--darkBlue);
+    }
+
+    .rights {
+        grid-area: 2/1/2/2;
+    }
+
+    .socialLogos {
+        grid-area: 2/2/2/3;
+        justify-self: end;
+    }
+
+    .socialLogos a {
+        color: var(--darkBlue);
+    }
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Task 16 DESKTOP VIEW CSS  Starts*/
+
+@media only screen and (min-width:1024px) {
+
+    /* Desktop view Navigation Section  */
+
+
+    nav {
+        padding: 20px 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navDeskDiv {
+        width: 100%;
+        display: grid;
+        height: max-content;
+        grid-template: 1fr /2fr 1fr 0px;
+        align-items: center;
+        justify-items: end;
+        grid-column-gap: 1rem;
+    }
+
+    .navMenu {
+        visibility: hidden;
+        grid-area: 1/3/1/4;
+    }
+
+    .navigation,
+    .navbtn {
+        visibility: visible;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: nowrap;
+        grid-area: 1/1/1/2;
+
+    }
+
+    .navigation h5 {
+        font-weight: 500;
+        font-size: .9rem;
+        margin: 0 15px;
+    }
+
+    .navbtn {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        flex-wrap: nowrap;
+    }
+
+    .navB1,
+    .navB2 {
+        width: 130px;
+        height: 35px;
+        border-radius: 3px;
+        font-size: 12px;
+        font-family: sans-serif;
+        border: 1.4px solid var(--darkBlue);
+    }
+
+    .navigation h5:hover,
+    .navB1:hover,
+    .navB2:hover {
+        background-color: var(--lightGreyishBlue);
+        color: white;
+    }
+
+    .navB1 {
+        background-color: white;
+        color: var(--darkBlue);
+        margin-right: 7px;
+    }
+
+    .navB2 {
+        background-color: var(--darkBlue);
+        color: white;
+    }
+
+
+    /* Desktop View Header Section  */
+
+    header {
+        background: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg) no-repeat center center/cover;
+        height: 410px;
+        padding: 0px 60px;
+    }
+
+    .searchSection {
+        align-items: center;
+        justify-content: start;
+    }
+
+    header h1 {
+        padding-top: 100px;
+    }
+
+    .input-box1,
+    .input-box2 {
+        margin: 0;
+    }
+
+    .input-box1 {
+        width: 230px;
+        flex-grow: 0;
+    }
+
+    .input-box2 {
+        flex-grow: 0;
+        width: 300px;
+    }
+
+    #locationSign {
+        padding-left: 10px;
+        font-size: 1.2rem;
+    }
+
+    #targetSign {
+        padding-right: 5px;
+        font-size: 1.2rem;
+    }
+
+    .btn button {
+        flex-grow: 0;
+        position: relative;
+        bottom: 8px
+    }
+
+    /* Desktop View How it works Section */
+
+    .howItWorks {
+        padding: 50px 60px;
+    }
+
+    .hiw-main {
+        grid-column-gap: 8.5rem;
+        grid-template: 1fr / 1fr 1fr;
+        justify-items: start;
+    }
+
+    .firstbox,
+    .otherbox {
+        width: 450px;
+        height: 120px;
+        border: 1.4px solid var(--blue);
+        border-radius: 0.3rem;
+    }
+
+    .otherbox {
+        margin-bottom: 5px;
+        opacity: 0.2;
+    }
+
+    .otherboxDiv {
+        margin-top: 125px;
+    }
+
+    .firstbox span,
+    .otherbox span {
+        padding-right: 35px;
+        padding-left: 25px;
+        font-size: 1.8rem;
+    }
+
+    .hiw-main img {
+        width: 550px;
+        height: 600px;
+        padding-top: 60px;
+    }
+
+    .firstB-img {
+        justify-self: center;
+    }
+
+    .fixConsultationInner {
+        top: 44rem;
+        padding: 0 60px;
+    }
+
+    /* Desktop View World Class Expert Doctors! Section */
+
+    
+    .doctorsPanel {
+        padding: 70px 60px;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1253px) {
+    .hiw-main {
+        grid-column-gap: 1rem;
+    }
+}
