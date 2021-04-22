@@ -1,0 +1,133 @@
+.darkBlueBtnBig {
+    padding: .95rem 3rem;
+    background-color: var(--darkBlue);
+    color: var(--white);
+    font-size: 1rem;
+    border: none;
+}
+
+.greyishBlueBtn {
+    padding: .95rem 2rem;
+    background-color: var(--greyishBlue);
+    color: var(--white);
+    font-size: 1rem;
+    border-radius: .4rem;
+    border: none;
+}
+
+.greyishBlueBtn:hover {
+    background-color: var(--darkBlue);
+}
+
+.whiteBtn,
+.darkBlueBtnSmall {
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    border: 1.5px solid var(--darkBlue);
+    border-radius: .2rem;
+}
+
+.whiteBtn {
+    background-color: var(--white);
+    color: var(--darkBlue);
+}
+
+.darkBlueBtnSmall {
+    background-color: var(--darkBlue);
+    color: var(--white);
+}
+
+.darkBlueBtnBig:hover,
+.darkBlueBtnSmall:hover,
+.whiteBtn:hover {
+    background-color: var(--greyishBlue);
+    color: var(--white);
+}
+
+/* Radio Button */
+
+.radBtn {
+    display: flex;
+    justify-self: start;
+    align-items: center;
+}
+
+.innerRadio {
+    margin: 0 5px;
+}
+
+.innerRadio input {
+    visibility: hidden;
+}
+
+.customRadio {
+    position: relative;
+    cursor: pointer;
+    top: .5rem;
+    height: .8rem;
+    width: .8rem;
+    background-color: var(--lightGrey);
+    border-radius: 50%;
+}
+
+
+
+/* Main Heading and Main Paragraph aligning */
+
+.alignHead {
+    text-align: center;
+}
+
+.HeadAPara {
+    padding: 0px;
+    height: max-content;
+    display: grid;
+    grid-template: 0.5fr 1fr 0px/1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.HeadAPara h2 {
+    grid-area: 1/1/1/2;
+}
+
+.hap1P {
+    padding-top: 15px;
+    grid-area: 2/1/2/2;
+}
+
+.hap2P {
+    grid-area: 3/1/3/2;
+    visibility: hidden;
+}
+
+
+@media only screen and (min-width:1025px) {
+
+    .alignHead {
+        text-align: left;
+    }
+
+    .HeadAPara {
+        justify-items: start;
+        margin-bottom: 0;
+    }
+
+    .hap1P {
+        grid-area: 3/1/3/2;
+        visibility: hidden;
+    }
+
+    .hap2P {
+        padding: 20px 0px;
+        grid-area: 2/1/2/2;
+        visibility: visible;
+        text-align: left;
+    }
+
+    .greyishBlueBtn {
+        padding: 1.3rem 4rem;
+    }
+}

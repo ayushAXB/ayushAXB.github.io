@@ -1,29 +1,28 @@
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 /* Mobile View Starts Here  */
+
 
 /* Task 02 Nav section */
 
 nav {
-    padding: 0px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
+    padding: 0 1.5rem;
     min-width: var(--minSize);
-    height: max-content;
+    height: 4rem;
 }
 
 .top-logo {
-    width: 180px;
-    height: 40px;
+    width: 8rem;
+    height: 2rem;
 }
 
 .navMenu {
     color: var(--iconsColor);
-    font-size: 20px;
-    padding: 0 10px;
+    font-size: 1.3rem;
+    margin: 0 .6rem;
+    cursor: pointer;
 }
 
 .navDeskDiv {
@@ -37,25 +36,28 @@ nav {
     visibility: hidden;
 }
 
+.navigation {
+    flex-direction: column;
+}
+
 
 /* Task 03 Header Section */
 
 header {
     background-color: var(--skyBlue);
-    padding: 40px 20px;
+    padding: var(--overallpadding);
     height: max-content;
     min-width: var(--minSize);
 }
 
-header h1 {
-    padding: 1rem 0;
+header p {
+    margin: 1.2rem 0;
 }
 
 .searchSection {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1.5rem;
 }
 
 .input-box1,
@@ -63,43 +65,28 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: start;
-    background-color: white;
-    width: 360px;
-    height: 50px;
-    padding: 0 5px;
-    margin-bottom: 10px;
+    background-color: var(--white);
+    width: 23rem;
+    height: 3.2rem;
+    padding: 0 .8rem;
+    margin-bottom: .8rem;
+
 }
 
 input[type=text] {
-    border: 1px solid white;
-    width: 100%;
-    height: 45px;
-    font-size: .9rem;
-    color: var(--lightGrey);
-    opacity: 0.8;
-    padding-left: 3px;
+    padding-left: .5rem;
 }
-
 
 #locationSign,
 #targetSign {
     font-size: 1.1rem;
 }
 
-.btn button {
-    background-color: var(--darkBlue);
-    color: white;
-    width: 150px;
-    height: 50px;
-    font-size: 1.1rem;
-    margin-top: 1rem;
-}
-
 
 /* Task 04 How it works section css starts here */
 
 .howItWorks {
-    padding: 40px 20px;
+    padding: var(--overallpadding);
     min-width: var(--minSize);
 }
 
@@ -112,15 +99,15 @@ input[type=text] {
 .firstbox,
 .otherbox {
     border: 1.5px solid var(--darkBlue);
-    width: 360px;
-    height: 60px;
+    min-width: 24rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: start;
     border-radius: 0.7rem;
     color: var(--darkBlue);
     padding: 10px;
-    background-color: white;
+    background-color: var(--white);
 }
 
 .firstbox span {
@@ -129,48 +116,56 @@ input[type=text] {
 
 .firstbox span,
 .otherbox span {
+    font-family: "Nexa-bold";
     padding-right: 10px;
 }
 
 .otherbox {
     opacity: 0.3;
-    color: var(--darkBlue);
-    margin-bottom: 15px;
 }
 
-.hiw-main img {
-    width: 350px;
-    height: 350px;
+.otherboxDiv {
+    display: grid;
+    width: 100%;
+    height: max-content;
+    grid-template: repeat(6, 1fr)/1fr;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 1rem;
+}
+
+.hiw-main figure {
+    width: 23rem;
+    height: 23rem;
     padding: 25px 0;
 }
 
 .fixConsultationInner {
     text-align: center;
-    padding-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .fixConsultationInner h3 {
-    padding-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 /* Task 05 World Class Expert Doctors Section  */
 
 .doctorsPanel {
-    padding: 40px 20px;
+    padding: var(--overallpadding);
     background-color: var(--darkBlue);
     height: max-content;
     min-width: var(--minSize);
 }
 
-.doctorsPanel h1,
+.doctorsPanel h2,
 .doctorsPanel p {
-    color: white;
+    color: var(--white);
 }
 
 .doc-div {
-    padding: 20px 0px;
-    display: grid;
     height: max-content;
+    display: grid;
     grid-template: repeat(4, 1fr) / 1fr;
     align-items: center;
     justify-items: center;
@@ -182,38 +177,38 @@ input[type=text] {
 .docName3,
 .docName4 {
     box-shadow: 0px 4px 0px var(--skyBlue);
-    background-color: white;
-    height: 510px;
-    width: 360px;
+    background-color: var(--white);
+    width: auto;
+    height: 38.5rem;
 }
 
 .docName1,
-.docName1 h4,
-.docName1 h5 {
+.docName1 ul,
+.docName1 h4 {
     grid-area: 1/1/1/2
 }
 
 .docName2,
-.docName2 h4,
-.docName2 h5 {
+.docName2 ul,
+.docName2 h4 {
     grid-area: 2/1/2/2
 }
 
 .docName3,
-.docName3 h4,
-.docName3 h5 {
+.docName3 ul,
+.docName3 h4 {
     grid-area: 3/1/3/2
 }
 
 .docName4,
-.docName4 h4,
-.docName4 h5 {
+.docName4 ul,
+.docName4 h4 {
     grid-area: 4/1/4/2
 }
 
-.doc-div img {
-    width: 360px;
-    height: 400px;
+.doc-div figure {
+    width: 24rem;
+    height: 30rem;
 }
 
 .docName1 h4,
@@ -224,16 +219,23 @@ input[type=text] {
     position: relative;
     left: 35px;
     bottom: 10px;
+    display: inline;
 }
 
-.docName1 h5,
-.docName2 h5,
-.docName3 h5,
-.docName4 h5 {
-    padding-left: 35px;
-    line-height: 15px;
-    opacity: 0.8;
-    font-weight: lighter;
+.docName1 ul,
+.docName2 ul,
+.docName3 ul,
+.docName4 ul {
+    flex-direction: column;
+    align-items: start;
+    margin-left: 35px;
+}
+
+.docName1 ul li,
+.docName2 ul li,
+.docName3 ul li,
+.docName4 ul li {
+    margin-bottom: 7px;
 }
 
 .line {
@@ -243,32 +245,38 @@ input[type=text] {
     position: relative;
 }
 
+.docRadioBtn {
+    display: flex;
+    visibility: hidden;
+}
+
 /* Task 06 Featured Medical Treatment */
 
 .treatment {
-    padding: 40px 20px;
+    padding: var(--overallpadding);
     background-color: white;
     height: min-content;
     min-width: var(--minSize);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .treatmentImgs {
     display: grid;
-    width: 360px;
+    width: 100%;
     height: max-content;
     grid-template: repeat(6, 1fr) / 1fr;
     align-items: center;
     justify-items: center;
-    padding: 30px 0;
-    grid-gap: 20px;
+    grid-gap: 1rem;
 }
 
-.treatmentImgs img {
-    width: 360px;
-    height: 400px;
+.treatImgs1 figure,
+.treatImgs2 figure,
+.treatImgs3 figure,
+.treatImgs4 figure,
+.treatImgs5 figure,
+.treatImgs6 figure {
+    width: 24rem;
+    height: 28rem;
 }
 
 .treatImgs1,
@@ -314,11 +322,11 @@ input[type=text] {
 .shadow4,
 .shadow5,
 .shadow6 {
-    box-shadow: inset 0px -100px 50px;
-    -moz-box-shadow: inset 0px -100px 50px;
-    -webkit-box-shadow: inset 0px -100px 50px;
-    width: 360px;
-    height: 400px;
+    box-shadow: inset 0px -120px 80px var(--darkBlue);
+    -moz-box-shadow: inset 0px -120px 80px var(--darkBlue);
+    -webkit-box-shadow: inset 0px -120px 80px var(--darkBlue);
+    width: 24rem;
+    height: 28rem;
     opacity: 0.9;
 }
 
@@ -333,53 +341,52 @@ input[type=text] {
 .s4,
 .s5,
 .s6 {
-    top: 10rem;
+    top: 11.5rem;
 }
 
 .s1,
 .s2 {
-    right: 6.8rem;
+    right: 7.7rem;
 }
 
 .s3 {
-    right: 3rem;
+    right: 4.7rem;
 }
 
 .s4 {
-    right: 2.7rem;
+    right: 4.4rem;
 }
 
 .s5 {
-    right: 3.4rem;
+    right: 4.9rem;
 }
 
 .s6 {
-    right: 3.8rem;
-}
-
-.treatmentImgs h3 {
-    color: white;
-    font-weight: 600;
+    right: 5.1rem;
 }
 
 .treatmentImgs h4 {
-    color: var(--lightLime);
-    padding-top: 6px;
-    font-family: serif;
-    font-weight: lighter;
+    color: white;
 }
 
+.treatmentImgs h5 {
+    color: var(--lightLime);
+    font-family: serif;
+    margin-top: 3px;
+}
+
+.treatRadioBtn {
+    display: flex;
+    visibility: hidden;
+}
 
 /* Task 07 Exclusive Services  */
 
 .ex-services {
+    padding: var(--overallpadding);
     min-width: var(--minSize);
-    padding: 30px 20px;
     height: max-content;
     background-color: var(--lightLime);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .serviceImgs {
@@ -393,17 +400,24 @@ input[type=text] {
 
 .sI,
 .ambulance {
-    background-color: white;
-    width: 180px;
-    height: 140px;
-    border-radius: 20px;
+    background-color: var(--white);
+    width: 11rem;
+    height: 9rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+.sI figure,
+.ambulance figure {
+    width: 6rem;
+    height: 6rem;
 }
 
 .sI h4,
-.ambulance h4 {
+.ambulance h4,
+.other h4 {
     text-transform: uppercase;
     opacity: 0.6;
     font-weight: 800;
@@ -441,14 +455,14 @@ input[type=text] {
 /* Task 08 Need Help Section */
 
 .container {
-    padding: 40px 20px;
+    padding: var(--overallpadding);
     background-color: var(--skyBlue);
     height: max-content;
-    text-align: center;
     min-width: var(--minSize);
+    text-align: center;
 }
 
-.container h1 {
+.container h2 {
     color: white;
 }
 
@@ -456,22 +470,14 @@ input[type=text] {
     padding: 15px 0;
 }
 
-.container button {
-    background-color: var(--greyishBlue);
-    color: var(--lime);
-    width: 200px;
-    height: 60px;
-    font-size: 1.2rem;
-}
+
+
 
 /* Task 09 Footer Section  */
 
 footer {
     min-width: var(--minSize);
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: var(--overallpadding);
     background-color: var(--darkBlue);
 }
 
@@ -489,33 +495,21 @@ footer {
 }
 
 .navlist {
-    display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-footer li {
-    padding: 10px 0;
-}
-
-.navlist a {
-    font-weight: lighter;
-    font-size: 20px;
+.navlist li {
+    margin: 10px 0;
     color: var(--lime);
-    opacity: 0.7;
-    font-family: sans-serif;
 }
 
-.socialLogos a {
-    padding: 0 15px;
-    color: white;
-    opacity: 0.8;
+.socialLogos li {
+    margin: 0 15px;
+    color: var(--white);
 }
 
 footer p {
-    font-family: serif;
     color: var(--lime);
-    opacity: 0.9;
 }
 
 
@@ -532,19 +526,11 @@ footer p {
 
     /*Tablet view nav section  */
 
-
     nav {
-        padding: 10px 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        padding: 0 3rem;
     }
 
     /* Task 10 Tablet view header */
-
-    header {
-        padding: 40px 30px;
-    }
 
     .searchSection {
         display: flex;
@@ -565,16 +551,14 @@ footer p {
     }
 
     .btn button {
-        width: 140px;
         position: relative;
-        bottom: 13px;
+        bottom: .4rem;
         flex-grow: 2;
     }
 
     /* Task 11 Tablet view How it works section */
 
     .howItWorks {
-        padding: 40px 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -586,7 +570,7 @@ footer p {
         align-items: start;
         justify-items: center;
         grid-template: 1fr / 1fr 1fr;
-        padding: 20px 0;
+        margin: 20px 0;
         grid-column-gap: 2.5rem;
     }
 
@@ -596,10 +580,15 @@ footer p {
 
     .otherboxDiv {
         grid-area: 1/1/1/2;
-        margin-top: 75px;
+        margin-top: 5rem;
     }
 
-    .hiw-main img {
+    .firstbox,
+    .otherbox {
+        width: 23rem;
+    }
+
+    .firstB-img figure {
         padding: 0;
     }
 
@@ -610,56 +599,52 @@ footer p {
     .fixConsultationInner {
         grid-area: 1/2/1/3;
         position: relative;
-        top: 23.5rem;
+        top: 24rem;
     }
 
 
     /* Task 12 Tablet view Doctors section */
 
     .doctorsPanel {
-        padding: 40px 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .doc-div {
-        grid-template: 500px 500px/ 360px 360px;
+        grid-template: 1fr 1fr/ 1fr 1fr;
+        grid-gap: 1rem;
     }
 
     .docName1,
     .docName1 h4,
-    .docName1 h5 {
+    .docName1 ul {
         grid-area: 1/1/1/2
     }
 
     .docName2,
     .docName2 h4,
-    .docName2 h5 {
+    .docName2 ul {
         grid-area: 1/2/1/3
     }
 
     .docName3,
     .docName3 h4,
-    .docName3 h5 {
+    .docName3 ul {
         grid-area: 2/1/2/2
     }
 
     .docName4,
     .docName4 h4,
-    .docName4 h5 {
+    .docName4 ul {
         grid-area: 2/2/2/3
     }
 
     /*  Task 13 Tablet view Featured medical treatment */
 
-    .treatment {
-        padding: 40px 30px;
-    }
-
     .treatmentImgs {
         width: max-content;
-        grid-template: 400px 400px / 360px 360px;
+        grid-template: 1fr 1fr/1fr 1fr;
     }
 
     .treatImgs1,
@@ -701,10 +686,6 @@ footer p {
 
     /* Task 14 Tablet view exclusive services section */
 
-    .ex-services {
-        padding: 40px 30px;
-    }
-
     .serviceImgs {
         grid-template: 1fr 1fr 0px/ repeat(3, 1fr);
         align-items: center;
@@ -713,7 +694,13 @@ footer p {
 
     .sI,
     .ambulance {
-        width: 230px;
+        width: 15.5rem;
+        height: 10rem;
+    }
+
+    .sI figure,
+    .ambulance figure {
+        width: 8rem;
     }
 
     .sI1 {
@@ -740,16 +727,9 @@ footer p {
         grid-area: 2/3/2/4;
     }
 
-    /* Tablet View Need Help Section */
-
-    .container {
-        padding: 40px 30px;
-    }
-
     /* Task 15 Tablet view Footer section  */
     footer {
-        padding: 40px 30px;
-        background-color: white;
+        background-color: var(--white);
     }
 
     .innerfooter {
@@ -778,7 +758,7 @@ footer p {
         flex-direction: row;
     }
 
-    .navlist a {
+    .navlist li {
         margin-right: 20px;
         color: var(--darkBlue);
     }
@@ -792,7 +772,7 @@ footer p {
         justify-self: end;
     }
 
-    .socialLogos a {
+    .socialLogos li {
         color: var(--darkBlue);
     }
 }
@@ -802,18 +782,18 @@ footer p {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-/* Task 16 DESKTOP VIEW CSS  Starts*/
+@media only screen and (min-width:1025px) {
 
-@media only screen and (min-width:1024px) {
+    /* Task 16  Desktop view Starts Here */
 
-    /* Desktop view Navigation Section  */
-
-
+    /* Desktop View Navigation Section */
     nav {
-        padding: 20px 60px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        padding: 1.3rem 3.8rem;
+    }
+
+    .top-logo {
+        width: 11rem;
+        height: 2.5rem;
     }
 
     .navDeskDiv {
@@ -837,15 +817,23 @@ footer p {
     }
 
     .navigation {
-        display: flex;
+        flex-direction: row;
         flex-wrap: nowrap;
         grid-area: 1/1/1/2;
 
     }
 
-    .navigation h5 {
-        font-weight: 500;
-        font-size: .9rem;
+    .navigation li {
+        padding: 3px;
+    }
+
+    .navigation li:hover {
+        color: var(--white);
+        background-color: var(--greyishBlue);
+        border-radius: 2px;
+    }
+
+    .navigation a {
         margin: 0 15px;
     }
 
@@ -856,41 +844,16 @@ footer p {
         flex-wrap: nowrap;
     }
 
-    .navB1,
-    .navB2 {
-        width: 130px;
-        height: 35px;
-        border-radius: 3px;
-        font-size: 12px;
-        font-family: sans-serif;
-        border: 1.4px solid var(--darkBlue);
-    }
-
-    .navigation h5:hover,
-    .navB1:hover,
-    .navB2:hover {
-        background-color: var(--lightGreyishBlue);
-        color: white;
-    }
-
     .navB1 {
-        background-color: white;
-        color: var(--darkBlue);
         margin-right: 7px;
     }
-
-    .navB2 {
-        background-color: var(--darkBlue);
-        color: white;
-    }
-
 
     /* Desktop View Header Section  */
 
     header {
         background: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg) no-repeat center center/cover;
-        height: 410px;
-        padding: 0px 60px;
+        height: 26rem;
+        padding: 0 3.8rem;
     }
 
     .searchSection {
@@ -899,7 +862,7 @@ footer p {
     }
 
     header h1 {
-        padding-top: 100px;
+        padding-top: 6.5rem;
     }
 
     .input-box1,
@@ -914,7 +877,7 @@ footer p {
 
     .input-box2 {
         flex-grow: 0;
-        width: 300px;
+        width: 380px;
     }
 
     #locationSign {
@@ -930,49 +893,50 @@ footer p {
     .btn button {
         flex-grow: 0;
         position: relative;
-        bottom: 8px
+        bottom: 0rem;
     }
 
     /* Desktop View How it works Section */
 
-    .howItWorks {
-        padding: 50px 60px;
-    }
-
     .hiw-main {
-        grid-column-gap: 8.5rem;
         grid-template: 1fr / 1fr 1fr;
         justify-items: start;
+        margin: 0;
+        margin-top:1rem;
+    }
+
+    .otherboxDiv {
+        justify-items: start;
+        grid-gap: 7px;
     }
 
     .firstbox,
     .otherbox {
-        width: 450px;
-        height: 120px;
+        width: 28rem;
+        height: 7rem;
         border: 1.4px solid var(--blue);
         border-radius: 0.3rem;
     }
 
     .otherbox {
-        margin-bottom: 5px;
         opacity: 0.2;
     }
 
     .otherboxDiv {
-        margin-top: 125px;
+        margin-top: 7.4rem;
     }
 
     .firstbox span,
     .otherbox span {
         padding-right: 35px;
         padding-left: 25px;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
-    .hiw-main img {
-        width: 550px;
-        height: 600px;
-        padding-top: 60px;
+    .hiw-main figure {
+        width: 34.5rem;
+        height: 37.5rem;
+        margin-top: 2rem;
     }
 
     .firstB-img {
@@ -980,20 +944,302 @@ footer p {
     }
 
     .fixConsultationInner {
-        top: 44rem;
+        top: 41rem;
         padding: 0 60px;
     }
 
     /* Desktop View World Class Expert Doctors! Section */
 
-    
-    .doctorsPanel {
-        padding: 70px 60px;
+    .doc-div {
+        grid-template: 1fr 4rem /repeat(4, 1fr);
+        grid-gap: 0 0.5rem;
+        padding: 0;
+        margin-top:1rem;
     }
-}
 
-@media only screen and (min-width:1024px) and (max-width:1253px) {
-    .hiw-main {
-        grid-column-gap: 1rem;
+    .docName1,
+    .docName1 h4,
+    .docName1 ul {
+        grid-area: 1/1/1/2
+    }
+
+    .docName2,
+    .docName2 h4,
+    .docName2 ul {
+        grid-area: 1/2/1/3
+    }
+
+    .docName3,
+    .docName3 h4,
+    .docName3 ul {
+        grid-area: 1/3/1/4
+    }
+
+    .docName4,
+    .docName4 h4,
+    .docName4 ul {
+        grid-area: 1/4/1/5
+    }
+
+    .docName1,
+    .docName2,
+    .docName3,
+    .docName4 {
+        width: 17.5rem;
+        height: 25.5rem;
+    }
+
+    .doc-div figure {
+        width: 17.5rem;
+        height: 18rem;
+    }
+
+    .doc-div li {
+        font-size: 0.8rem;
+        color: var(--darkBlue);
+    }
+
+    .docName1 ul li,
+    .docName2 ul li,
+    .docName3 ul li,
+    .docName4 ul li {
+        margin-bottom: 5px;
+    }
+
+    .docName1 h4,
+    .docName2 h4,
+    .docName3 h4,
+    .docName4 h4 {
+        font-size: 1rem;
+    }
+
+    .line {
+        border-bottom: 1.5px solid var(--blue);
+    }
+
+    .docRadioBtn {
+        visibility: visible;
+        grid-area: 2/1/2/2;
+    }
+
+    .docRadCol input:checked~.customRadio {
+        background-color: var(--darkBlue);
+        border: 2px solid var(--blue);
+    }
+
+    /* Desktop view treatment section */
+
+    .treatmentImgs {
+        grid-template: repeat(12, 3rem) 4rem/repeat(3, 1fr);
+        margin-top: 1rem;
+        grid-gap: 0.5rem;
+        align-items: start;
+    }
+
+    .treatImgs1 figure,
+    .shadow1,
+    .treatImgs2 figure,
+    .shadow2,
+    .treatImgs3 figure,
+    .shadow3,
+    .treatImgs4 figure,
+    .shadow4,
+    .treatImgs5 figure,
+    .shadow5,
+    .treatImgs6 figure,
+    .shadow6 {
+        width: 23.5rem;
+    }
+
+
+    .treatImgs1 figure,
+    .shadow1 {
+        height: 13.5rem;
+    }
+
+    .treatImgs1,
+    .shadow1,
+    .s1 {
+        grid-area: 1/1/5/2;
+    }
+
+    .s1 {
+        top: 10rem;
+        right: 7.5rem;
+    }
+
+    .treatImgs2 figure,
+    .shadow2 {
+        height: 20.5rem;
+    }
+
+    .treatImgs2,
+    .shadow2,
+    .s2 {
+        grid-area: 1/2/6/3;
+    }
+
+    .s2 {
+        top: 17rem;
+        right: 7.5rem;
+    }
+
+    .treatImgs3 figure,
+    .shadow3 {
+        height: 17rem;
+    }
+
+    .treatImgs3,
+    .shadow3,
+    .s3 {
+        grid-area: 1/3/5/4;
+    }
+
+    .s3 {
+        top: 13.5rem;
+        right: 4.6rem;
+    }
+
+    .treatImgs4 figure,
+    .shadow4 {
+        height: 28rem;
+    }
+
+    .treatImgs4,
+    .shadow4,
+    .s4 {
+        grid-area: 5/1/13/2;
+    }
+
+    .s4 {
+        top: 24.5rem;
+        right: 4.3rem;
+    }
+
+    .treatImgs5 figure,
+    .shadow5 {
+        height: 21rem;
+    }
+
+    .treatImgs5,
+    .shadow5,
+    .s5 {
+        grid-area: 7/2/13/3;
+    }
+
+    .s5 {
+        top: 17.5rem;
+        right: 4.8rem;
+    }
+
+    .treatImgs6 figure,
+    .shadow6 {
+        height: 24.5rem;
+    }
+
+    .treatImgs6,
+    .shadow6,
+    .s6 {
+        grid-area: 6/3/13/4;
+    }
+
+    .s6 {
+        top: 21rem;
+        right: 5rem;
+    }
+
+    .treatRadioBtn {
+        visibility: visible;
+        grid-area: 13/1/13/2;
+    }
+
+    .treatRadCol input:checked~.customRadio {
+        background-color: var(--white);
+        border: 2px solid var(--blue);
+    }
+
+    /* Desktop view exclusive services section */
+
+    .serviceImgs {
+        grid-template: 1fr 0rem/repeat(6, 1fr);
+        grid-gap: 0 .5rem;
+        margin: 1rem 0;
+    }
+
+    .sI,
+    .other {
+        width: 11.5rem;
+        height: 12rem;
+        border-radius: 0;
+    }
+    
+    .other {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--white);
+    }
+
+    .other i {
+        font-size: 4.5rem;
+        color: var(--greyishBlue);
+        margin-bottom: 1rem;
+    }
+
+    .sI1 {
+        grid-area: 1/1/1/2;
+    }
+
+    .sI2 {
+        grid-area: 1/2/1/3;
+    }
+
+    .sI3 {
+        grid-area: 1/3/1/4;
+    }
+
+    .sI4 {
+        grid-area: 1/4/1/5;
+    }
+
+    .sI5 {
+        grid-area: 1/5/1/6;
+    }
+
+    .other {
+        visibility: visible;
+        grid-area: 1/6/1/7;
+    }
+
+    .ambulance {
+        visibility: hidden;
+        width: 10rem;
+        grid-area: 2/1/2/2;
+    }
+
+    /* Desktop View Need Help Section */
+
+    .container {
+        display: grid;
+        grid-template: 1fr/1fr 1fr;
+        align-items: start;
+    }
+
+    .container h2,
+    .container p {
+        grid-area: 1/1/1/2;
+        justify-self: left;
+    }
+
+    .container p {
+        position: relative;
+        top: 3rem;
+        padding: 0;
+    }
+
+    .container button {
+        grid-area: 1/2/1/3;
+        justify-self: right;
     }
 }
