@@ -273,6 +273,12 @@ footer p {
         padding: 1rem 3rem;
     }
 
+    /* tablet filter and main section */
+
+    .layout {
+        padding: 0 3rem;
+    }
+
 
     /* Tablet view main section */
 
@@ -448,7 +454,7 @@ footer p {
         background: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png)no-repeat center center/cover;
         padding: var(--overallpadding);
         min-width: var(--minSize);
-        height: 12rem;
+        height: 8rem;
         visibility: visible;
         position: relative;
         display: flex;
@@ -477,16 +483,17 @@ footer p {
     }
 
 
+
     /* Desktop view Search heading section */
 
     .searchHeading {
-        padding: 1rem 3rem;
+        padding: 2rem 3.8rem;
     }
 
-    /* Desktop filter and main section */
+    /* desktop filter and main section */
 
     .layout {
-        padding: 0 3rem;
+        padding: 0 3.8rem;
         display: grid;
         grid-template: 1fr/25% 73%;
         align-items: center;
