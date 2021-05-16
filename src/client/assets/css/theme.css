@@ -19,6 +19,7 @@
     --greyishBlue: #0173b2;
     --lightGreyishBlue: #7ab0d4;
     --white: #fff;
+    --black: #000;
     --selectCol: #d3d3d3;
     --minSize: 24rem;
     --overallpadding: 2.5rem 1.5rem;
@@ -39,33 +40,33 @@ h6 {
 }
 
 h1 {
-    font-size: 2.3rem;
-    line-height: 2.7rem;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
 }
 
 h2 {
-    font-size: 2.3rem;
-    line-height: 2.5rem;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
 }
 
 h3 {
-    font-size: 1.6rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 2.3rem;
 }
 
 h4 {
-    font-size: 1.3rem;
-    line-height: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
 }
 
 h5 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
 }
 
 h6 {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: .8rem;
+    line-height: 1.1rem;
 }
 
 p {
@@ -78,14 +79,18 @@ p {
 span,
 label {
     font-size: 1rem;
+    line-height: 1.3rem;
     font-family: "Nexa-light";
-    color:var(--darkblue);
+    color: var(--darkblue);
+}
+
+a {
+    text-decoration: none;
 }
 
 a,
 button,
 input {
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -101,6 +106,8 @@ input[type=text] {
     font-family: "Nexa-light";
     color: var(--darkBlue);
 }
+
+input[type=radio]
 
 input ::placeholder {
     color: var(--lightGrey)
@@ -124,13 +131,9 @@ nav {
     justify-content: space-between;
 }
 
-section,
-footer {
-    flex-direction: column;
-}
 
 select,
-option{
+option {
     background-color: var(--selectCol);
     border: none;
     font-family: "Nexa-light";
@@ -139,7 +142,7 @@ option{
 }
 
 select {
-    padding: .5rem ;
+    padding: .5rem;
     font-size: 1rem;
 }
 
@@ -151,22 +154,67 @@ option {
 li,
 textarea {
     font-size: 1rem;
+    line-height: 1.3rem;
     font-family: "Nexa-light";
     color: var(--lightGrey);
 }
 
-label {
+textarea::placeholder {
+    font-size: .8rem;
     font-family: "Nexa-light";
-    font-size: .9rem;
-    color: var(--darkBlue);
-    line-height: 1.2rem;
+    color: var(--lightGrey);
 }
+
 
 
 @media only screen and (min-width:768px) and (max-width:1024px) {
     :root {
         --minSize: 50rem;
         --overallpadding: 2.5rem 3rem;
+    }
+
+    h1 {
+        font-size: 2.7rem;
+        line-height: 3rem;
+    }
+
+    h2 {
+        font-size: 2.7rem;
+        line-height: 3rem;
+    }
+
+    h3 {
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+
+    span,
+    label,
+    li,
+    textarea,
+    select {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
     }
 }
 
@@ -178,37 +226,46 @@ label {
     }
 
     h1 {
-        font-size: 2.5rem;
-        line-height: 3rem;
+        font-size: 2.9rem;
+        line-height: 3.2rem;
     }
 
     h2 {
-        font-size: 2.5rem;
-        line-height: 2.8rem;
+        font-size: 2.9rem;
+        line-height: 3.2rem;
     }
 
     h3 {
-        font-size: 1.7rem;
-        line-height: 2.3rem;
+        font-size: 2.4rem;
+        line-height: 2.7rem;
     }
 
     h4 {
-        font-size: 1.3rem;
-        line-height: 1.5rem;
+        font-size: 2rem;
+        line-height: 2.3rem;
     }
 
     h5 {
-        font-size: 1.1rem;
-        line-height: 1.5rem;
+        font-size: 1.7rem;
+        line-height: 2rem;
     }
 
     h6 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 1.5rem;
     }
 
     p {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+    span,
+    label,
+    li,
+    textarea,
+    select {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
     }
 }
