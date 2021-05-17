@@ -4,269 +4,275 @@
 
 /* Mobile View Starts Here  */
 
-
 /* Task 02 Nav section */
 
 nav {
-    padding: 0 1.5rem;
-    min-width: var(--minSize);
-    height: 4rem;
+  padding: var(--overallpaddingNoHeight);
+  min-width: var(--minSize);
+  height: 4rem;
 }
 
 .top-logo {
-    width: 8rem;
-    height: 2rem;
+  width: 9rem;
+  height: 2rem;
 }
 
 .navMenu {
-    color: var(--iconsColor);
-    font-size: 1.3rem;
-    margin: 0 .6rem;
-    cursor: pointer;
+  color: var(--iconsColor);
+  font-size: 1.3rem;
+  margin: 0 0.6rem;
+  cursor: pointer;
 }
 
 .navDeskDiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navigation,
 .navbtn {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .navigation {
-    flex-direction: column;
+  flex-direction: column;
 }
-
 
 /* Task 03 Header Section */
 
 header {
-    background-color: var(--skyBlue);
-    padding: var(--overallpadding);
-    height: max-content;
-    min-width: var(--minSize);
+  background-color: var(--skyBlue);
+  padding: var(--overallpadding);
+  height: max-content;
+  min-width: var(--minSize);
 }
 
 header p {
-    margin: 1.2rem 0;
+  margin: 1.2rem 0;
 }
 
 .searchSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .input-box1,
 .input-box2 {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    background-color: var(--white);
-    width: 23rem;
-    height: 3.2rem;
-    padding: 0 .8rem;
-    margin-bottom: .8rem;
-
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: var(--white);
+  width: 23rem;
+  height: 3.2rem;
+  padding: 0 0.8rem;
+  margin-bottom: 0.8rem;
 }
 
-input[type=text] {
-    padding-left: .5rem;
+input[type="text"] {
+  padding-left: 0.5rem;
 }
 
 #locationSign,
 #targetSign {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
-
 
 /* Task 04 How it works section css starts here */
 
 .howItWorks {
-    padding: var(--overallpadding);
-    min-width: var(--minSize);
+  padding: var(--overallpadding);
+  min-width: var(--minSize);
 }
 
-.hiw-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.boxUl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.firstbox,
-.otherbox {
-    border: 1.5px solid var(--darkBlue);
-    min-width: 24rem;
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    border-radius: 0.7rem;
-    color: var(--darkBlue);
-    padding: 10px;
-    background-color: var(--white);
+.box {
+  border: 1.5px solid var(--darkBlue);
+  width: 24rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-radius: 0.7rem;
+  color: var(--darkBlue);
+  background-color: var(--white);
 }
 
-.firstbox span {
-    color: var(--skyBlue);
+.boxLi1,
+.boxLi2,
+.boxLi3,
+.boxLi4,
+.boxLi5,
+.boxLi6,
+.boxLi7 {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.firstbox span,
-.otherbox span {
-    font-family: "Nexa-bold";
-    padding-right: 10px;
+.boxContent1,
+.boxContent2,
+.boxContent3,
+.boxContent4,
+.boxContent5,
+.boxContent6,
+.boxContent7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.otherbox {
-    opacity: 0.3;
+.box span {
+  font-family: "Nexa-bold";
+  padding: 0 10px;
+  color: var(--greyishBlue);
 }
 
-.otherboxDiv {
-    display: grid;
-    width: 100%;
-    height: max-content;
-    grid-template: repeat(6, 1fr)/1fr;
-    align-items: center;
-    justify-items: center;
-    grid-gap: 1rem;
+.boxContent1 img,
+.boxContent2 img,
+.boxContent3 img,
+.boxContent4 img,
+.boxContent5 img,
+.boxContent6 img,
+.boxContent7 img {
+  object-fit: contain;
 }
 
-.hiw-main figure {
-    width: 23rem;
-    height: 23rem;
-    padding: 25px 0;
+.box-img {
+  width: 23rem;
+  height: 23rem;
+  padding: 1rem 0;
 }
 
-.fixConsultationInner {
-    text-align: center;
-    margin-bottom: 30px;
+.boxInContent {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.fixConsultationInner h3 {
-    margin-bottom: 15px;
+.boxInContent h4 {
+  margin-bottom: 15px;
 }
 
 /* Task 05 World Class Expert Doctors Section  */
 
 .doctorsPanel {
-    padding: var(--overallpadding);
-    background-color: var(--darkBlue);
-    height: max-content;
-    min-width: var(--minSize);
+  padding: var(--overallpadding);
+  background-color: var(--darkBlue);
+  height: max-content;
+  min-width: var(--minSize);
 }
 
 .doctorsPanel h2,
 .doctorsPanel p {
-    color: var(--white);
+  color: var(--white);
 }
 
 .doc-div {
-    height: max-content;
-    display: grid;
-    grid-template: repeat(4, 1fr) / 1fr;
-    align-items: center;
-    justify-items: center;
-    grid-gap: 25px;
+  height: max-content;
+  display: grid;
+  grid-template: repeat(4, 1fr) / 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 25px;
 }
 
 .docName1,
 .docName2,
 .docName3,
 .docName4 {
-    box-shadow: 0px 4px 0px var(--skyBlue);
-    background-color: var(--white);
-    width: auto;
-    height: 38.5rem;
+  box-shadow: 0px 4px 0px var(--skyBlue);
+  background-color: var(--white);
+  width: auto;
+  height: 37rem;
 }
 
 .docName1,
 .docName1 ul,
-.docName1 h4 {
-    grid-area: 1/1/1/2
+.docName1 h5 {
+  grid-area: 1/1/1/2;
 }
 
 .docName2,
 .docName2 ul,
-.docName2 h4 {
-    grid-area: 2/1/2/2
+.docName2 h5 {
+  grid-area: 2/1/2/2;
 }
 
 .docName3,
 .docName3 ul,
-.docName3 h4 {
-    grid-area: 3/1/3/2
+.docName3 h5 {
+  grid-area: 3/1/3/2;
 }
 
 .docName4,
 .docName4 ul,
-.docName4 h4 {
-    grid-area: 4/1/4/2
+.docName4 h5 {
+  grid-area: 4/1/4/2;
 }
 
 .doc-div figure {
-    width: 24rem;
-    height: 30rem;
+  width: 24rem;
+  height: 28rem;
 }
 
-.docName1 h4,
-.docName2 h4,
-.docName3 h4,
-.docName4 h4 {
-    color: var(--blue);
-    position: relative;
-    left: 35px;
-    bottom: 10px;
-    display: inline;
+.docName1 h5,
+.docName2 h5,
+.docName3 h5,
+.docName4 h5 {
+  color: var(--blue);
+  position: relative;
+  left: 35px;
+  bottom: 13px;
+  display: inline;
 }
 
 .docName1 ul,
 .docName2 ul,
 .docName3 ul,
 .docName4 ul {
-    flex-direction: column;
-    align-items: start;
-    margin-left: 35px;
-}
-
-.docName1 ul li,
-.docName2 ul li,
-.docName3 ul li,
-.docName4 ul li {
-    margin-bottom: 7px;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 35px;
 }
 
 .line {
-    width: 30px;
-    height: 20px;
-    border-bottom: 2px solid var(--blue);
-    position: relative;
+  width: 30px;
+  height: 20px;
+  border-bottom: 2px solid var(--blue);
+  position: relative;
 }
 
 .docRadioBtn {
-    display: flex;
-    visibility: hidden;
+  display: flex;
+  visibility: hidden;
 }
 
 /* Task 06 Featured Medical Treatment */
 
 .treatment {
-    padding: var(--overallpadding);
-    background-color: white;
-    height: min-content;
-    min-width: var(--minSize);
+  padding: var(--overallpadding);
+  background-color: white;
+  height: min-content;
+  min-width: var(--minSize);
 }
 
 .treatmentImgs {
-    display: grid;
-    width: 100%;
-    height: max-content;
-    grid-template: repeat(6, 1fr) / 1fr;
-    align-items: center;
-    justify-items: center;
-    grid-gap: 1rem;
+  display: grid;
+  width: 100%;
+  height: max-content;
+  grid-template: repeat(6, 1fr) / 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 1rem;
 }
 
 .treatImgs1 figure,
@@ -275,45 +281,44 @@ input[type=text] {
 .treatImgs4 figure,
 .treatImgs5 figure,
 .treatImgs6 figure {
-    width: 24rem;
-    height: 28rem;
+  width: 24rem;
+  height: 28rem;
 }
 
 .treatImgs1,
 .shadow1,
 .s1 {
-    grid-area: 1/1/1/2;
+  grid-area: 1/1/1/2;
 }
 
 .treatImgs2,
 .shadow2,
 .s2 {
-    grid-area: 2/1/2/2;
+  grid-area: 2/1/2/2;
 }
 
 .treatImgs3,
 .shadow3,
 .s3 {
-    grid-area: 3/1/3/2;
+  grid-area: 3/1/3/2;
 }
 
 .treatImgs4,
 .shadow4,
 .s4 {
-    grid-area: 4/1/4/2;
+  grid-area: 4/1/4/2;
 }
 
 .treatImgs5,
 .shadow5,
 .s5 {
-    grid-area: 5/1/5/2;
+  grid-area: 5/1/5/2;
 }
 
 .treatImgs6,
 .shadow6,
 .s6 {
-    grid-area: 6/1/6/2;
-
+  grid-area: 6/1/6/2;
 }
 
 .shadow1,
@@ -322,18 +327,13 @@ input[type=text] {
 .shadow4,
 .shadow5,
 .shadow6 {
-    box-shadow: inset 0px -120px 80px var(--darkBlue);
-    -moz-box-shadow: inset 0px -120px 80px var(--darkBlue);
-    -webkit-box-shadow: inset 0px -120px 80px var(--darkBlue);
-    width: 24rem;
-    height: 28rem;
-    opacity: 0.9;
+  box-shadow: inset 0px -120px 80px var(--darkBlue);
+  -moz-box-shadow: inset 0px -120px 80px var(--darkBlue);
+  -webkit-box-shadow: inset 0px -120px 80px var(--darkBlue);
+  width: 24rem;
+  height: 28rem;
+  opacity: 0.9;
 }
-
-.specialization {
-    position: relative;
-}
-
 
 .s1,
 .s2,
@@ -341,905 +341,835 @@ input[type=text] {
 .s4,
 .s5,
 .s6 {
-    top: 11.5rem;
-}
-
-.s1,
-.s2 {
-    right: 7.7rem;
-}
-
-.s3 {
-    right: 4.7rem;
-}
-
-.s4 {
-    right: 4.4rem;
-}
-
-.s5 {
-    right: 4.9rem;
-}
-
-.s6 {
-    right: 5.1rem;
-}
-
-.treatmentImgs h4 {
-    color: white;
+  justify-self: start;
+  align-self: end;
+  position: relative;
+  left: 1rem;
+  bottom: 1rem;
 }
 
 .treatmentImgs h5 {
-    color: var(--lightLime);
-    font-family: serif;
-    margin-top: 3px;
+  color: var(--white);
+}
+
+.treatmentImgs h6 {
+  color: var(--white);
+  font-family: serif;
+  margin-top: 3px;
 }
 
 .treatRadioBtn {
-    display: flex;
-    visibility: hidden;
+  display: flex;
+  visibility: hidden;
 }
 
 /* Task 07 Exclusive Services  */
 
 .ex-services {
-    padding: var(--overallpadding);
-    min-width: var(--minSize);
-    height: max-content;
-    background-color: var(--lightLime);
+  padding: var(--overallpadding);
+  min-width: var(--minSize);
+  height: max-content;
+  background-color: var(--lightLime);
 }
 
 .serviceImgs {
-    display: grid;
-    height: max-content;
-    grid-template: repeat(3, 1fr) 0px /1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    grid-gap: 10px;
+  display: grid;
+  height: max-content;
+  grid-template: repeat(3, 1fr) 0px /1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 1rem;
 }
 
 .sI,
 .ambulance {
-    background-color: var(--white);
-    width: 11rem;
-    height: 9rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-color: var(--white);
+  width: 11rem;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
 }
 
 .sI figure,
 .ambulance figure {
-    width: 6rem;
-    height: 6rem;
+  width: 5rem;
+  height: 5rem;
 }
 
-.sI h4,
-.ambulance h4,
-.other h4 {
-    text-transform: uppercase;
-    opacity: 0.6;
-    font-weight: 800;
+.serviceImgs a {
+  text-transform: uppercase;
+  color: var(--iconsColor);
 }
 
 .sI1 {
-    grid-area: 1/1/1/2;
+  grid-area: 1/1/1/2;
 }
 
 .sI2 {
-    grid-area: 1/2/1/3;
+  grid-area: 1/2/1/3;
 }
 
 .sI3 {
-    grid-area: 2/1/2/2;
+  grid-area: 2/1/2/2;
 }
 
 .sI4 {
-    grid-area: 2/2/2/3;
+  grid-area: 2/2/2/3;
 }
 
 .sI5 {
-    grid-area: 3/1/3/2;
+  grid-area: 3/1/3/2;
 }
 
 .ambulance {
-    grid-area: 3/2/3/3;
+  grid-area: 3/2/3/3;
 }
 
 .other {
-    visibility: hidden;
+  visibility: hidden;
 }
-
 
 /* Task 08 Need Help Section */
 
 .container {
-    padding: var(--overallpadding);
-    background-color: var(--skyBlue);
-    height: max-content;
-    min-width: var(--minSize);
-    text-align: center;
+  padding: var(--overallpadding);
+  background-color: var(--skyBlue);
+  height: max-content;
+  min-width: var(--minSize);
+  text-align: center;
 }
 
 .container h2 {
-    color: white;
+  color: white;
 }
 
 .container p {
-    padding: 15px 0;
+  padding: 15px 0;
 }
 
-
-
+.container button {
+  margin-top: 1rem;
+}
 
 /* Task 09 Footer Section  */
 
 footer {
-    min-width: var(--minSize);
-    padding: var(--overallpadding);
-    background-color: var(--darkBlue);
+  min-width: var(--minSize);
+  padding: var(--overallpadding);
+  background-color: var(--darkBlue);
+  flex-direction: column;
+  justify-content: center;
 }
 
 .innerfooter {
-    display: grid;
-    height: max-content;
-    grid-template: 70px 1fr 50px 60px / 1fr;
-    align-items: center;
-    justify-items: center;
+  display: grid;
+  height: max-content;
+  grid-template: 70px 1fr 50px 60px / 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
 .innerfooter img {
-    width: 200px;
-    height: 50px;
+    object-fit: contain;
+}
+
+.innerfooter figure {
+  width: 12rem;
+  height: 3rem;
 }
 
 .navlist {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .navlist li {
-    margin: 10px 0;
-    color: var(--lime);
+  margin: .4rem 0;
+  color: var(--lime);
 }
 
 .socialLogos li {
-    margin: 0 15px;
-    color: var(--white);
+  margin: 0 1rem;
+  color: var(--white);
 }
 
 footer p {
-    color: var(--lime);
+  color: var(--lime);
 }
-
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
 
 /* TABLET VIEW SECTION STARTS HERE */
 
+@media only screen and (min-width: 768px) {
 
+  /* Task 10 Tablet view header */
 
-@media only screen and (min-width:768px) {
+  .searchSection {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+  }
 
-    /*Tablet view nav section  */
+  .input-box1 {
+    width: 150px;
+    border-right: 1px solid var(--darkBlue);
+    flex-grow: 1;
+  }
 
-    nav {
-        padding: 0 3rem;
-    }
+  .input-box2 {
+    width: 200px;
+    flex-grow: 2;
+  }
 
-    /* Task 10 Tablet view header */
+  .btn button {
+    position: relative;
+    bottom: 0.4rem;
+    flex-grow: 2;
+  }
 
-    .searchSection {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-    }
+  /* Task 11 Tablet view How it works section */
 
-    .input-box1 {
-        width: 150px;
-        border-right: 1px solid var(--darkBlue);
-        flex-grow: 1;
-    }
+  .boxUl {
+    height: max-content;
+    display: grid;
+    align-items: start;
+    justify-items: center;
+    grid-template: 1fr / 1fr 1fr;
+    grid-gap: 1rem;
+  }
 
-    .input-box2 {
-        width: 200px;
-        flex-grow: 2;
-    }
+  .box {
+    width: 25rem;
+  }
 
-    .btn button {
-        position: relative;
-        bottom: .4rem;
-        flex-grow: 2;
-    }
+  .boxLi1,
+  .boxLi2,
+  .boxLi3,
+  .boxLi4,
+  .boxLi5,
+  .boxLi6,
+  .boxLi7 {
+    grid-area: 1/1/1/2;
+    justify-self: start;
+  }
 
-    /* Task 11 Tablet view How it works section */
+  .boxLi2 {
+    margin-top: 5rem;
+  }
+  .boxLi3 {
+    margin-top: 10rem;
+  }
+  .boxLi4 {
+    margin-top: 15rem;
+  }
+  .boxLi5 {
+    margin-top: 20rem;
+  }
+  .boxLi6 {
+    margin-top: 25rem;
+  }
+  .boxLi7 {
+    margin-top: 30rem;
+  }
 
-    .howItWorks {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .boxContent1,
+  .boxContent2,
+  .boxContent3,
+  .boxContent4,
+  .boxContent5,
+  .boxContent6,
+  .boxContent7 {
+    grid-area: 1/2/1/3;
+  }
 
-    .hiw-main {
-        height: max-content;
-        display: grid;
-        align-items: start;
-        justify-items: center;
-        grid-template: 1fr / 1fr 1fr;
-        margin: 20px 0;
-        grid-column-gap: 2.5rem;
-    }
+  /* Task 12 Tablet view Doctors section */
 
-    .firstbox {
-        grid-area: 1/1/1/2;
-    }
+  .doctorsPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .otherboxDiv {
-        grid-area: 1/1/1/2;
-        margin-top: 5rem;
-    }
+  .doc-div {
+    grid-template: 1fr 1fr/ 1fr 1fr;
+    grid-gap: 1rem;
+  }
 
-    .firstbox,
-    .otherbox {
-        width: 23rem;
-    }
+  .docName1,
+  .docName2,
+  .docName3,
+  .docName4 {
+    height: 37.5rem;
+  }
 
-    .firstB-img figure {
-        padding: 0;
-    }
+  .docName1,
+  .docName1 h5,
+  .docName1 ul {
+    grid-area: 1/1/1/2;
+  }
 
-    .firstB-img {
-        grid-area: 1/2/1/3;
-    }
+  .docName2,
+  .docName2 h5,
+  .docName2 ul {
+    grid-area: 1/2/1/3;
+  }
 
-    .fixConsultationInner {
-        grid-area: 1/2/1/3;
-        position: relative;
-        top: 24rem;
-    }
+  .docName3,
+  .docName3 h5,
+  .docName3 ul {
+    grid-area: 2/1/2/2;
+  }
 
+  .docName4,
+  .docName4 h5,
+  .docName4 ul {
+    grid-area: 2/2/2/3;
+  }
 
-    /* Task 12 Tablet view Doctors section */
+  /*  Task 13 Tablet view Featured medical treatment */
 
-    .doctorsPanel {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .treatmentImgs {
+    width: max-content;
+    grid-template: 1fr 1fr/1fr 1fr;
+  }
 
-    .doc-div {
-        grid-template: 1fr 1fr/ 1fr 1fr;
-        grid-gap: 1rem;
-    }
+  .treatImgs1,
+  .shadow1,
+  .s1 {
+    grid-area: 1/1/1/2;
+  }
 
-    .docName1,
-    .docName1 h4,
-    .docName1 ul {
-        grid-area: 1/1/1/2
-    }
+  .treatImgs2,
+  .shadow2,
+  .s2 {
+    grid-area: 1/2/1/3;
+  }
 
-    .docName2,
-    .docName2 h4,
-    .docName2 ul {
-        grid-area: 1/2/1/3
-    }
+  .treatImgs3,
+  .shadow3,
+  .s3 {
+    grid-area: 2/1/2/2;
+  }
 
-    .docName3,
-    .docName3 h4,
-    .docName3 ul {
-        grid-area: 2/1/2/2
-    }
+  .treatImgs4,
+  .shadow4,
+  .s4 {
+    grid-area: 2/2/2/3;
+  }
 
-    .docName4,
-    .docName4 h4,
-    .docName4 ul {
-        grid-area: 2/2/2/3
-    }
+  .treatImgs5,
+  .shadow5,
+  .s5 {
+    grid-area: 3/1/3/2;
+  }
 
-    /*  Task 13 Tablet view Featured medical treatment */
+  .treatImgs6,
+  .shadow6,
+  .s6 {
+    grid-area: 3/2/3/3;
+  }
 
-    .treatmentImgs {
-        width: max-content;
-        grid-template: 1fr 1fr/1fr 1fr;
-    }
+  /* Task 14 Tablet view exclusive services section */
 
-    .treatImgs1,
-    .shadow1,
-    .s1 {
-        grid-area: 1/1/1/2;
-    }
+  .serviceImgs {
+    grid-template: 1fr 1fr 0px / repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
 
-    .treatImgs2,
-    .shadow2,
-    .s2 {
-        grid-area: 1/2/1/3;
-    }
+  .sI,
+  .ambulance {
+    width: 16.5rem;
+    height: 11rem;
+  }
 
-    .treatImgs3,
-    .shadow3,
-    .s3 {
-        grid-area: 2/1/2/2;
-    }
+  .sI figure,
+  .ambulance figure {
+    width: 6rem;
+    height: 6rem;
+  }
 
-    .treatImgs4,
-    .shadow4,
-    .s4 {
-        grid-area: 2/2/2/3;
-    }
+  .sI1 {
+    grid-area: 1/1/1/2;
+  }
 
-    .treatImgs5,
-    .shadow5,
-    .s5 {
-        grid-area: 3/1/3/2;
-    }
+  .sI2 {
+    grid-area: 1/2/1/3;
+  }
 
-    .treatImgs6,
-    .shadow6,
-    .s6 {
-        grid-area: 3/2/3/3;
-    }
+  .sI3 {
+    grid-area: 1/3/1/4;
+  }
 
+  .sI4 {
+    grid-area: 2/1/2/2;
+  }
 
-    /* Task 14 Tablet view exclusive services section */
+  .sI5 {
+    grid-area: 2/2/2/3;
+  }
 
-    .serviceImgs {
-        grid-template: 1fr 1fr 0px/ repeat(3, 1fr);
-        align-items: center;
-        justify-content: center;
-    }
+  .ambulance {
+    grid-area: 2/3/2/4;
+  }
 
-    .sI,
-    .ambulance {
-        width: 15.5rem;
-        height: 10rem;
-    }
+  /* Task 15 Tablet view Footer section  */
+  footer {
+    background-color: var(--white);
+  }
 
-    .sI figure,
-    .ambulance figure {
-        width: 8rem;
-    }
+  .innerfooter {
+    width: 100%;
+    grid-template: 1fr 1fr/2fr 1fr;
+    justify-items: start;
+    align-items: center;
+    grid-gap: 1rem;
+  }
 
-    .sI1 {
-        grid-area: 1/1/1/2;
-    }
+  .innerfooter figure {
+    grid-area: 1/2/1/3;
+    justify-self: end;
+    width: 13rem;
+    height: 3.5rem;
+    padding-right: 15px;
+  }
 
-    .sI2 {
-        grid-area: 1/2/1/3;
-    }
+  footer p {
+    padding: 0px;
+    color: var(--darkBlue);
+  }
 
-    .sI3 {
-        grid-area: 1/3/1/4;
-    }
+  .navlist {
+    grid-area: 1/1/1/2;
+    flex-direction: row;
+  }
 
-    .sI4 {
-        grid-area: 2/1/2/2;
-    }
+  .navlist li {
+    margin-right: 20px;
+    color: var(--darkBlue);
+  }
 
-    .sI5 {
-        grid-area: 2/2/2/3;
-    }
+  .rights {
+    grid-area: 2/1/2/2;
+  }
 
-    .ambulance {
-        grid-area: 2/3/2/4;
-    }
+  .socialLogos {
+    grid-area: 2/2/2/3;
+    justify-self: end;
+  }
 
-    /* Task 15 Tablet view Footer section  */
-    footer {
-        background-color: var(--white);
-    }
-
-    .innerfooter {
-        width: 100%;
-        grid-template: 1fr 1fr/2fr 1fr;
-        justify-items: start;
-        align-items: center;
-        grid-gap: 1.5rem;
-    }
-
-    .innerfooter img {
-        grid-area: 1/2/1/3;
-        justify-self: end;
-        width: 200px;
-        height: 45px;
-        padding-right: 15px;
-    }
-
-    footer p {
-        padding: 0px;
-        color: var(--darkBlue);
-    }
-
-    .navlist {
-        grid-area: 1/1/1/2;
-        flex-direction: row;
-    }
-
-    .navlist li {
-        margin-right: 20px;
-        color: var(--darkBlue);
-    }
-
-    .rights {
-        grid-area: 2/1/2/2;
-    }
-
-    .socialLogos {
-        grid-area: 2/2/2/3;
-        justify-self: end;
-    }
-
-    .socialLogos li {
-        color: var(--darkBlue);
-    }
+  .socialLogos li {
+    color: var(--darkBlue);
+  }
 }
-
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-@media only screen and (min-width:1025px) {
-
-    /* Task 16  Desktop view Starts Here */
-
-    /* Desktop View Navigation Section */
-    nav {
-        padding: 1.3rem 3.8rem;
-    }
-
-    .top-logo {
-        width: 11rem;
-        height: 2.5rem;
-    }
-
-    .navDeskDiv {
-        width: 100%;
-        display: grid;
-        height: max-content;
-        grid-template: 1fr /2fr 1fr 0px;
-        align-items: center;
-        justify-items: end;
-        grid-column-gap: 1rem;
-    }
-
-    .navMenu {
-        visibility: hidden;
-        grid-area: 1/3/1/4;
-    }
-
-    .navigation,
-    .navbtn {
-        visibility: visible;
-    }
-
-    .navigation {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        grid-area: 1/1/1/2;
-
-    }
-
-    .navigation li {
-        padding: 3px;
-    }
-
-    .navigation li:hover {
-        color: var(--white);
-        background-color: var(--greyishBlue);
-        border-radius: 2px;
-    }
-
-    .navigation a {
-        margin: 0 15px;
-    }
-
-    .navbtn {
-        display: flex;
-        align-items: center;
-        justify-content: end;
-        flex-wrap: nowrap;
-    }
-
-    .navB1 {
-        margin-right: 7px;
-    }
-
-    /* Desktop View Header Section  */
-
-    header {
-        background: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg) no-repeat center center/cover;
-        height: 26rem;
-        padding: 0 3.8rem;
-    }
-
-    .searchSection {
-        align-items: center;
-        justify-content: start;
-    }
-
-    header h1 {
-        padding-top: 6.5rem;
-    }
-
-    .input-box1,
-    .input-box2 {
-        margin: 0;
-    }
-
-    .input-box1 {
-        width: 230px;
-        flex-grow: 0;
-    }
-
-    .input-box2 {
-        flex-grow: 0;
-        width: 380px;
-    }
-
-    #locationSign {
-        padding-left: 10px;
-        font-size: 1.2rem;
-    }
-
-    #targetSign {
-        padding-right: 5px;
-        font-size: 1.2rem;
-    }
-
-    .btn button {
-        flex-grow: 0;
-        position: relative;
-        bottom: 0rem;
-    }
-
-    /* Desktop View How it works Section */
-
-    .hiw-main {
-        grid-template: 1fr / 1fr 1fr;
-        justify-items: start;
-        margin: 0;
-        margin-top:1rem;
-    }
-
-    .otherboxDiv {
-        justify-items: start;
-        grid-gap: 7px;
-    }
-
-    .firstbox,
-    .otherbox {
-        width: 28rem;
-        height: 7rem;
-        border: 1.4px solid var(--blue);
-        border-radius: 0.3rem;
-    }
-
-    .otherbox {
-        opacity: 0.2;
-    }
-
-    .otherboxDiv {
-        margin-top: 7.4rem;
-    }
-
-    .firstbox span,
-    .otherbox span {
-        padding-right: 35px;
-        padding-left: 25px;
-        font-size: 1.6rem;
-    }
-
-    .hiw-main figure {
-        width: 34.5rem;
-        height: 37.5rem;
-        margin-top: 2rem;
-    }
-
-    .firstB-img {
-        justify-self: center;
-    }
-
-    .fixConsultationInner {
-        top: 41rem;
-        padding: 0 60px;
-    }
-
-    /* Desktop View World Class Expert Doctors! Section */
-
-    .doc-div {
-        grid-template: 1fr 4rem /repeat(4, 1fr);
-        grid-gap: 0 0.5rem;
-        padding: 0;
-        margin-top:1rem;
-    }
-
-    .docName1,
-    .docName1 h4,
-    .docName1 ul {
-        grid-area: 1/1/1/2
-    }
-
-    .docName2,
-    .docName2 h4,
-    .docName2 ul {
-        grid-area: 1/2/1/3
-    }
-
-    .docName3,
-    .docName3 h4,
-    .docName3 ul {
-        grid-area: 1/3/1/4
-    }
-
-    .docName4,
-    .docName4 h4,
-    .docName4 ul {
-        grid-area: 1/4/1/5
-    }
-
-    .docName1,
-    .docName2,
-    .docName3,
-    .docName4 {
-        width: 17.5rem;
-        height: 25.5rem;
-    }
-
-    .doc-div figure {
-        width: 17.5rem;
-        height: 18rem;
-    }
-
-    .doc-div li {
-        font-size: 0.8rem;
-        color: var(--darkBlue);
-    }
-
-    .docName1 ul li,
-    .docName2 ul li,
-    .docName3 ul li,
-    .docName4 ul li {
-        margin-bottom: 5px;
-    }
-
-    .docName1 h4,
-    .docName2 h4,
-    .docName3 h4,
-    .docName4 h4 {
-        font-size: 1rem;
-    }
-
-    .line {
-        border-bottom: 1.5px solid var(--blue);
-    }
-
-    .docRadioBtn {
-        visibility: visible;
-        grid-area: 2/1/2/2;
-    }
-
-    .docRadCol input:checked~.customRadio {
-        background-color: var(--darkBlue);
-        border: 2px solid var(--blue);
-    }
-
-    /* Desktop view treatment section */
-
-    .treatmentImgs {
-        grid-template: repeat(12, 3rem) 4rem/repeat(3, 1fr);
-        margin-top: 1rem;
-        grid-gap: 0.5rem;
-        align-items: start;
-    }
-
-    .treatImgs1 figure,
-    .shadow1,
-    .treatImgs2 figure,
-    .shadow2,
-    .treatImgs3 figure,
-    .shadow3,
-    .treatImgs4 figure,
-    .shadow4,
-    .treatImgs5 figure,
-    .shadow5,
-    .treatImgs6 figure,
-    .shadow6 {
-        width: 23.5rem;
-    }
-
-
-    .treatImgs1 figure,
-    .shadow1 {
-        height: 13.5rem;
-    }
-
-    .treatImgs1,
-    .shadow1,
-    .s1 {
-        grid-area: 1/1/5/2;
-    }
-
-    .s1 {
-        top: 10rem;
-        right: 7.5rem;
-    }
-
-    .treatImgs2 figure,
-    .shadow2 {
-        height: 20.5rem;
-    }
-
-    .treatImgs2,
-    .shadow2,
-    .s2 {
-        grid-area: 1/2/6/3;
-    }
-
-    .s2 {
-        top: 17rem;
-        right: 7.5rem;
-    }
-
-    .treatImgs3 figure,
-    .shadow3 {
-        height: 17rem;
-    }
-
-    .treatImgs3,
-    .shadow3,
-    .s3 {
-        grid-area: 1/3/5/4;
-    }
-
-    .s3 {
-        top: 13.5rem;
-        right: 4.6rem;
-    }
-
-    .treatImgs4 figure,
-    .shadow4 {
-        height: 28rem;
-    }
-
-    .treatImgs4,
-    .shadow4,
-    .s4 {
-        grid-area: 5/1/13/2;
-    }
-
-    .s4 {
-        top: 24.5rem;
-        right: 4.3rem;
-    }
-
-    .treatImgs5 figure,
-    .shadow5 {
-        height: 21rem;
-    }
-
-    .treatImgs5,
-    .shadow5,
-    .s5 {
-        grid-area: 7/2/13/3;
-    }
-
-    .s5 {
-        top: 17.5rem;
-        right: 4.8rem;
-    }
-
-    .treatImgs6 figure,
-    .shadow6 {
-        height: 24.5rem;
-    }
-
-    .treatImgs6,
-    .shadow6,
-    .s6 {
-        grid-area: 6/3/13/4;
-    }
-
-    .s6 {
-        top: 21rem;
-        right: 5rem;
-    }
-
-    .treatRadioBtn {
-        visibility: visible;
-        grid-area: 13/1/13/2;
-    }
-
-    .treatRadCol input:checked~.customRadio {
-        background-color: var(--white);
-        border: 2px solid var(--blue);
-    }
-
-    /* Desktop view exclusive services section */
-
-    .serviceImgs {
-        grid-template: 1fr 0rem/repeat(6, 1fr);
-        grid-gap: 0 .5rem;
-        margin: 1rem 0;
-    }
-
-    .sI,
-    .other {
-        width: 11.5rem;
-        height: 12rem;
-        border-radius: 0;
-    }
-    
-    .other {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        background-color: var(--white);
-    }
-
-    .other i {
-        font-size: 4.5rem;
-        color: var(--greyishBlue);
-        margin-bottom: 1rem;
-    }
-
-    .sI1 {
-        grid-area: 1/1/1/2;
-    }
-
-    .sI2 {
-        grid-area: 1/2/1/3;
-    }
-
-    .sI3 {
-        grid-area: 1/3/1/4;
-    }
-
-    .sI4 {
-        grid-area: 1/4/1/5;
-    }
-
-    .sI5 {
-        grid-area: 1/5/1/6;
-    }
-
-    .other {
-        visibility: visible;
-        grid-area: 1/6/1/7;
-    }
-
-    .ambulance {
-        visibility: hidden;
-        width: 10rem;
-        grid-area: 2/1/2/2;
-    }
-
-    /* Desktop View Need Help Section */
-
-    .container {
-        display: grid;
-        grid-template: 1fr/1fr 1fr;
-        align-items: start;
-    }
-
-    .container h2,
-    .container p {
-        grid-area: 1/1/1/2;
-        justify-self: left;
-    }
-
-    .container p {
-        position: relative;
-        top: 3rem;
-        padding: 0;
-    }
-
-    .container button {
-        grid-area: 1/2/1/3;
-        justify-self: right;
-    }
+@media only screen and (min-width: 1025px) {
+  /* Task 16  Desktop view Starts Here */
+
+  /* Desktop View Navigation Section */
+  .top-logo {
+    width: 11rem;
+    height: 2.5rem;
+  }
+
+  .navDeskDiv {
+    width: 100%;
+    display: grid;
+    height: max-content;
+    grid-template: 1fr /2fr 1fr 0px;
+    align-items: center;
+    justify-items: end;
+    grid-column-gap: 1rem;
+  }
+
+  .navMenu {
+    visibility: hidden;
+    grid-area: 1/3/1/4;
+  }
+
+  .navigation,
+  .navbtn {
+    visibility: visible;
+  }
+
+  .navigation {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    grid-area: 1/1/1/2;
+  }
+
+  .navigation li {
+    padding: 3px;
+  }
+
+  .navigation li:hover {
+    color: var(--white);
+    background-color: var(--greyishBlue);
+    border-radius: 2px;
+  }
+
+  .navigation a {
+    margin: 0 0.5rem;
+  }
+
+  .navbtn {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: nowrap;
+  }
+
+  .navB1 {
+    margin-right: 7px;
+  }
+
+  /* Desktop View Header Section  */
+
+  header {
+    background: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg)
+      no-repeat center center/cover;
+    height: 26rem;
+    padding: 0 3.8rem;
+  }
+
+  .searchSection {
+    align-items: center;
+    justify-content: start;
+  }
+
+  header h1 {
+    padding-top: 6.5rem;
+  }
+
+  .input-box1,
+  .input-box2 {
+    margin: 0;
+  }
+
+  .input-box1 {
+    width: 230px;
+    flex-grow: 0;
+  }
+
+  .input-box2 {
+    flex-grow: 0;
+    width: 380px;
+  }
+
+  #locationSign {
+    padding-left: 10px;
+    font-size: 1.2rem;
+  }
+
+  #targetSign {
+    padding-right: 5px;
+    font-size: 1.2rem;
+  }
+
+  .btn button {
+    flex-grow: 0;
+    position: relative;
+    bottom: 0rem;
+  }
+
+  /* Desktop View How it works Section */
+  .box {
+    width: 30rem;
+    height: 6rem;
+    border: 1.5px solid var(--greyishBlue);
+    border-radius: 0.3rem;
+  }
+  .boxUl {
+    margin-top: 1.8rem;
+  }
+
+  .boxLi2 {
+    margin-top: 6.5rem;
+  }
+  .boxLi3 {
+    margin-top: 13rem;
+  }
+  .boxLi4 {
+    margin-top: 19.5rem;
+  }
+  .boxLi5 {
+    margin-top: 26rem;
+  }
+  .boxLi6 {
+    margin-top: 32.5rem;
+  }
+  .boxLi7 {
+    margin-top: 39rem;
+  }
+
+  .box-img {
+    width: 35rem;
+    height: 35rem;
+    padding: 1rem 0;
+  }
+
+  /* Desktop View World Class Expert Doctors! Section */
+
+  .doc-div {
+    grid-template: 1fr 4rem / repeat(4, 1fr);
+    grid-gap: 0 0.5rem;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .docName1,
+  .docName1 h5,
+  .docName1 ul {
+    grid-area: 1/1/1/2;
+  }
+
+  .docName2,
+  .docName2 h5,
+  .docName2 ul {
+    grid-area: 1/2/1/3;
+  }
+
+  .docName3,
+  .docName3 h5,
+  .docName3 ul {
+    grid-area: 1/3/1/4;
+  }
+
+  .docName4,
+  .docName4 h5,
+  .docName4 ul {
+    grid-area: 1/4/1/5;
+  }
+
+  .docName1,
+  .docName2,
+  .docName3,
+  .docName4 {
+    width: 17.5rem;
+    height: 25.5rem;
+  }
+
+  .doc-div figure {
+    width: 17.5rem;
+    height: 18rem;
+  }
+
+  .doc-div li {
+    font-size: 0.8rem;
+    color: var(--darkBlue);
+  }
+
+  .line {
+    border-bottom: 1.5px solid var(--blue);
+  }
+
+  .docRadioBtn {
+    visibility: visible;
+    grid-area: 2/1/2/2;
+  }
+
+  .docRadCol input:checked ~ .customRadio {
+    background-color: var(--darkBlue);
+    border: 2px solid var(--blue);
+  }
+
+  /* Desktop view treatment section */
+
+  .treatmentImgs {
+    grid-template: repeat(12, 3rem) 4rem / repeat(3, 1fr);
+    margin-top: 1.8rem;
+    grid-gap: 0.5rem;
+    align-items: start;
+  }
+
+  .treatImgs1 figure,
+  .shadow1,
+  .treatImgs2 figure,
+  .shadow2,
+  .treatImgs3 figure,
+  .shadow3,
+  .treatImgs4 figure,
+  .shadow4,
+  .treatImgs5 figure,
+  .shadow5,
+  .treatImgs6 figure,
+  .shadow6 {
+    width: 23.5rem;
+  }
+
+  .treatImgs1 figure,
+  .shadow1 {
+    height: 13.5rem;
+  }
+
+  .treatImgs1,
+  .shadow1,
+  .s1 {
+    grid-area: 1/1/5/2;
+  }
+
+  .treatImgs2 figure,
+  .shadow2 {
+    height: 20.5rem;
+  }
+
+  .treatImgs2,
+  .shadow2,
+  .s2 {
+    grid-area: 1/2/6/3;
+  }
+
+  .treatImgs3 figure,
+  .shadow3 {
+    height: 17rem;
+  }
+
+  .treatImgs3,
+  .shadow3,
+  .s3 {
+    grid-area: 1/3/5/4;
+  }
+
+  .treatImgs4 figure,
+  .shadow4 {
+    height: 28rem;
+  }
+
+  .treatImgs4,
+  .shadow4,
+  .s4 {
+    grid-area: 5/1/13/2;
+  }
+
+  .treatImgs5 figure,
+  .shadow5 {
+    height: 21rem;
+  }
+
+  .treatImgs5,
+  .shadow5,
+  .s5 {
+    grid-area: 7/2/13/3;
+  }
+
+  .treatImgs6 figure,
+  .shadow6 {
+    height: 24.5rem;
+  }
+
+  .treatImgs6,
+  .shadow6,
+  .s6 {
+    grid-area: 6/3/13/4;
+  }
+
+  .s2,
+  .s3 {
+    top: 2.2rem;
+  }
+
+  .treatRadioBtn {
+    visibility: visible;
+    grid-area: 13/1/13/2;
+  }
+
+  .treatRadCol input:checked ~ .customRadio {
+    background-color: var(--white);
+    border: 2px solid var(--blue);
+  }
+
+  /* Desktop view exclusive services section */
+
+  .serviceImgs {
+    grid-template: 1fr 0rem / repeat(6, 1fr);
+    grid-gap: 0 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .sI,
+  .other {
+    width: 11.5rem;
+    height: 12rem;
+    border-radius: 0;
+  }
+
+  .other {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+  }
+
+  .other i {
+    font-size: 4.5rem;
+    color: var(--greyishBlue);
+    margin-bottom: 1rem;
+  }
+
+  .sI1 {
+    grid-area: 1/1/1/2;
+  }
+
+  .sI2 {
+    grid-area: 1/2/1/3;
+  }
+
+  .sI3 {
+    grid-area: 1/3/1/4;
+  }
+
+  .sI4 {
+    grid-area: 1/4/1/5;
+  }
+
+  .sI5 {
+    grid-area: 1/5/1/6;
+  }
+
+  .other {
+    visibility: visible;
+    grid-area: 1/6/1/7;
+  }
+
+  .ambulance {
+    visibility: hidden;
+    width: 10rem;
+    grid-area: 2/1/2/2;
+  }
+
+  /* Desktop View Need Help Section */
+
+  .container {
+    display: grid;
+    grid-template: 1fr/1fr 1fr;
+    align-items: start;
+  }
+
+  .container h2,
+  .container p {
+    grid-area: 1/1/1/2;
+    justify-self: left;
+  }
+
+  .container p {
+    position: relative;
+    top: 3.5rem;
+    padding: 0;
+  }
+
+  .container button {
+    grid-area: 1/2/1/3;
+    justify-self: right;
+  }
 }

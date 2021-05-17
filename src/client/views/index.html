@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tvastra</title>
     <link rel="stylesheet" href="../assets/css/reset.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/theme.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/home.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/CommonClasses.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Tvastra</title>
 </head>
 
 <body>
     <!-- Task 02 Nav bar Section-->
 
     <nav>
-        <a href="#"><img class="top-logo"
+        <a href="./index.html"><img class="top-logo"
                 src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="Logo">
         </a>
         <div class="navDeskDiv">
@@ -37,6 +37,9 @@
                 </a>
                 <a href="#">
                     <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Tvastra+</li>
                 </a>
             </ul>
             <div class="navbtn">
@@ -59,7 +62,7 @@
                 afford
             </p>
         </div>
-        <form class="searchSection" action="get">
+        <form class="searchSection" method="#" action="post">
             <div class="input-box1">
                 <i class="fas fa-map-marker-alt" id="locationSign"></i>
                 <input type="text" name="cityN" id="cityN" placeholder="Ahemdabad">
@@ -87,55 +90,55 @@
                 tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
                 exerci tation ullamcorper suscipit lobortis nisl ut </p>
         </div>
-        <div class="hiw-main">
-            <button class="firstbox">
-                <h3><span>01</span>Fix Consultation</h3>
-            </button>
-            <div class="firstB-img">
-                <figure>
+        <ul class="boxUl">
+            <li class="boxLi1">
+                <button class="box">
+                    <h4><span>01</span>Fix Consultation</h4>
+                </button>
+            </li>
+            <div class="boxContent1">
+                <figure class="box-img">
                     <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png"
                         alt="Consultation">
                 </figure>
+                <div class="boxInContent">
+                    <h4>Fix Consultation</h4>
+                    <p>This depicts that user will have to fix appointment first when it selects a
+                        particular doctor.</p>
+                </div>
             </div>
-            <div class="fixConsultationInner">
-                <h3>Fix Consultation</h3>
-                <p>This depicts that user will have to fix appointment first when it selects a
-                    particular doctor.</p>
-            </div>
-            <ul class="otherboxDiv">
-                <li>
-                    <button class="otherbox">
-                        <h3><span>02</span>Upload Medical Reports</h3>
-                    </button>
-                </li>
-                <li>
-                    <button class="otherbox">
-                        <h3><span>03</span>Consult with doctor</h3>
-                    </button>
-                </li>
-                <li><button class="otherbox">
-                        <h3><span>04</span>Fix Surgery</h3>
-                    </button>
-                </li>
-                <li>
-                    <button class="otherbox">
-                        <h3><span>05</span>Hospital sent estimates</h3>
-                    </button>
-                </li>
-                <li>
-                    <button class="otherbox">
-                        <h3><span>06</span>Payment
-                            <h3>
-                    </button>
-                </li>
-                <li>
-                    <button class="otherbox">
-                        <h3><span>07</span>Surgery
-                        </h3>
-                    </button>
-                </li>
-            </ul>
-        </div>
+            <li class="boxLi2">
+                <button class="box">
+                    <h4><span>02</span>Upload Medical Reports</h4>
+                </button>
+            </li>
+            <li class="boxLi3">
+                <button class="box">
+                    <h4><span>03</span>Consult with doctor</h4>
+                </button>
+            </li>
+            <li class="boxLi4"><button class="box">
+                    <h4><span>04</span>Fix Surgery</h4>
+                </button>
+            </li>
+            <li class="boxLi5">
+                <button class="box">
+                    <h4><span>05</span>Hospital sent estimates</h4>
+                </button>
+            </li>
+            <li class="boxLi6">
+                <button class="box">
+                    <h4><span>06</span>Payment
+                        <h4>
+                </button>
+            </li>
+            <li class="boxLi7">
+                <button class="box">
+                    <h4><span>07</span>Surgery
+                    </h4>
+                </button>
+            </li>
+        </ul>
     </Section>
 
     <!-- Task 05 World Class Expert Doctors Section  -->
@@ -159,7 +162,7 @@
                         alt="doc image 1">
                 </figure>
                 <div class="line"></div>
-                <h4>Duke Sanson</h4>
+                <h5>Duke Sanson</h5>
                 <ul>
                     <li>Neuro Surgeon</li>
                     <li>Chain Department of Neurological</li>
@@ -173,7 +176,7 @@
                         alt="doc image 2">
                 </figure>
                 <div class="line"></div>
-                <h4>Georgea Peter</h4>
+                <h5>Georgea Peter</h5>
                 <ul>
                     <li>Breast Cancer Surgeon</li>
                     <li>Director, UT, Southwest</li>
@@ -186,7 +189,7 @@
                         alt="doc image 3">
                 </figure>
                 <div class="line"></div>
-                <h4>Charlie Moon</h4>
+                <h5>Charlie Moon</h5>
                 <ul>
                     <li>Cardiac Surgeon</li>
                     <li>MBBS, MD, FRCP, MRCP, Fellowship</li>
@@ -199,7 +202,7 @@
                         alt="doc image 4">
                 </figure>
                 <div class="line"></div>
-                <h4>Rose Moon</h4>
+                <h5>Rose Moon</h5>
                 <ul>
                     <li>Plastic Surgeon</li>
                     <li>Department of Plastic and</li>
@@ -251,8 +254,8 @@
             </div>
             <div class="shadow1"></div>
             <div class="specialization s1">
-                <h4>Dentistry</h4>
-                <h5>50+ Specialists</h5>
+                <h5>Dentistry</h5>
+                <h6>50+ Specialists</h6>
             </div>
 
             <div class="treatImgs2">
@@ -263,8 +266,8 @@
             </div>
             <div class="shadow2"></div>
             <div class="specialization s2">
-                <h4>Cancer</h4>
-                <h5>50+ Specialists</h5>
+                <h5>Cancer</h5>
+                <h6>50+ Specialists</h6>
             </div>
 
             <div class="treatImgs3">
@@ -275,8 +278,8 @@
             </div>
             <div class="shadow3"></div>
             <div class="specialization s3">
-                <h4>Cardiologic Treatment</h4>
-                <h5>50+ Specialists</h5>
+                <h5>Cardiologic Treatment</h5>
+                <h6>50+ Specialists</h6>
             </div>
 
             <div class="treatImgs4">
@@ -287,8 +290,8 @@
             </div>
             <div class="shadow4"></div>
             <div class="specialization s4">
-                <h4>Multi Organ Transplant</h4>
-                <h5>50+ Specialists</h5>
+                <h5>Multi Organ Transplant</h5>
+                <h6>50+ Specialists</h6>
             </div>
 
             <div class="treatImgs5">
@@ -299,8 +302,8 @@
             </div>
             <div class="shadow5"></div>
             <div class="specialization s5">
-                <h4>Orthopedics Surgery</h4>
-                <h5>50+ Specialists</h5>
+                <h5>Orthopedics Surgery</h5>
+                <h6>50+ Specialists</h6>
             </div>
 
             <div class="treatImgs6">
@@ -311,8 +314,8 @@
             </div>
             <div class="shadow6"></div>
             <div class="specialization s6">
-                <h4>Infertility Treatment</h4>
-                <h5>50+ Specialists</h5>
+                <h5>Infertility Treatment</h5>
+                <h6>50+ Specialists</h6>
             </div>
             <div class="treatRadioBtn radBtn">
                 <label class="innerRadio treatRadCol">
@@ -350,48 +353,48 @@
                     <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-01.png"
                         alt="travel">
                 </figure>
-                <h4><a href="#">Travel</a></h4>
+                <h6><a href="#">Travel</a></h6>
             </div>
             <div class="sI sI2">
                 <figure>
                     <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-02.png"
                         alt="food">
                 </figure>
-                <h4><a href>Food</a></h4>
+                <h6><a href>Food</a></h6>
             </div>
             <div class="sI sI3">
                 <figure>
                     <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-03.png"
                         alt="accomodation">
                 </figure>
-                <h4><a href>Accomodation</a></h4>
+                <h6><a href>Accomodation</a></h6>
             </div>
             <div class="sI sI4">
                 <figure>
                     <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-07.png"
                         alt="labs">
                 </figure>
-                <h4><a href>Labs</a></h4>
+                <h6><a href>Labs</a></h6>
             </div>
             <div class="sI sI5">
                 <figure>
                     <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-10.png"
                         alt="reports">
                 </figure>
-                <h4><a href>Reports</a></h4>
+                <h6><a href>Reports</a></h6>
             </div>
             <div class="ambulance">
                 <figure>
                     <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-06.png"
                         alt="ambulance">
                 </figure>
-                <h4><a href>Ambulance</a></h4>
+                <h6><a href>Ambulance</a></h6>
             </div>
             <div class="other">
                 <figure>
                     <i class="fas fa-plus-circle"></i>
                 </figure>
-                <h4><a href>Others</a></h4>
+                <h6><a href>Others</a></h6>
             </div>
         </div>
     </section>
@@ -408,7 +411,8 @@
 
     <footer>
         <div class="innerfooter">
-            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png" alt="logo">
+            <figure><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png" alt="logo">
+            </figure>
             <ul class="navlist">
                 <a href="#">
                     <li>

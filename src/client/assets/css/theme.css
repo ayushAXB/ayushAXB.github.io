@@ -1,32 +1,33 @@
 @font-face {
-    font-family: "Nexa-bold";
-    src: url(../fonts/Nexa-Bold.otf);
+  font-family: "Nexa-bold";
+  src: url(../fonts/Nexa-Bold.otf);
 }
 
 @font-face {
-    font-family: "Nexa-light";
-    src: url(../fonts/Nexa-Light.otf);
+  font-family: "Nexa-light";
+  src: url(../fonts/Nexa-Light.otf);
 }
 
 :root {
-    --iconsColor: #525659;
-    --skyBlue: #93bede;
-    --darkBlue: #021433;
-    --lightGrey: #636668;
-    --lime: #cccccc;
-    --blue: #3792f3;
-    --lightLime: #f3f3f3;
-    --greyishBlue: #0173b2;
-    --lightGreyishBlue: #7ab0d4;
-    --white: #fff;
-    --black: #000;
-    --selectCol: #d3d3d3;
-    --minSize: 24rem;
-    --overallpadding: 2.5rem 1.5rem;
+  --iconsColor: #525659;
+  --skyBlue: #93bede;
+  --darkBlue: #021433;
+  --lightGrey: #636668;
+  --lime: #cccccc;
+  --blue: #3792f3;
+  --lightLime: #f3f3f3;
+  --greyishBlue: #0173b2;
+  --lightGreyishBlue: #7ab0d4;
+  --white: #fff;
+  --black: #000;
+  --selectCol: #d3d3d3;
+  --minSize: 24rem;
+  --overallpadding: 2.5rem 1.5rem;
+  --overallpaddingNoHeight: 0 1.5rem;
 }
 
 body {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1,
@@ -35,237 +36,256 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Nexa-bold";
-    color: var(--darkBlue);
+  font-family: "Nexa-bold";
+  color: var(--darkBlue);
 }
 
 h1 {
-    font-size: 2.5rem;
-    line-height: 2.8rem;
+  font-size: 2.3rem;
+  line-height: 2.5rem;
 }
 
 h2 {
-    font-size: 2.5rem;
-    line-height: 2.8rem;
+  font-size: 2.3rem;
+  line-height: 2.5rem;
 }
 
 h3 {
-    font-size: 2rem;
-    line-height: 2.3rem;
+  font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 h4 {
-    font-size: 1.6rem;
-    line-height: 1.9rem;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
 }
 
 h5 {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 
 h6 {
-    font-size: .8rem;
-    line-height: 1.1rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
 }
 
 p {
-    font-size: 1.2rem;
-    color: var(--darkBlue);
-    font-family: "Nexa-light";
-    line-height: 1.5rem;
+  font-size: 1.2rem;
+  color: var(--darkBlue);
+  font-family: "Nexa-light";
+  line-height: 1.4rem;
 }
 
 span,
 label {
-    font-size: 1rem;
-    line-height: 1.3rem;
-    font-family: "Nexa-light";
-    color: var(--darkblue);
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  font-family: "Nexa-light";
+  color: var(--darkblue);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a,
 button,
 input {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button {
-    font-family: "Nexa-light";
+  font-family: "Nexa-light";
 }
 
-input[type=text] {
-    border: none;
-    width: 100%;
-    height: 3rem;
-    font-size: 1rem;
-    font-family: "Nexa-light";
-    color: var(--darkBlue);
+input[type="text"] {
+  border: none;
+  width: 100%;
+  padding: 0.9rem 0;
+  font-size: 1rem;
+  font-family: "Nexa-light";
+  color: var(--darkBlue);
 }
 
-input[type=radio]
-
-input ::placeholder {
-    color: var(--lightGrey)
+input[type="text"] input::placeholder {
+  color: var(--lightGrey);
 }
 
 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 nav,
 section,
 footer,
 ul {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+section {
+  flex-direction: column;
 }
 
 nav {
-    justify-content: space-between;
+  justify-content: space-between;
 }
-
 
 select,
 option {
-    background-color: var(--selectCol);
-    border: none;
-    font-family: "Nexa-light";
-    color: var(--darkBlue);
-    cursor: pointer;
+  background-color: var(--selectCol);
+  border: none;
+  font-family: "Nexa-light";
+  color: var(--darkBlue);
+  cursor: pointer;
 }
 
 select {
-    padding: .5rem;
-    font-size: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
 option {
-    font-size: .7rem;
+  font-size: 0.7rem;
 }
-
 
 li,
 textarea {
-    font-size: 1rem;
-    line-height: 1.3rem;
-    font-family: "Nexa-light";
-    color: var(--lightGrey);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Nexa-light";
+  color: var(--lightGrey);
 }
 
 textarea::placeholder {
-    font-size: .8rem;
+  font-size: 0.8rem;
+  font-family: "Nexa-light";
+  color: var(--lightGrey);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  :root {
+    --minSize: 50rem;
+    --overallpadding: 2.5rem 3rem;
+    --overallpaddingNoHeight: 0 3rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
+
+  h3 {
+    font-size: 2.1rem;
+    line-height: 2.3rem;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+    line-height: 1.9rem;
+  }
+
+  h5 {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+
+  h6 {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    color: var(--darkBlue);
     font-family: "Nexa-light";
-    color: var(--lightGrey);
+    line-height: 1.5rem;
+  }
+
+  span {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  label,
+  textarea,
+  select {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+  li {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
 }
 
+@media only screen and (min-width: 1025px) {
+  :root {
+    --minSize: 64rem;
+    --overallpadding: 3.8rem;
+    --overallpaddingNoHeight: 0.5rem 3.8rem;
+  }
 
+  h1 {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
 
-@media only screen and (min-width:768px) and (max-width:1024px) {
-    :root {
-        --minSize: 50rem;
-        --overallpadding: 2.5rem 3rem;
-    }
+  h2 {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
 
-    h1 {
-        font-size: 2.7rem;
-        line-height: 3rem;
-    }
+  h3 {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
 
-    h2 {
-        font-size: 2.7rem;
-        line-height: 3rem;
-    }
+  h4 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
 
-    h3 {
-        font-size: 2.2rem;
-        line-height: 2.5rem;
-    }
+  h5 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
 
-    h4 {
-        font-size: 1.8rem;
-        line-height: 2.1rem;
-    }
+  h6 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
 
-    h5 {
-        font-size: 1.5rem;
-        line-height: 1.8rem;
-    }
+  p {
+    font-size: 1.4rem;
+    color: var(--darkBlue);
+    font-family: "Nexa-light";
+    line-height: 1.6rem;
+  }
 
-    h6 {
-        font-size: 1rem;
-        line-height: 1.3rem;
-    }
+  span {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
 
-    p {
-        font-size: 1.4rem;
-        line-height: 1.7rem;
-    }
+  label,
+  textarea,
+  select {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
 
-    span,
-    label,
-    li,
-    textarea,
-    select {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-    }
-}
-
-@media only screen and (min-width:1025px) {
-
-    :root {
-        --minSize: 64rem;
-        --overallpadding: 3.8rem;
-    }
-
-    h1 {
-        font-size: 2.9rem;
-        line-height: 3.2rem;
-    }
-
-    h2 {
-        font-size: 2.9rem;
-        line-height: 3.2rem;
-    }
-
-    h3 {
-        font-size: 2.4rem;
-        line-height: 2.7rem;
-    }
-
-    h4 {
-        font-size: 2rem;
-        line-height: 2.3rem;
-    }
-
-    h5 {
-        font-size: 1.7rem;
-        line-height: 2rem;
-    }
-
-    h6 {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-    }
-
-    p {
-        font-size: 1.5rem;
-        line-height: 1.8rem;
-    }
-
-    span,
-    label,
-    li,
-    textarea,
-    select {
-        font-size: 1.4rem;
-        line-height: 1.6rem;
-    }
+  li {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
 }
