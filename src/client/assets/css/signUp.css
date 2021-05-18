@@ -1,0 +1,251 @@
+/* Mobile View Starts Here  */
+
+/* Mobile Navbar section */
+
+nav {
+  padding: var(--overallpaddingNoHeight);
+  min-width: var(--minSize);
+  height: 4rem;
+}
+
+.top-logo {
+  width: 9rem;
+  height: 2rem;
+}
+
+.navMenu {
+  color: var(--iconsColor);
+  font-size: 1.3rem;
+  margin: 0 0.6rem;
+  cursor: pointer;
+}
+
+.navDeskDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation,
+.navbtn {
+  visibility: hidden;
+}
+
+.navigation {
+  flex-direction: column;
+}
+
+/* Mobile view Main Section */
+
+.outerSection {
+  padding: var(--overallpadding);
+  min-width: var(--minSize);
+  background-color: var(--lightGreyishBlue);
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: end;
+  grid-template: 1fr minmax(3rem,5rem)/ 1fr;
+}
+
+.innerSection {
+  grid-area: 1/1/1/2;
+  background-color: var(--white);
+  box-shadow: 2px 2px 10px 1px var(--greyishBlue),
+    -2px -2px 10px 1px var(--greyishBlue);
+  width: auto;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  padding: 1rem 0;
+}
+
+.heading h4 {
+  color: var(--greyishBlue);
+}
+
+.loginForm {
+  width: max-content;
+  border-top: 1px solid var(--lightGrey);
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputDiv {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--lightGrey);
+  margin-bottom: 1rem;
+  height: 3rem;
+  width: 18rem;
+  padding-right: 0.5rem;
+}
+
+.inlineInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inlineInDiv {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--lightGrey);
+  margin-bottom: 1rem;
+  margin-right: 0.2rem;
+  height: 3rem;
+  width: 8.5rem;
+  padding-right: 0.5rem;
+}
+
+.loginForm input[type="text"],
+.loginForm input[type="password"],
+.loginForm input[type="date"] {
+  padding: .7rem 0;
+  padding-left: 1rem;
+}
+
+.loginForm input[type="date"],
+select {
+  padding-left: 1rem;
+}
+
+select {
+  color: var(--lightGrey);
+}
+
+.loginForm button {
+  padding: .8rem 7rem;
+}
+
+.alternate {
+  margin-bottom: 1rem;
+}
+
+.alternate a {
+  color: var(--greyishBlue);
+}
+
+/* Mobile view footer section  */
+
+.footer {
+  grid-area: 2/1/2/2;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Tablet view starts here */
+
+@media only screen and (min-width: 768px) {
+  /* Tablet view Main section */
+
+  .outerSection {
+    height: 103vh;
+    grid-template: 2fr 1fr / 1fr;
+  }
+
+  .inputDiv {
+    width: 25rem;
+  }
+
+  .inlineInDiv {
+    width: 12rem;
+  }
+
+  .loginForm button {
+    padding: 1rem 10.5rem;
+  }
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*  Desktop view Starts Here */
+
+@media only screen and (min-width: 1025px) {
+  /* Desktop View Navigation Section */
+  .top-logo {
+    width: 11rem;
+    height: 2.5rem;
+  }
+
+  .navDeskDiv {
+    width: 100%;
+    display: grid;
+    height: max-content;
+    grid-template: 1fr /2fr 1fr 0px;
+    align-items: center;
+    justify-items: end;
+    grid-column-gap: 1rem;
+  }
+
+  .navMenu {
+    visibility: hidden;
+    grid-area: 1/3/1/4;
+  }
+
+  .navigation,
+  .navbtn {
+    visibility: visible;
+  }
+
+  .navigation {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    grid-area: 1/1/1/2;
+  }
+
+  .navigation li {
+    padding: 3px;
+  }
+
+  .navigation li:hover {
+    color: var(--white);
+    background-color: var(--greyishBlue);
+    border-radius: 2px;
+  }
+
+  .navigation a {
+    margin: 0 0.5rem;
+  }
+
+  .navbtn {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: nowrap;
+  }
+
+  .navB1 {
+    margin-right: 7px;
+  }
+
+  /* Desktop view main section */
+
+  .outerSection {
+    height: 130vh;
+  }
+
+  .inputDiv {
+    width: 30rem;
+  }
+
+  .inlineInDiv {
+    width: 14.5rem;
+  }
+
+  .loginForm button {
+    padding: 1rem 13rem;
+  }
+}

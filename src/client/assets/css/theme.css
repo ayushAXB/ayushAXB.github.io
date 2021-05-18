@@ -99,13 +99,20 @@ button {
   font-family: "Nexa-light";
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+  outline: none;
   border: none;
-  width: 100%;
   padding: 0.9rem 0;
+  width: 100%;
   font-size: 1rem;
   font-family: "Nexa-light";
   color: var(--darkBlue);
+}
+
+input[type="date"] {
+  color: var(--lightGrey);
 }
 
 input[type="text"] input::placeholder {
@@ -136,20 +143,17 @@ nav {
 
 select,
 option {
-  background-color: var(--selectCol);
+  width: 100%;
   border: none;
   font-family: "Nexa-light";
   color: var(--darkBlue);
   cursor: pointer;
+  outline: none;
+  font-size: 1rem;
 }
 
 select {
   padding: 0.5rem;
-  font-size: 1rem;
-}
-
-option {
-  font-size: 0.7rem;
 }
 
 li,

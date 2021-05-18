@@ -49,7 +49,8 @@ header {
 }
 
 header p {
-  margin: 1.2rem 0;
+  margin-top: 1rem;
+  margin-bottom: 1.8rem;
 }
 
 .searchSection {
@@ -473,7 +474,7 @@ footer {
 }
 
 .innerfooter img {
-    object-fit: contain;
+  object-fit: contain;
 }
 
 .innerfooter figure {
@@ -486,7 +487,7 @@ footer {
 }
 
 .navlist li {
-  margin: .4rem 0;
+  margin: 0.4rem 0;
   color: var(--lime);
 }
 
@@ -506,7 +507,6 @@ footer p {
 /* TABLET VIEW SECTION STARTS HERE */
 
 @media only screen and (min-width: 768px) {
-
   /* Task 10 Tablet view header */
 
   .searchSection {
