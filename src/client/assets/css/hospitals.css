@@ -6,6 +6,7 @@ nav {
   padding: var(--overallpaddingNoHeight);
   min-width: var(--minSize);
   height: 4rem;
+  background-color: var(--white);
 }
 
 .top-logo {
@@ -45,6 +46,7 @@ header {
 /* Mobile Search Heading Section  */
 
 .searchHeading {
+  background-color: var(--white);
   padding: 0 1.5rem;
   min-width: var(--minSize);
   flex-direction: row;
@@ -60,9 +62,11 @@ header {
   width: 7rem;
   height: 2.5rem;
 }
+
 /* mobile filter and main section */
 
 .layout {
+  background-color: var(--white);
   display: grid;
   padding: var(--overallpadding);
   min-width: var(--minSize);
@@ -91,7 +95,7 @@ header {
   height: 100%;
   border: 1.5px solid var(--selectCol);
   display: grid;
-  grid-template: 20rem 2.6rem 1fr /1fr;
+  grid-template: 20rem 3.6rem 1fr /1fr;
   align-items: start;
   justify-items: center;
   margin-bottom: 1rem;
@@ -156,8 +160,7 @@ header {
 
 .innerSelected span {
   font-family: "Nexa-light";
-  font-size: 0.8rem;
-  margin-right: 1rem;
+  font-size: 0.9rem;
 }
 
 .innerSelected i {
@@ -182,8 +185,8 @@ header {
 }
 
 .cards figure {
-  width: 24rem;
-  height: 15rem;
+  width: 27rem;
+  height: 18rem;
   grid-area: 3/1/3/2;
 }
 
@@ -304,6 +307,7 @@ footer p {
     grid-template: 3rem 3rem/ 1fr 1fr;
     align-items: center;
     justify-items: start;
+    margin: 1rem 0;
   }
 
   .iconAtext {
@@ -313,10 +317,6 @@ footer p {
   .iconAtext i {
     margin: 0 1rem;
     font-size: 0.9rem;
-  }
-
-  .iconAtext h6 {
-    font-size: 0.8rem;
   }
 
   /* Task 15 Tablet view Footer section  */
@@ -440,7 +440,7 @@ footer p {
       no-repeat center center/cover;
     padding: var(--overallpadding);
     min-width: var(--minSize);
-    height: 8rem;
+    height: 15rem;
     visibility: visible;
     position: relative;
     display: flex;
@@ -562,8 +562,8 @@ footer p {
   }
 
   .cards figure {
-    width: 20rem;
-    height: 22rem;
+    width: 22rem;
+    height: 26rem;
   }
 
   /* Desktop View Need Help Section */

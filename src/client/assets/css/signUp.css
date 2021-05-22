@@ -1,3 +1,7 @@
+body {
+  min-height: 100vh;
+}
+
 /* Mobile View Starts Here  */
 
 /* Mobile Navbar section */
@@ -6,6 +10,7 @@ nav {
   padding: var(--overallpaddingNoHeight);
   min-width: var(--minSize);
   height: 4rem;
+  background-color: var(--white);
 }
 
 .top-logo {
@@ -37,24 +42,24 @@ nav {
 
 /* Mobile view Main Section */
 
-.outerSection {
-  padding: var(--overallpadding);
+.container {
+  padding: var(--overallpaddingNoHeight);
   min-width: var(--minSize);
   background-color: var(--lightGreyishBlue);
-  height: 100%;
-  display: grid;
-  justify-items: center;
-  align-items: end;
-  grid-template: 1fr minmax(3rem,5rem)/ 1fr;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .innerSection {
-  grid-area: 1/1/1/2;
+  margin: 8rem 0;
   background-color: var(--white);
   box-shadow: 2px 2px 10px 1px var(--greyishBlue),
     -2px -2px 10px 1px var(--greyishBlue);
-  width: auto;
-  height: max-content;
+  width: max-content;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +70,7 @@ nav {
   padding: 1rem 0;
 }
 
-.heading h4 {
+.heading h5 {
   color: var(--greyishBlue);
 }
 
@@ -89,6 +94,11 @@ nav {
   padding-right: 0.5rem;
 }
 
+.inputDiv i {
+  font-size: 1rem;
+  color: var(--greyishBlue);
+}
+
 .inlineInput {
   display: flex;
   align-items: center;
@@ -102,14 +112,14 @@ nav {
   margin-bottom: 1rem;
   margin-right: 0.2rem;
   height: 3rem;
-  width: 8.5rem;
+  width: 8.8rem;
   padding-right: 0.5rem;
 }
 
 .loginForm input[type="text"],
 .loginForm input[type="password"],
 .loginForm input[type="date"] {
-  padding: .7rem 0;
+  padding: 0.7rem 0;
   padding-left: 1rem;
 }
 
@@ -123,7 +133,7 @@ select {
 }
 
 .loginForm button {
-  padding: .8rem 7rem;
+  padding: 0.8rem 7.5rem;
 }
 
 .alternate {
@@ -134,10 +144,8 @@ select {
   color: var(--greyishBlue);
 }
 
-/* Mobile view footer section  */
-
 .footer {
-  grid-area: 2/1/2/2;
+  margin-bottom: 1rem;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\
@@ -149,9 +157,8 @@ select {
 @media only screen and (min-width: 768px) {
   /* Tablet view Main section */
 
-  .outerSection {
-    height: 103vh;
-    grid-template: 2fr 1fr / 1fr;
+  .innerSection {
+    margin: 12rem 0;
   }
 
   .inputDiv {
@@ -163,7 +170,11 @@ select {
   }
 
   .loginForm button {
-    padding: 1rem 10.5rem;
+    padding: 1rem 11rem;
+  }
+
+  .footer {
+    margin-bottom: 1.2rem;
   }
 }
 
@@ -233,19 +244,23 @@ select {
 
   /* Desktop view main section */
 
-  .outerSection {
-    height: 130vh;
+  .innerSection {
+    margin: 3rem 0;
   }
 
   .inputDiv {
-    width: 30rem;
+    width: 26rem;
   }
 
   .inlineInDiv {
-    width: 14.5rem;
+    width: 12.8rem;
   }
 
   .loginForm button {
-    padding: 1rem 13rem;
+    padding: 1rem 11.2rem;
+  }
+
+  .footer {
+    margin-bottom: 1.5rem;
   }
 }

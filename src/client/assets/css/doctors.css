@@ -1,3 +1,4 @@
+
 /* Mobile View Starts Here  */
 
 /* Mobile Navbar section */
@@ -6,6 +7,7 @@ nav {
   padding: var(--overallpaddingNoHeight);
   min-width: var(--minSize);
   height: 4rem;
+  background-color: var(--white);
 }
 
 .top-logo {
@@ -49,6 +51,7 @@ header {
   min-width: var(--minSize);
   flex-direction: row;
   justify-content: space-between;
+  background-color: var(--white);
 }
 
 .searchHeading h4 {
@@ -64,6 +67,7 @@ header {
 /* mobile filter and main section */
 
 .layout {
+  background-color: var(--white);
   display: grid;
   padding: var(--overallpadding);
   min-width: var(--minSize);
@@ -148,7 +152,7 @@ header {
 }
 
 .cards figure {
-  width: 24rem;
+  width: 27rem;
   height: 28rem;
   grid-area: 3/1/3/2;
 }
@@ -523,7 +527,7 @@ footer p {
   /* Desktop view header section */
 
   .head {
-    height: 8rem;
+    height: 15rem;
   }
 
   /* Desktop view Search heading section */

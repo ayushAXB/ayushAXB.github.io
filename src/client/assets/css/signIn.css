@@ -1,3 +1,7 @@
+body {
+  min-height: 100vh;
+}
+
 /* Mobile View Starts Here  */
 
 /* Mobile Navbar section */
@@ -6,6 +10,7 @@ nav {
   padding: var(--overallpaddingNoHeight);
   min-width: var(--minSize);
   height: 4rem;
+  background-color: var(--white);
 }
 
 .top-logo {
@@ -37,24 +42,24 @@ nav {
 
 /* Mobile view Main Section */
 
-.outerSection {
-  padding: var(--overallpadding);
+.container {
+  padding: var(--overallpaddingNoHeight);
   min-width: var(--minSize);
   background-color: var(--lightGreyishBlue);
-  height: 100vh;
-  display: grid;
-  justify-items: center;
-  align-items: end;
-  grid-template: 2fr 1fr/ 1fr;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .innerSection {
-  grid-area: 1/1/1/2;
+  margin: 20rem 0;
   background-color: var(--white);
   box-shadow: 2px 2px 10px 1px var(--greyishBlue),
     -2px -2px 10px 1px var(--greyishBlue);
-  width: auto;
-  height: max-content;
+  width: max-content;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +70,7 @@ nav {
   padding: 1rem 0;
 }
 
-.heading h4 {
+.heading h5 {
   color: var(--greyishBlue);
 }
 
@@ -84,24 +89,51 @@ nav {
   align-items: center;
   border: 1px solid var(--lightGrey);
   margin-bottom: 1rem;
-  height: 3.5rem;
+  height: 3rem;
   width: 18rem;
   padding-right: 0.5rem;
 }
 
-.inputDiv a {
-  font-size: 1.2rem;
+.inputDiv i {
+  font-size: 1rem;
   color: var(--greyishBlue);
-  opacity: 0.7;
 }
 
-.loginForm input[type="text"] {
-  padding: 1.1rem 0;
+.inlineInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inlineInDiv {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--lightGrey);
+  margin-bottom: 1rem;
+  margin-right: 0.2rem;
+  height: 3rem;
+  width: 8.5rem;
+  padding-right: 0.5rem;
+}
+
+.loginForm input[type="text"],
+.loginForm input[type="password"],
+.loginForm input[type="date"] {
+  padding: 0.7rem 0;
   padding-left: 1rem;
 }
 
+.loginForm input[type="date"],
+select {
+  padding-left: 1rem;
+}
+
+select {
+  color: var(--lightGrey);
+}
+
 .loginForm button {
-  padding: 1.1rem 7.4rem;
+  padding: 0.8rem 7.5rem;
 }
 
 .alternate {
@@ -112,37 +144,43 @@ nav {
   color: var(--greyishBlue);
 }
 
-/* Mobile view footer section  */
-
 .footer {
-  grid-area: 2/1/2/2;
+  margin-bottom: 1rem;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /* Tablet view starts here */
 
 @media only screen and (min-width: 768px) {
   /* Tablet view Main section */
 
-  .outerSection {
-    height: 103vh;
+  .innerSection {
+    margin: 23.5rem 0;
   }
 
   .inputDiv {
     width: 25rem;
   }
 
+  .inlineInDiv {
+    width: 12rem;
+  }
+
   .loginForm button {
     padding: 1rem 11rem;
+  }
+
+  .footer {
+    margin-bottom: 1.2rem;
   }
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*  Desktop view Starts Here */
 
@@ -206,15 +244,27 @@ nav {
 
   /* Desktop view main section */
 
-  .outerSection {
-    height: 67.5vh;
+  body {
+    overflow: hidden;
+  }
+
+  .innerSection {
+    margin: 6.4rem 0;
   }
 
   .inputDiv {
-    width: 30rem;
+    width: 26rem;
+  }
+
+  .inlineInDiv {
+    width: 14.5rem;
   }
 
   .loginForm button {
-    padding: 1rem 13.5rem;
+    padding: 1rem 11.2rem;
+  }
+
+  .footer {
+    margin-bottom: 1.5rem;
   }
 }

@@ -19,15 +19,23 @@
   --greyishBlue: #0173b2;
   --lightGreyishBlue: #7ab0d4;
   --white: #fff;
+  --blueishWhite: rgb(223, 231, 248);
   --black: #000;
   --selectCol: #d3d3d3;
-  --minSize: 24rem;
+  --minSize: 30rem;
   --overallpadding: 2.5rem 1.5rem;
   --overallpaddingNoHeight: 0 1.5rem;
 }
 
-body {
+* {
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--blueishWhite);
+  width: min-content;
+  height: max-content;
+  margin: 0 auto;
 }
 
 h1,
@@ -104,7 +112,7 @@ input[type="password"],
 input[type="date"] {
   outline: none;
   border: none;
-  padding: 0.9rem 0;
+  padding: 0.9rem 1rem;
   width: 100%;
   font-size: 1rem;
   font-family: "Nexa-light";
@@ -150,10 +158,16 @@ option {
   cursor: pointer;
   outline: none;
   font-size: 1rem;
+  background-color: var(--white);
 }
 
 select {
   padding: 0.5rem;
+}
+
+textarea {
+  outline: none;
+  border: none;
 }
 
 li,
@@ -172,7 +186,7 @@ textarea::placeholder {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   :root {
-    --minSize: 50rem;
+    --minSize: 55rem;
     --overallpadding: 2.5rem 3rem;
     --overallpaddingNoHeight: 0 3rem;
   }
@@ -234,7 +248,7 @@ textarea::placeholder {
 
 @media only screen and (min-width: 1025px) {
   :root {
-    --minSize: 64rem;
+    --minSize: 80rem;
     --overallpadding: 3.8rem;
     --overallpaddingNoHeight: 0.5rem 3.8rem;
   }

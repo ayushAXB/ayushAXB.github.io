@@ -10,6 +10,7 @@ nav {
   padding: var(--overallpaddingNoHeight);
   min-width: var(--minSize);
   height: 4rem;
+  background-color: var(--white);
 }
 
 .top-logo {
@@ -85,6 +86,7 @@ input[type="text"] {
 .howItWorks {
   padding: var(--overallpadding);
   min-width: var(--minSize);
+  background-color: var(--white);
 }
 
 .boxUl {
@@ -168,7 +170,6 @@ input[type="text"] {
 .doctorsPanel {
   padding: var(--overallpadding);
   background-color: var(--darkBlue);
-  height: max-content;
   min-width: var(--minSize);
 }
 
@@ -262,7 +263,6 @@ input[type="text"] {
 .treatment {
   padding: var(--overallpadding);
   background-color: white;
-  height: min-content;
   min-width: var(--minSize);
 }
 
@@ -369,7 +369,6 @@ input[type="text"] {
 .ex-services {
   padding: var(--overallpadding);
   min-width: var(--minSize);
-  height: max-content;
   background-color: var(--lightLime);
 }
 
@@ -438,7 +437,6 @@ input[type="text"] {
 .container {
   padding: var(--overallpadding);
   background-color: var(--skyBlue);
-  height: max-content;
   min-width: var(--minSize);
   text-align: center;
 }
