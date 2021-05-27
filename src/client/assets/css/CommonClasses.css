@@ -1,6 +1,11 @@
+.mainContainer {
+  width: min-content;
+  height: max-content;
+  margin: 0 auto;
+}
 
 .darkBlueBtnBig {
-  padding: 0.8rem 3rem;
+  padding: 0.9rem 3rem;
   background-color: var(--darkBlue);
   color: var(--white);
   font-size: 1.2rem;
@@ -17,7 +22,7 @@
 }
 
 .greyishBlueBtn:hover {
-  background-color: var(--darkBlue);
+  background-color: var(--darkGreyishBlue);
 }
 
 .whiteBtn,
@@ -41,7 +46,7 @@
 .darkBlueBtnBig:hover,
 .darkBlueBtnSmall:hover,
 .whiteBtn:hover {
-  background-color: var(--greyishBlue);
+  background-color: var(--darkGreyishBlue);
   color: var(--white);
 }
 

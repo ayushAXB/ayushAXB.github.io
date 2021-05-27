@@ -16,97 +16,269 @@
 
 <body>
 
-    <!-- Navbar section -->
+    <div class="mainContainer">
 
-    <nav>
-        <a href="./index.html"><img class="top-logo"
-                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="Logo">
-        </a>
-        <div class="navDeskDiv">
-            <ul class="navigation">
-                <a href="./doctors.html">
-                    <li>Doctors</li>
-                </a>
-                <a href="./hospitals.html">
-                    <li>Hospitals</li>
-                </a>
-                <a href="#">
-                    <li>Treatment</li>
-                </a>
-                <a href="#">
-                    <li>Other Services</li>
-                </a>
-                <a href="#">
-                    <li>About</li>
-                </a>
-                <a href="#">
-                    <li>Tvastra+</li>
-                </a>
-            </ul>
-            <div class="navbtn">
-                <button onclick="location.href='./signIn.html'" class="navB1 whiteBtn">Login / Sign Up</button>
-                <button class="darkBlueBtnSmall">Get a Quote</button>
+        <!-- Navbar section -->
+
+        <nav>
+            <a href="./index.html"><img class="top-logo"
+                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="Logo">
+            </a>
+            <div class="navDeskDiv">
+                <ul class="navigation">
+                    <a href="./doctors.html">
+                        <li>Doctors</li>
+                    </a>
+                    <a href="./hospitals.html">
+                        <li>Hospitals</li>
+                    </a>
+                    <a href="./treatment.html">
+                        <li>Treatment</li>
+                    </a>
+                    <a href="#">
+                        <li>Other Services</li>
+                    </a>
+                    <a href="./aboutUs.html">
+                        <li>About</li>
+                    </a>
+                </ul>
+                <div class="navbtn">
+                    <button onclick="location.href='./signIn.html'" class="navB1 whiteBtn">Login / Sign Up</button>
+                    <button class="darkBlueBtnSmall">Get a Quote</button>
+                </div>
+                <div class="navMenu">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-            <div class="navMenu">
-                <i class="fas fa-bars"></i>
+        </nav>
+
+
+
+        <!-- Header section  -->
+
+        <header class="header">
+            <h3>Dentistry</h3>
+            <h5>Home / Dentistry</h5>
+        </header>
+
+
+        <!-- Main Section  -->
+        <div class="mainOuter">
+
+            <section class="mainSection">
+
+                <!--heading  -->
+                <div class="heading">
+                    <h4>Vaccination</h4>
+                </div>
+
+                <div class="mainDiv">
+                    <figure class="mainFig">
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/dentist.jpg"
+                            alt="Dentistry">
+                    </figure>
+
+                    <!-- about dentist Department section -->
+
+                    <div class="about">
+                        <h5>About Dentist Department</h5>
+                        <p>The vaccination of dentists against various vaccine-preventable infections is the most
+                            important
+                            measure of primary prevention against such diseases which would otherwise prove fatal for
+                            both
+                            the dentists and their patients.</p>
+                        <ul class="innerLi">
+                            <li>CF-related diabetes (monthly)</li>
+                            <li>Gastointestional (monthly)</li>
+                            <li>CF-related liver disease (monthly)</li>
+                            <li>Sweat testing (three times per month)</li>
+                        </ul>
+                    </div>
+
+                    <!-- circle icons section -->
+
+                    <div class="circleIconSection">
+                        <div class="icons iconsMarginBottom">
+                            <div class="iconOuter">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <h6>Central Nervous System</h6>
+                            <p>Open visitation with only two visitors in a room at any time. No one under 12 years of
+                                age
+                                may.</p>
+                        </div>
+                        <div class="icons iconsMarginBottom">
+                            <div class="iconOuter">
+                                <i class="fas fa-tablets"></i>
+                            </div>
+                            <h6>Allergic Disorders</h6>
+                            <p>Open visitation with only two visitors in a room at any time. No one under 12 years of
+                                age
+                                may.</p>
+                        </div>
+                        <div class="icons">
+                            <div class="iconOuter">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h6>Neoplastic Disorders</h6>
+                            <p>Open visitation with only two visitors in a room at any time. No one under 12 years of
+                                age
+                                may.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- info Section -->
+
+            <aside class="infoSection">
+                <div class="infoCards">
+                    <div class="card">
+                        <div class="title">
+                            <div class="line"></div>
+                            <h6>Service Details</h6>
+                        </div>
+                        <table class="infoTable">
+                            <tr class="infoTr">
+                                <td class="property">Price</td>
+                                <td class="value">from $340</td>
+                            </tr>
+                            <tr class="infoTr">
+                                <td class="property">Duration</td>
+                                <td class="value">10 Minutes</td>
+                            </tr>
+                            <tr class="infoTr">
+                                <td class="property">Office</td>
+                                <td class="value">#46</td>
+                            </tr>
+                            <tr class="infoTr">
+                                <td class="property">Doctor</td>
+                                <td class="value">Dr. Elizabeth Beard</td>
+                            </tr>
+                            <tr class="infoTr">
+                                <td class="property">Categories</td>
+                                <td class="value">Family Medicine</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="card">
+                        <div class="title">
+                            <div class="line"></div>
+                            <h6>Schedule</h6>
+                        </div>
+                        <table class="infoTable">
+                            <tr class="infoTr">
+                                <td class="property">Tuesday</td>
+                                <td class="value">10:00am - 01:00pm</td>
+                            </tr>
+                            <tr class="infoTr">
+                                <td class="property">Friday</td>
+                                <td class="value">07:00am - 10:00pm</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+
+
+        <!-- More Services seciton -->
+
+        <section class="moreService">
+            <div class="moreServiceHead">
+                <h4>More Services</h4>
+                <div class="leftRightIcons">
+                    <a href="#" class="moreServiceIconOuter">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#" class="moreServiceIconOuter">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-    </nav>
 
 
+            <div class="imgSection">
+
+                <div class="imgCards imgCardMarginBottom">
+                    <figure>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg">
+                    </figure>
+                    <div class="imgAbout">
+                        <div class="line"></div>
+                        <h6>Orthopedic Surgery</h6>
+                    </div>
+                </div>
+                <div class="imgCards imgCardMarginBottom">
+                    <figure>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg">
+                    </figure>
+                    <div class="imgAbout">
+                        <div class="line"></div>
+                        <h6>Cancer</h6>
+                    </div>
+                </div>
+                <div class="imgCards">
+                    <figure>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg">
+                    </figure>
+                    <div class="imgAbout">
+                        <div class="line"></div>
+                        <h6>Cardiology</h6>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
 
+        <!-- Footer section -->
 
+        <footer>
+            <div class="innerfooter">
+                <figure><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png"
+                        alt="logo">
+                </figure>
+                <ul class="navlist">
+                    <a href="#">
+                        <li>
+                    </a>Doctor</li></a>
+                    <a href="#">
+                        <li>Hospital</li>
+                    </a>
+                    <a href="#">
+                        <li>Treatment</li>
+                    </a>
+                    <a href="#">
+                        <li>Other Services</li>
+                    </a>
+                    <a href="#">
+                        <li>FAQs</li>
+                    </a>
+                </ul>
+                <ul class="socialLogos">
+                    <a href="#">
+                        <li><i class="fab fa-facebook-f"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-pinterest-p"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-twitter"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-google-plus-g"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-instagram"></i></li>
+                    </a>
+                </ul>
+                <p class="rights">All Rights Reserved. &copy; tvastra 2018</p>
+            </div>
+        </footer>
 
-
-
-
-
-
-
-    <!-- Footer section -->
-
-    <footer>
-        <div class="innerfooter">
-            <figure><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png" alt="logo">
-            </figure>
-            <ul class="navlist">
-                <a href="#">
-                    <li>
-                </a>Doctor</li></a>
-                <a href="#">
-                    <li>Hospital</li>
-                </a>
-                <a href="#">
-                    <li>Treatment</li>
-                </a>
-                <a href="#">
-                    <li>Other Services</li>
-                </a>
-                <a href="#">
-                    <li>FAQs</li>
-                </a>
-            </ul>
-            <ul class="socialLogos">
-                <a href="#">
-                    <li><i class="fab fa-facebook-f"></i></li>
-                </a>
-                <a href="#">
-                    <li><i class="fab fa-pinterest-p"></i></li>
-                </a>
-                <a href="#">
-                    <li><i class="fab fa-twitter"></i></li>
-                </a>
-                <a href="#">
-                    <li><i class="fab fa-google-plus-g"></i></li>
-                </a>
-                <a href="#">
-                    <li><i class="fab fa-instagram"></i></li>
-                </a>
-            </ul>
-            <p class="rights">All Rights Reserved. &copy; tvastra 2018</p>
-        </div>
-    </footer>
+    </div>
 </body>
 
 </html>

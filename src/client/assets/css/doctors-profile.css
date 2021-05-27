@@ -6,7 +6,6 @@ nav {
   padding: var(--overallpaddingNoHeight);
   min-width: var(--minSize);
   height: 4rem;
-  background-color: var(--white);
 }
 
 .top-logo {

@@ -15,439 +15,443 @@
 </head>
 
 <body>
-    <!-- Navbar section -->
 
-    <nav>
-        <a href="./index.html"><img class="top-logo"
-                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="Logo">
-        </a>
-        <div class="navDeskDiv">
-            <ul class="navigation">
-                <a href="./doctors.html">
-                    <li>Doctors</li>
-                </a>
-                <a href="./hospitals.html">
-                    <li>Hospitals</li>
-                </a>
-                <a href="#">
-                    <li>Treatment</li>
-                </a>
-                <a href="#">
-                    <li>Other Services</li>
-                </a>
-                <a href="#">
-                    <li>About</li>
-                </a>
-                <a href="#">
-                    <li>Tvastra+</li>
-                </a>
-            </ul>
-            <div class="navbtn">
-                <button onclick="location.href='./signIn.html'" class="navB1 whiteBtn">Login / Sign Up</button>
-                <button class="darkBlueBtnSmall">Get a Quote</button>
-            </div>
-            <div class="navMenu">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+    <div class="mainContainer">
 
+        <!-- Navbar section -->
 
-    <!-- Header Section  -->
-
-    <header class="head">
-        <h3>Hospitals in <u>Delhi</u></h3>
-    </header>
-
-    <!-- Search Heading Section -->
-
-    <section class="searchHeading">
-        <h4>Home / Hospital List</h4>
-        <select name="docSort" id="docSort">
-            <option value="none">Sort by</option>
-            <option value="name">Name</option>
-            <option value="specialization">Specialization</option>
-            <option value="experience">Experience</option>
-        </select>
-    </section>
-
-
-    <!-- Filter and main section -->
-
-    <section class="layout">
-
-        <!-- Filter By Section -->
-
-        <aside class="filter">
-            <div class="filterHead">
-                <h6>Filter By</h6>
-            </div>
-            <div class="selecting">
-                <div class="optionHead">
-                    <h5>Loction</h5>
-                    <div class="searchAdash">
-                        <a href="#"><i class="fas fa-search"></i></a>
-                        <div class="lineSec"></div>
-                    </div>
+        <nav>
+            <a href="./index.html"><img class="top-logo"
+                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="Logo">
+            </a>
+            <div class="navDeskDiv">
+                <ul class="navigation">
+                    <a href="./doctors.html">
+                        <li>Doctors</li>
+                    </a>
+                    <a href="./hospitals.html">
+                        <li>Hospitals</li>
+                    </a>
+                    <a href="./treatment.html">
+                        <li>Treatment</li>
+                    </a>
+                    <a href="#">
+                        <li>Other Services</li>
+                    </a>
+                    <a href="./aboutUs.html">
+                        <li>About</li>
+                    </a>
+                </ul>
+                <div class="navbtn">
+                    <button onclick="location.href='./signIn.html'" class="navB1 whiteBtn">Login / Sign Up</button>
+                    <button class="darkBlueBtnSmall">Get a Quote</button>
                 </div>
-                <div class="options">
-                    <div class="option">
-                        <input type="checkbox" checked="checked" name="location">
-                        <label>DLF Cyber City</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="location">
-                        <label>Dwarka</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="location">
-                        <label>Lajpat Nagar</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="location">
-                        <label>Palam Vihar</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="location">
-                        <label>Punjabi Baag</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="location">
-                        <label>Pusa Road</label>
-                    </div>
+                <div class="navMenu">
+                    <i class="fas fa-bars"></i>
                 </div>
-                <h6><a href="#">+ Show more</a></h6>
             </div>
-            <div class="selecting">
-                <div class="optionHead">
-                    <h5>Department</h5>
-                    <div class="searchAdash">
-                        <a href="#"><i class="fas fa-search"></i></a>
-                        <div class="lineSec"></div>
-                    </div>
-                </div>
-                <div class="options">
-                    <div class="option">
-                        <input type="checkbox" checked="checked" name="Apollo Hospitals">
-                        <label>Department 1</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Manipal North Side Hospital">
-                        <label>Department 2</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Northstar">
-                        <label>Department 3</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="AIIMs">
-                        <label>Department 4</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Fortis Hospital">
-                        <label>Department 5</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Elbit Diagnostics">
-                        <label>Department 6</label>
-                    </div>
-                </div>
-                <h6><a href="#">+ Show more</a></h6>
-            </div>
-            <div class="selecting">
-                <div class="optionHead">
-                    <h5>Treatment</h5>
-                    <div class="searchAdash">
-                        <a href="#"><i class="fas fa-search"></i></a>
-                        <div class="lineSec"></div>
-                    </div>
-                </div>
-                <div class="options">
-                    <div class="option">
-                        <input type="checkbox" checked="checked" name="Multi Organ Transplant">
-                        <label>Multi Organ Transplant</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Orthopedics">
-                        <label>Orthopedics</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Infertility Treatment">
-                        <label>Infertility Treatment</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Dentistry">
-                        <label>Dentistry</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Cardiology">
-                        <label>Cardiology</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Cancer">
-                        <label>Cancer</label>
-                    </div>
-                </div>
-                <h6><a href="#">+ Show more</a></h6>
-            </div>
-        </aside>
+        </nav>
 
-        <!-- Main Section -->
 
-        <section class="mainSection">
-            <div class="cards">
-                <div class="info">
-                    <div class="docName">
-                        <div class="line"></div>
-                        <h4>Apollo Hospital</h4>
-                    </div>
-                    <div class="aboutThing">
-                        <li class="iconAtext">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h6>Delhi Mathura Road, Sarita Vihar, Delhi 110076</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-bed"></i>
-                            <h6>100 beds</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-stethoscope"></i>
-                            <h6>Famous Treatments</h6>
-                        </li>
-                    </div>
-                    <div class="selected">
-                        <div class="innerSelected">
-                            <span>Multi Organ Transplant</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Orthopedic Surgery</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Infertility Treatment</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Dentistry</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Cardiology</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Cancer</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>+40 more</span>
-                        </div>
-                    </div>
-                </div>
-                <button class="darkBlueBtnBig">Call Now</button>
-                <figure>
-                    <img src="../assets/images/Indraprastha Apollo Hospitals.webp" alt="Indraprastha Apollo Hospital">
-                </figure>
-            </div>
-            <div class="cards">
-                <div class="info">
-                    <div class="docName">
-                        <div class="line"></div>
-                        <h4>Fortis Hospital</h4>
-                    </div>
-                    <div class="aboutThing">
-                        <li class="iconAtext">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h6>Delhi Mathura Road, Sarita Vihar, Delhi 110076</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-bed"></i>
-                            <h6>100 beds</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-stethoscope"></i>
-                            <h6>Famous Treatments</h6>
-                        </li>
-                    </div>
-                    <div class="selected">
-                        <div class="innerSelected">
-                            <span>Multi Organ Transplant</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Orthopedic Surgery</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Infertility Treatment</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Dentistry</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Cardiology</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Cancer</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>+40 more</span>
-                        </div>
-                    </div>
-                </div>
-                <button class="darkBlueBtnBig">Call Now</button>
-                <figure>
-                    <img src="../assets/images/Fortis hospital.jpg" alt="Fortis Hospital">
-                </figure>
-            </div>
-            <div class="cards">
-                <div class="info">
-                    <div class="docName">
-                        <div class="line"></div>
-                        <h4>Rockland Hospital</h4>
-                    </div>
-                    <div class="aboutThing">
-                        <li class="iconAtext">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h6>Delhi Mathura Road, Sarita Vihar, Delhi 110076</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-bed"></i>
-                            <h6>100 beds</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-stethoscope"></i>
-                            <h6>Famous Treatments</h6>
-                        </li>
-                    </div>
-                    <div class="selected">
-                        <div class="innerSelected">
-                            <span>Multi Organ Transplant</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Orthopedic Surgery</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Infertility Treatment</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Dentistry</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Cardiology</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Cancer</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>+40 more</span>
-                        </div>
-                    </div>
-                </div>
-                <button class="darkBlueBtnBig">Call Now</button>
-                <figure>
-                    <img src="../assets/images/rockland-hospital.jpg" alt="Rockland hospital">
-                </figure>
-            </div>
-            <div class="cards">
-                <div class="info">
-                    <div class="docName">
-                        <div class="line"></div>
-                        <h4>Primus Super Speciality Hospital</h4>
-                    </div>
-                    <div class="aboutThing">
-                        <li class="iconAtext">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h6>Delhi Mathura Road, Sarita Vihar, Delhi 110076</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-bed"></i>
-                            <h6>100 beds</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-stethoscope"></i>
-                            <h6>Famous Treatments</h6>
-                        </li>
-                    </div>
-                    <div class="selected">
-                        <div class="innerSelected">
-                            <span>Multi Organ Transplant</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Orthopedic Surgery</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Infertility Treatment</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Dentistry</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Cardiology</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>Cancer</span>
-                        </div>
-                        <div class="innerSelected">
-                            <span>+40 more</span>
-                        </div>
-                    </div>
-                </div>
-                <button class="darkBlueBtnBig">Call Now</button>
-                <figure>
-                    <img src="../assets/images/primus hospital.jpg" alt="Primus hospital">
-                </figure>
-            </div>
+        <!-- Header Section  -->
+
+        <header class="head">
+            <h3>Hospitals in <u>Delhi</u></h3>
+        </header>
+
+        <!-- Search Heading Section -->
+
+        <section class="searchHeading">
+            <h4>Home / Hospital List</h4>
+            <select name="docSort" id="docSort">
+                <option value="none">Sort by</option>
+                <option value="name">Name</option>
+                <option value="specialization">Specialization</option>
+                <option value="experience">Experience</option>
+            </select>
         </section>
 
-    </section>
+
+        <!-- Filter and main section -->
+
+        <section class="layout">
+
+            <!-- Filter By Section -->
+
+            <aside class="filter">
+                <div class="filterHead">
+                    <h6>Filter By</h6>
+                </div>
+                <div class="selecting">
+                    <div class="optionHead">
+                        <h5>Loction</h5>
+                        <div class="searchAdash">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <div class="lineSec"></div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="checkbox" checked="checked" name="location">
+                            <label>DLF Cyber City</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="location">
+                            <label>Dwarka</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="location">
+                            <label>Lajpat Nagar</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="location">
+                            <label>Palam Vihar</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="location">
+                            <label>Punjabi Baag</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="location">
+                            <label>Pusa Road</label>
+                        </div>
+                    </div>
+                    <h6><a href="#">+ Show more</a></h6>
+                </div>
+                <div class="selecting">
+                    <div class="optionHead">
+                        <h5>Department</h5>
+                        <div class="searchAdash">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <div class="lineSec"></div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="checkbox" checked="checked" name="Apollo Hospitals">
+                            <label>Department 1</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Manipal North Side Hospital">
+                            <label>Department 2</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Northstar">
+                            <label>Department 3</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="AIIMs">
+                            <label>Department 4</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Fortis Hospital">
+                            <label>Department 5</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Elbit Diagnostics">
+                            <label>Department 6</label>
+                        </div>
+                    </div>
+                    <h6><a href="#">+ Show more</a></h6>
+                </div>
+                <div class="selecting">
+                    <div class="optionHead">
+                        <h5>Treatment</h5>
+                        <div class="searchAdash">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <div class="lineSec"></div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="checkbox" checked="checked" name="Multi Organ Transplant">
+                            <label>Multi Organ Transplant</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Orthopedics">
+                            <label>Orthopedics</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Infertility Treatment">
+                            <label>Infertility Treatment</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Dentistry">
+                            <label>Dentistry</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Cardiology">
+                            <label>Cardiology</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Cancer">
+                            <label>Cancer</label>
+                        </div>
+                    </div>
+                    <h6><a href="#">+ Show more</a></h6>
+                </div>
+            </aside>
+
+            <!-- Main Section -->
+
+            <section class="mainSection">
+                <div class="cards">
+                    <div class="info">
+                        <div class="docName">
+                            <div class="line"></div>
+                            <h4>Apollo Hospital</h4>
+                        </div>
+                        <div class="aboutThing">
+                            <li class="iconAtext">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h6>Delhi Mathura Road, Sarita Vihar, Delhi 110076</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-bed"></i>
+                                <h6>100 beds</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-stethoscope"></i>
+                                <h6>Famous Treatments</h6>
+                            </li>
+                        </div>
+                        <div class="selected">
+                            <div class="innerSelected">
+                                <span>Multi Organ Transplant</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Orthopedic Surgery</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Infertility Treatment</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Dentistry</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Cardiology</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Cancer</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>+40 more</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="darkBlueBtnBig">Call Now</button>
+                    <figure>
+                        <img src="../assets/images/Indraprastha Apollo Hospitals.webp"
+                            alt="Indraprastha Apollo Hospital">
+                    </figure>
+                </div>
+                <div class="cards">
+                    <div class="info">
+                        <div class="docName">
+                            <div class="line"></div>
+                            <h4>Fortis Hospital</h4>
+                        </div>
+                        <div class="aboutThing">
+                            <li class="iconAtext">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h6>Delhi Mathura Road, Sarita Vihar, Delhi 110076</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-bed"></i>
+                                <h6>100 beds</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-stethoscope"></i>
+                                <h6>Famous Treatments</h6>
+                            </li>
+                        </div>
+                        <div class="selected">
+                            <div class="innerSelected">
+                                <span>Multi Organ Transplant</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Orthopedic Surgery</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Infertility Treatment</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Dentistry</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Cardiology</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Cancer</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>+40 more</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="darkBlueBtnBig">Call Now</button>
+                    <figure>
+                        <img src="../assets/images/Fortis hospital.jpg" alt="Fortis Hospital">
+                    </figure>
+                </div>
+                <div class="cards">
+                    <div class="info">
+                        <div class="docName">
+                            <div class="line"></div>
+                            <h4>Rockland Hospital</h4>
+                        </div>
+                        <div class="aboutThing">
+                            <li class="iconAtext">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h6>Delhi Mathura Road, Sarita Vihar, Delhi 110076</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-bed"></i>
+                                <h6>100 beds</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-stethoscope"></i>
+                                <h6>Famous Treatments</h6>
+                            </li>
+                        </div>
+                        <div class="selected">
+                            <div class="innerSelected">
+                                <span>Multi Organ Transplant</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Orthopedic Surgery</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Infertility Treatment</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Dentistry</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Cardiology</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Cancer</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>+40 more</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="darkBlueBtnBig">Call Now</button>
+                    <figure>
+                        <img src="../assets/images/rockland-hospital.jpg" alt="Rockland hospital">
+                    </figure>
+                </div>
+                <div class="cards">
+                    <div class="info">
+                        <div class="docName">
+                            <div class="line"></div>
+                            <h4>Primus Super Speciality Hospital</h4>
+                        </div>
+                        <div class="aboutThing">
+                            <li class="iconAtext">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h6>Delhi Mathura Road, Sarita Vihar, Delhi 110076</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-bed"></i>
+                                <h6>100 beds</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-stethoscope"></i>
+                                <h6>Famous Treatments</h6>
+                            </li>
+                        </div>
+                        <div class="selected">
+                            <div class="innerSelected">
+                                <span>Multi Organ Transplant</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Orthopedic Surgery</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Infertility Treatment</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Dentistry</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Cardiology</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>Cancer</span>
+                            </div>
+                            <div class="innerSelected">
+                                <span>+40 more</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="darkBlueBtnBig">Call Now</button>
+                    <figure>
+                        <img src="../assets/images/primus hospital.jpg" alt="Primus hospital">
+                    </figure>
+                </div>
+            </section>
+
+        </section>
 
 
-    <!-- Need Help Section -->
+        <!-- Need Help Section -->
 
-    <section class="container">
-        <h2>Need Help?</h2>
-        <p>Just let us know, we will happy to assist you</p>
-        <button class="greyishBlueBtn">Submit your enquiry</button>
-    </section>
+        <section class="container">
+            <h2>Need Help?</h2>
+            <p>Just let us know, we will happy to assist you</p>
+            <button class="greyishBlueBtn">Submit your enquiry</button>
+        </section>
 
-    <!-- Footer section -->
+        <!-- Footer section -->
 
-    <footer>
-        <div class="innerfooter">
-            <figure><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png" alt="logo">
-            </figure>
-            <ul class="navlist">
-                <a href="#">
-                    <li>
-                </a>Doctor</li></a>
-                <a href="#">
-                    <li>Hospital</li>
-                </a>
-                <a href="#">
-                    <li>Treatment</li>
-                </a>
-                <a href="#">
-                    <li>Other Services</li>
-                </a>
-                <a href="#">
-                    <li>FAQs</li>
-                </a>
-            </ul>
-            <ul class="socialLogos">
-                <a href="#">
-                    <li><i class="fab fa-facebook-f"></i></li>
-                </a>
-                <a href="#">
-                    <li><i class="fab fa-pinterest-p"></i></li>
-                </a>
-                <a href="#">
-                    <li><i class="fab fa-twitter"></i></li>
-                </a>
-                <a href="#">
-                    <li><i class="fab fa-google-plus-g"></i></li>
-                </a>
-                <a href="#">
-                    <li><i class="fab fa-instagram"></i></li>
-                </a>
-            </ul>
-            <p class="rights">All Rights Reserved. &copy; tvastra 2018</p>
-        </div>
-    </footer>
+        <footer>
+            <div class="innerfooter">
+                <figure><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png"
+                        alt="logo">
+                </figure>
+                <ul class="navlist">
+                    <a href="#">
+                        <li>
+                    </a>Doctor</li></a>
+                    <a href="#">
+                        <li>Hospital</li>
+                    </a>
+                    <a href="#">
+                        <li>Treatment</li>
+                    </a>
+                    <a href="#">
+                        <li>Other Services</li>
+                    </a>
+                    <a href="#">
+                        <li>FAQs</li>
+                    </a>
+                </ul>
+                <ul class="socialLogos">
+                    <a href="#">
+                        <li><i class="fab fa-facebook-f"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-pinterest-p"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-twitter"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-google-plus-g"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-instagram"></i></li>
+                    </a>
+                </ul>
+                <p class="rights">All Rights Reserved. &copy; tvastra 2018</p>
+            </div>
+        </footer>
 
+
+    </div>
 </body>
 
 </html>

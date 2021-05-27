@@ -6,7 +6,6 @@ nav {
   padding: var(--overallpaddingNoHeight);
   min-width: var(--minSize);
   height: 4rem;
-  background-color: var(--white);
 }
 
 .top-logo {
@@ -46,7 +45,6 @@ header {
 /* Mobile Search Heading Section  */
 
 .searchHeading {
-  background-color: var(--white);
   padding: 0 1.5rem;
   min-width: var(--minSize);
   flex-direction: row;
@@ -66,7 +64,6 @@ header {
 /* mobile filter and main section */
 
 .layout {
-  background-color: var(--white);
   display: grid;
   padding: var(--overallpadding);
   min-width: var(--minSize);

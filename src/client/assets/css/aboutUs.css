@@ -6,7 +6,6 @@ nav {
   padding: var(--overallpaddingNoHeight);
   min-width: var(--minSize);
   height: 4rem;
-  background-color: var(--white);
 }
 
 .top-logo {
@@ -34,6 +33,212 @@ nav {
 
 .navigation {
   flex-direction: column;
+}
+
+/* Mobile view header section  */
+
+.header {
+  padding: var(--overallpadding);
+  min-width: var(--minSize);
+  background: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg)
+    no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  height: 30rem;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: var(--darkBlue);
+  opacity: 0.3;
+}
+
+.header h3,
+.header p {
+  color: var(--white);
+  text-align: center;
+}
+
+.header p {
+  margin-top: 1rem;
+  font-family: "Nexa-light";
+}
+
+/* mobile view main text and sign section */
+
+.mainOuter {
+  padding: var(--overallpadding);
+  min-width: var(--minSize);
+}
+
+.mainOuter img {
+  object-fit: contain;
+}
+
+.mainTextAndSig {
+  justify-content: center;
+  text-align: center;
+}
+
+.mainTextAndSig h3,
+.mainTextAndSig figure,
+.mainTextAndSig p {
+  margin-bottom: 1.5rem;
+}
+
+.mainTextAndSig figure {
+  width: 15rem;
+  height: 5rem;
+}
+
+/* doc image Section  */
+
+.docImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.docImage figure {
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile view free checkup  Section  */
+
+.freeCheckupOuter {
+  height: max-content;
+  min-width: var(--minSize);
+}
+
+.freeCheckupOuter video {
+  visibility: hidden;
+  height: 0;
+}
+
+.freeCheckupSection {
+  padding: var(--overallpadding);
+  min-width: var(--minSize);
+  position: relative;
+  z-index: 2;
+}
+
+.freeCheckupSection ::before {
+  z-index: -2;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--black);
+}
+
+/* head section */
+
+.headSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.headSection h3,
+.headSection p {
+  text-align: center;
+  color: var(--white);
+}
+
+.headSection h3 {
+  margin-bottom: 1.5rem;
+}
+
+.headSection button {
+  margin: 1.5rem 0;
+}
+
+/* box section */
+
+.boxSection {
+  display: grid;
+  grid-template: repeat(6, 1fr) / 1fr;
+  align-items: start;
+  justify-items: center;
+  grid-row-gap: 1rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  width: 26.5rem;
+  height: 8rem;
+}
+
+.box h3,
+.box span {
+  color: var(--white);
+}
+
+.box span {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.boxMargin {
+  margin-bottom: 1rem;
+}
+
+.box1 {
+  grid-area: 1/1/1/2;
+}
+.box2 {
+  grid-area: 2/1/2/2;
+}
+.box3 {
+  grid-area: 3/1/3/2;
+}
+.box4 {
+  grid-area: 4/1/4/2;
+}
+.box5 {
+  grid-area: 5/1/5/2;
+}
+.box6 {
+  grid-area: 6/1/6/2;
+}
+
+/* Mobile Join our team Section */
+
+.container {
+  padding: var(--overallpadding);
+  background-color: var(--skyBlue);
+  min-width: var(--minSize);
+  text-align: center;
+}
+
+.container h3 {
+  color: white;
+}
+
+.container p {
+  padding: 15px 0;
+}
+
+.container button {
+  margin-top: 1rem;
 }
 
 /* Mobile view Footer Section  */
@@ -89,6 +294,75 @@ footer p {
 /* Tablet view starts here */
 
 @media only screen and (min-width: 768px) {
+  /*Tablet view main text and sign section  */
+
+  .mainOuter {
+    display: grid;
+    grid-template: 1fr/1.5fr 1fr;
+    align-items: start;
+    justify-items: center;
+    grid-column-gap: 1rem;
+  }
+
+  .mainTextAndSig {
+    grid-area: 1/1/1/2;
+    align-items: start;
+    text-align: left;
+  }
+
+  .docImage {
+    grid-area: 1/2/1/3;
+  }
+
+  /* Tablet view free checkup  Section  */
+
+  /* head section */
+
+  .headSection {
+    align-items: start;
+  }
+
+  .headSection h3,
+  .headSection p {
+    text-align: left;
+  }
+
+  .headSection button {
+    margin: 5rem 0;
+  }
+
+  /* box section */
+
+  .boxSection {
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-row-gap: 1rem;
+    grid-column-gap: 0.5rem;
+  }
+
+  .box {
+    width: 15.8rem;
+    height: 7rem;
+  }
+
+  .box1 {
+    grid-area: 1/1/1/2;
+  }
+  .box2 {
+    grid-area: 1/2/1/3;
+  }
+  .box3 {
+    grid-area: 1/3/1/4;
+  }
+  .box4 {
+    grid-area: 2/1/2/2;
+  }
+  .box5 {
+    grid-area: 2/2/2/3;
+  }
+  .box6 {
+    grid-area: 2/3/2/4;
+  }
+
   /*Tablet view Footer section  */
   footer {
     background-color: var(--white);
@@ -201,5 +475,84 @@ footer p {
 
   .navB1 {
     margin-right: 7px;
+  }
+
+  /* desktop view header section  */
+
+  .header {
+    height: 22rem;
+  }
+
+  /*desktop view main text and sign section  */
+  .mainOuter {
+    grid-template: 1fr/1fr 1fr;
+  }
+
+  .docImage figure {
+    height: 30rem;
+  }
+
+  /*desktop view free checkup section  */
+
+  .freeCheckupOuter {
+    height: 34rem;
+  }
+
+  .freeCheckupOuter video {
+    visibility: visible;
+    height: 34rem;
+  }
+
+  .freeCheckupSection {
+    height: 34rem;
+    position: relative;
+    bottom: 34rem;
+    display: grid;
+    align-items: start;
+    grid-template: 1fr / 1fr 1fr;
+    justify-content: center;
+    grid-column-gap: 1rem;
+  }
+
+  .freeCheckupSection ::before {
+    position: relative;
+  }
+
+  .headSection {
+    grid-area: 1/1/1/2;
+  }
+
+  .boxSection {
+    grid-area: 1/2/1/3;
+  }
+
+  .box {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  /* Desktop View Join our team Section */
+
+  .container {
+    display: grid;
+    grid-template: 1fr/1fr 1fr;
+    align-items: start;
+  }
+
+  .container h3,
+  .container p {
+    grid-area: 1/1/1/2;
+    justify-self: left;
+  }
+
+  .container p {
+    position: relative;
+    top: 3.5rem;
+    padding: 0;
+  }
+
+  .container button {
+    grid-area: 1/2/1/3;
+    justify-self: right;
   }
 }

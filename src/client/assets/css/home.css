@@ -10,7 +10,6 @@ nav {
   padding: var(--overallpaddingNoHeight);
   min-width: var(--minSize);
   height: 4rem;
-  background-color: var(--white);
 }
 
 .top-logo {
@@ -67,13 +66,9 @@ header p {
   justify-content: start;
   background-color: var(--white);
   width: 23rem;
-  height: 3.2rem;
+  height: 3.3rem;
   padding: 0 0.8rem;
   margin-bottom: 0.8rem;
-}
-
-input[type="text"] {
-  padding-left: 0.5rem;
 }
 
 #locationSign,
@@ -86,7 +81,6 @@ input[type="text"] {
 .howItWorks {
   padding: var(--overallpadding);
   min-width: var(--minSize);
-  background-color: var(--white);
 }
 
 .boxUl {
@@ -96,29 +90,43 @@ input[type="text"] {
 }
 
 .box {
-  border: 1.5px solid var(--darkBlue);
   width: 24rem;
   height: 4rem;
+  margin-bottom: 1rem;
+  border-radius: 0.7rem;
+  background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: start;
-  border-radius: 0.7rem;
-  color: var(--darkBlue);
-  background-color: var(--white);
 }
 
-.boxLi1,
-.boxLi2,
-.boxLi3,
-.boxLi4,
-.boxLi5,
-.boxLi6,
-.boxLi7 {
-  display: flex;
-  margin-bottom: 1rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.boxSelected {
+  color: var(--darkBlue);
+  border: 1.5px solid var(--darkBlue);
+}
+
+.boxUnSelected {
+  border: 1.5px solid var(--lightGrey);
+  color: var(--lightGrey);
+  opacity: 0.5;
+}
+
+.box span {
+  font-family: "Nexa-bold";
+  padding: 0 1rem;
+  font-size: 1.5rem;
+}
+
+.boxSelected span {
+  color: var(--greyishBlue);
+}
+
+.boxUnSelected span {
+  color: var(--lightGrey);
+}
+
+.boxUnSelected h4 {
+  color: var(--lightGrey);
 }
 
 .boxContent1,
@@ -132,12 +140,6 @@ input[type="text"] {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.box span {
-  font-family: "Nexa-bold";
-  padding: 0 10px;
-  color: var(--greyishBlue);
 }
 
 .boxContent1 img,
@@ -262,7 +264,6 @@ input[type="text"] {
 
 .treatment {
   padding: var(--overallpadding);
-  background-color: white;
   min-width: var(--minSize);
 }
 
@@ -345,7 +346,7 @@ input[type="text"] {
   justify-self: start;
   align-self: end;
   position: relative;
-  left: 1rem;
+  left: 2.5rem;
   bottom: 1rem;
 }
 
@@ -673,6 +674,16 @@ footer p {
     grid-area: 3/2/3/3;
   }
 
+  .s1,
+  .s2,
+  .s3,
+  .s4,
+  .s5,
+  .s6 {
+    left: 1rem;
+    bottom: 1rem;
+  }
+
   /* Task 14 Tablet view exclusive services section */
 
   .serviceImgs {
@@ -855,13 +866,13 @@ footer p {
   }
 
   .input-box1 {
-    width: 230px;
+    width: 17rem;
     flex-grow: 0;
   }
 
   .input-box2 {
     flex-grow: 0;
-    width: 380px;
+    width: 25rem;
   }
 
   #locationSign {
@@ -884,30 +895,49 @@ footer p {
   .box {
     width: 30rem;
     height: 6rem;
-    border: 1.5px solid var(--greyishBlue);
     border-radius: 0.3rem;
   }
+
+  .boxSelected {
+    border: 1.5px solid var(--greyishBlue);
+  }
+
+  .box span {
+    padding: 0 2rem;
+    font-size: 1.9rem;
+  }
+
   .boxUl {
     margin-top: 1.8rem;
   }
 
+  .boxLi1 {
+    margin-bottom: 0;
+  }
+
   .boxLi2 {
     margin-top: 6.5rem;
+    margin-bottom: 0;
   }
   .boxLi3 {
     margin-top: 13rem;
+    margin-bottom: 0;
   }
   .boxLi4 {
     margin-top: 19.5rem;
+    margin-bottom: 0;
   }
   .boxLi5 {
     margin-top: 26rem;
+    margin-bottom: 0;
   }
   .boxLi6 {
     margin-top: 32.5rem;
+    margin-bottom: 0;
   }
   .boxLi7 {
     margin-top: 39rem;
+    margin-bottom: 0;
   }
 
   .box-img {

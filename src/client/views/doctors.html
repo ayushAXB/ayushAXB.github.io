@@ -16,506 +16,513 @@
 
 <body>
 
-    <!-- Navbar section -->
+    <div class="mainContainer">
+        <!-- Navbar section -->
 
-    <nav>
-        <a href="./index.html"><img class="top-logo"
-                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="Logo">
-        </a>
-        <div class="navDeskDiv">
-            <ul class="navigation">
-                <a href="./doctors.html">
-                    <li>Doctors</li>
-                </a>
-                <a href="./hospitals.html">
-                    <li>Hospitals</li>
-                </a>
-                <a href="#">
-                    <li>Treatment</li>
-                </a>
-                <a href="#">
-                    <li>Other Services</li>
-                </a>
-                <a href="#">
-                    <li>About</li>
-                </a>
-                <a href="#">
-                    <li>Tvastra+</li>
-                </a>
-            </ul>
-            <div class="navbtn">
-              <button onclick="location.href='./signIn.html'" class="navB1 whiteBtn">Login / Sign Up</button>
-                <button class="darkBlueBtnSmall">Get a Quote</button>
-            </div>
-            <div class="navMenu">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
-
-
-    <!-- Header Section  -->
-
-    <header class="head">
-        <h3>Cardiac Surgeon in <u>Delhi</u></h3>
-    </header>
-
-
-    <!-- Search Heading Section -->
-
-    <section class="searchHeading">
-        <h4>Home / Doctor List</h4>
-        <select name="docSort" id="docSort">
-            <option value="none">Sort by</option>
-            <option value="name">Name</option>
-            <option value="specialization">Specialization</option>
-            <option value="experience">Experience</option>
-        </select>
-    </section>
-
-
-    <!-- Filter and main section -->
-
-    <section class="layout">
-
-        <!-- Filter By Section -->
-
-        <aside class="filter">
-            <div class="filterHead">
-                <h6>Filter By</h6>
-            </div>
-            <div class="selected">
-                <div class="innerSelected">
-                    <span>DLF Cyber City</span>
-                    <a href="#"><i class="fas fa-times"></i></a>
+        <nav>
+            <a href="./index.html"><img class="top-logo"
+                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="Logo">
+            </a>
+            <div class="navDeskDiv">
+                <ul class="navigation">
+                    <a href="./doctors.html">
+                        <li>Doctors</li>
+                    </a>
+                    <a href="./hospitals.html">
+                        <li>Hospitals</li>
+                    </a>
+                    <a href="./treatment.html">
+                        <li>Treatment</li>
+                    </a>
+                    <a href="#">
+                        <li>Other Services</li>
+                    </a>
+                    <a href="./aboutUs.html">
+                        <li>About</li>
+                    </a>
+                </ul>
+                <div class="navbtn">
+                    <button onclick="location.href='./signIn.html'" class="navB1 whiteBtn">Login / Sign Up</button>
+                    <button class="darkBlueBtnSmall">Get a Quote</button>
                 </div>
-                <div class="innerSelected">
-                    <span>Multi Organ Transplant</span>
-                    <a href="#"><i class="fas fa-times"></i></a>
-                </div>
-                <div class="innerSelected">
-                    <span>Apollo Hospital</span>
-                    <a href="#"><i class="fas fa-times"></i></a>
-                </div>
-                <div class="innerSelected">
-                    <span>30+</span>
-                    <a href="#"><i class="fas fa-times"></i></a>
+                <div class="navMenu">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
-            <div class="selecting">
-                <div class="optionHead">
-                    <h5>Loction</h5>
-                    <div class="searchAdash">
-                        <a href="#"><i class="fas fa-search"></i></a>
-                        <div class="lineSec"></div>
-                    </div>
-                </div>
-                <div class="options">
-                    <div class="option">
-                        <input type="checkbox" checked="checked" name="location">
-                        <label>DLF Cyber City</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="location">
-                        <label>Dwarka</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="location">
-                        <label>Lajpat Nagar</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="location">
-                        <label>Palam Vihar</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="location">
-                        <label>Punjabi Baag</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="location">
-                        <label>Pusa Road</label>
-                    </div>
-                </div>
-                <h6><a href="#">+ Show more</a></h6>
-            </div>
-            <div class="selecting">
-                <div class="optionHead">
-                    <h5>Treatment</h5>
-                    <div class="searchAdash">
-                        <a href="#"><i class="fas fa-search"></i></a>
-                        <div class="lineSec"></div>
-                    </div>
-                </div>
-                <div class="options">
-                    <div class="option">
-                        <input type="checkbox" checked="checked" name="Multi Organ Transplant">
-                        <label>Multi Organ Transplant</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Orthopedics">
-                        <label>Orthopedics</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Infertility Treatment">
-                        <label>Infertility Treatment</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Dentistry">
-                        <label>Dentistry</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Cardiology">
-                        <label>Cardiology</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Cancer">
-                        <label>Cancer</label>
-                    </div>
-                </div>
-                <h6><a href="#">+ Show more</a></h6>
-            </div>
-            <div class="selecting">
-                <div class="optionHead">
-                    <h5>Hospitals</h5>
-                    <div class="searchAdash">
-                        <a href="#"><i class="fas fa-search"></i></a>
-                        <div class="lineSec"></div>
-                    </div>
-                </div>
-                <div class="options">
-                    <div class="option">
-                        <input type="checkbox" checked="checked" name="Apollo Hospitals">
-                        <label>Apollo Hospitals</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Manipal North Side Hospital">
-                        <label>Manipal North Side Hospital</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Northstar">
-                        <label>Northstar</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="AIIMs">
-                        <label>AIIMs</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Fortis Hospital">
-                        <label>Fortis Hospital</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="Elbit Diagnostics">
-                        <label>Elbit Diagnostics</label>
-                    </div>
-                </div>
-                <h6><a href="#">+ Show more</a></h6>
-            </div>
-            <div class="selecting">
-                <div class="optionHead">
-                    <h5>Years of Experience</h5>
-                    <div class="searchAdash">
-                        <a href="#"><i class="fas fa-search"></i></a>
-                        <div class="lineSec"></div>
-                    </div>
-                </div>
-                <div class="options">
-                    <div class="option">
-                        <input type="checkbox" checked="checked" name="30+">
-                        <label>30+</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="25+">
-                        <label>25+</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="20+">
-                        <label>20+</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="15+">
-                        <label>15+</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="10+">
-                        <label>10+</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="5+">
-                        <label>5+</label>
-                    </div>
-                </div>
-                <h6><a href="#">+ Show more</a></h6>
-            </div>
-        </aside>
+        </nav>
 
-        <!-- Main Section -->
 
-        <section class="mainSection">
-            <div class="cards">
-                <div class="info">
-                    <div class="docName">
-                        <div class="line"></div>
-                        <h4>Duke Sanson</h4>
-                    </div>
-                    <ul class="aboutThing">
-                        <li class="iconAtext">
-                            <i class="fas fa-certificate"></i>
-                            <h6>Neuro Surgeon</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="far fa-hospital"></i>
-                            <h6>Apollo Hospitals, Sydney</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-award"></i>
-                            <h6>Chain Department of Neurological Surgery</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h6>Sydney, Australia</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="far fa-clock"></i>
-                            <h6>8 Years of Experience</h6>
-                        </li>
-                    </ul>
-                </div>
-                <button class="darkBlueBtnBig">Book an Appointment</button>
-                <figure>
-                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg"
-                        alt="Duke Sanson">
-                </figure>
-            </div>
-            <div class="cards">
-                <div class="info">
-                    <div class="docName">
-                        <div class="line"></div>
-                        <h4>Georgea Peter</h4>
-                    </div>
-                    <div class="aboutThing">
-                        <li class="iconAtext">
-                            <i class="fas fa-certificate"></i>
-                            <h6>Breast Cancer Surgeon</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="far fa-hospital"></i>
-                            <h6>Apollo Hospitals, London</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-award"></i>
-                            <h6>Director, UT</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h6>Southwest, London</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="far fa-clock"></i>
-                            <h6>15 Years of Experience</h6>
-                        </li>
-                    </div>
-                </div>
-                <button class="darkBlueBtnBig">Book an Appointment</button>
-                <figure>
-                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg"
-                        alt="Georgea Peter">
-                </figure>
-            </div>
-            <div class="cards">
-                <div class="info">
-                    <div class="docName">
-                        <div class="line"></div>
-                        <h4>Charlie Moon</h4>
-                    </div>
-                    <div class="aboutThing">
-                        <li class="iconAtext">
-                            <i class="fas fa-certificate"></i>
-                            <h6>Cardiac Surgeon</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="far fa-hospital"></i>
-                            <h6>Apollo Hospitals, India</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-award"></i>
-                            <h6>MBBS, MD, FRCP, MRCP, Fellowship</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h6>New Delhi, India</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="far fa-clock"></i>
-                            <h6>10 Years of Experience</h6>
-                        </li>
-                    </div>
-                </div>
-                <button class="darkBlueBtnBig">Book an Appointment</button>
-                <figure>
-                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg"
-                        alt="Charlie Moon">
-                </figure>
-            </div>
-            <div class="cards">
-                <div class="info">
-                    <div class="docName">
-                        <div class="line"></div>
-                        <h4>Rose Moon</h4>
-                    </div>
-                    <div class="aboutThing">
-                        <li class="iconAtext">
-                            <i class="fas fa-certificate"></i>
-                            <h6>Plastic Surgeon</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="far fa-hospital"></i>
-                            <h6>Apollo Hospitals, Dubia</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-award"></i>
-                            <h6>Dep. of Plastic and Reconstructive surgery</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h6>Abu Dabi, Dubai</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="far fa-clock"></i>
-                            <h6>7 Years of Experience</h6>
-                        </li>
-                    </div>
-                </div>
-                <button class="darkBlueBtnBig">Book an Appointment</button>
-                <figure>
-                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg"
-                        alt="Duke Sanson">
-                </figure>
-            </div>
-            <div class="cards">
-                <div class="info">
-                    <div class="docName">
-                        <div class="line"></div>
-                        <h4>Charlie Moon</h4>
-                    </div>
-                    <div class="aboutThing">
-                        <li class="iconAtext">
-                            <i class="fas fa-certificate"></i>
-                            <h6>Cardiac Surgeon</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="far fa-hospital"></i>
-                            <h6>Apollo Hospitals, India</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-award"></i>
-                            <h6>MBBS, MD, FRCP, MRCP, Fellowship</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h6>New Delhi, India</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="far fa-clock"></i>
-                            <h6>10 Years of Experience</h6>
-                        </li>
-                    </div>
-                </div>
-                <button class="darkBlueBtnBig">Book an Appointment</button>
-                <figure>
-                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg"
-                        alt="Charlie Moon">
-                </figure>
-            </div>
-            <div class="cards">
-                <div class="info">
-                    <div class="docName">
-                        <div class="line"></div>
-                        <h4>Duke Sanson</h4>
-                    </div>
-                    <div class="aboutThing">
-                        <li class="iconAtext">
-                            <i class="fas fa-certificate"></i>
-                            <h6>Neuro Surgeon</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="far fa-hospital"></i>
-                            <h6>Apollo Hospitals, Sydney</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-award"></i>
-                            <h6>Chain Department of Neurological Surgery</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h6>Sydney, Australia</h6>
-                        </li>
-                        <li class="iconAtext">
-                            <i class="far fa-clock"></i>
-                            <h6>8 Years of Experience</h6>
-                        </li>
-                    </div>
-                </div>
-                <button class="darkBlueBtnBig">Book an Appointment</button>
-                <figure>
-                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg"
-                        alt="Duke Sanson">
-                </figure>
-            </div>
+        <!-- Header Section  -->
+
+        <header class="head">
+            <h3>Cardiac Surgeon in <u>Delhi</u></h3>
+        </header>
+
+
+        <!-- Search Heading Section -->
+
+        <section class="searchHeading">
+            <h4>Home / Doctor List</h4>
+            <select name="docSort" id="docSort">
+                <option value="none">Sort by</option>
+                <option value="name">Name</option>
+                <option value="specialization">Specialization</option>
+                <option value="experience">Experience</option>
+            </select>
         </section>
 
-    </section>
 
-    <!-- Need Help Section -->
+        <!-- Filter and main section -->
 
-    <section class="container">
-        <h2>Need Help?</h2>
-        <p>Just let us know, we will happy to assist you</p>
-        <button class="greyishBlueBtn">Submit your enquiry</button>
-    </section>
+        <section class="layout">
 
-    <!-- Footer section -->
+            <!-- Filter By Section -->
 
-    <footer>
-        <div class="innerfooter">
-            <figure><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png" alt="logo">
-            </figure>
-            <ul class="navlist">
-                <a href="#">
-                    <li>
-                </a>Doctor</li></a>
-                <a href="#">
-                    <li>Hospital</li>
-                </a>
-                <a href="#">
-                    <li>Treatment</li>
-                </a>
-                <a href="#">
-                    <li>Other Services</li>
-                </a>
-                <a href="#">
-                    <li>FAQs</li>
-                </a>
-            </ul>
-            <ul class="socialLogos">
-                <a href="#">
-                    <li><i class="fab fa-facebook-f"></i></li>
-                </a>
-                <a href="#">
-                    <li><i class="fab fa-pinterest-p"></i></li>
-                </a>
-                <a href="#">
-                    <li><i class="fab fa-twitter"></i></li>
-                </a>
-                <a href="#">
-                    <li><i class="fab fa-google-plus-g"></i></li>
-                </a>
-                <a href="#">
-                    <li><i class="fab fa-instagram"></i></li>
-                </a>
-            </ul>
-            <p class="rights">All Rights Reserved. &copy; tvastra 2018</p>
-        </div>
-    </footer>
+            <aside class="filter">
+                <div class="filterHead">
+                    <h6>Filter By</h6>
+                </div>
+                <div class="selected">
+                    <div class="innerSelected">
+                        <span>DLF Cyber City</span>
+                        <a href="#"><i class="fas fa-times"></i></a>
+                    </div>
+                    <div class="innerSelected">
+                        <span>Multi Organ Transplant</span>
+                        <a href="#"><i class="fas fa-times"></i></a>
+                    </div>
+                    <div class="innerSelected">
+                        <span>Apollo Hospital</span>
+                        <a href="#"><i class="fas fa-times"></i></a>
+                    </div>
+                    <div class="innerSelected">
+                        <span>30+</span>
+                        <a href="#"><i class="fas fa-times"></i></a>
+                    </div>
+                </div>
+                <div class="selecting">
+                    <div class="optionHead">
+                        <h5>Loction</h5>
+                        <div class="searchAdash">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <div class="lineSec"></div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="checkbox" checked="checked" name="location">
+                            <label>DLF Cyber City</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="location">
+                            <label>Dwarka</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="location">
+                            <label>Lajpat Nagar</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="location">
+                            <label>Palam Vihar</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="location">
+                            <label>Punjabi Baag</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="location">
+                            <label>Pusa Road</label>
+                        </div>
+                    </div>
+                    <h6><a href="#">+ Show more</a></h6>
+                </div>
+                <div class="selecting">
+                    <div class="optionHead">
+                        <h5>Treatment</h5>
+                        <div class="searchAdash">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <div class="lineSec"></div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="checkbox" checked="checked" name="Multi Organ Transplant">
+                            <label>Multi Organ Transplant</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Orthopedics">
+                            <label>Orthopedics</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Infertility Treatment">
+                            <label>Infertility Treatment</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Dentistry">
+                            <label>Dentistry</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Cardiology">
+                            <label>Cardiology</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Cancer">
+                            <label>Cancer</label>
+                        </div>
+                    </div>
+                    <h6><a href="#">+ Show more</a></h6>
+                </div>
+                <div class="selecting">
+                    <div class="optionHead">
+                        <h5>Hospitals</h5>
+                        <div class="searchAdash">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <div class="lineSec"></div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="checkbox" checked="checked" name="Apollo Hospitals">
+                            <label>Apollo Hospitals</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Manipal North Side Hospital">
+                            <label>Manipal North Side Hospital</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Northstar">
+                            <label>Northstar</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="AIIMs">
+                            <label>AIIMs</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Fortis Hospital">
+                            <label>Fortis Hospital</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="Elbit Diagnostics">
+                            <label>Elbit Diagnostics</label>
+                        </div>
+                    </div>
+                    <h6><a href="#">+ Show more</a></h6>
+                </div>
+                <div class="selecting">
+                    <div class="optionHead">
+                        <h5>Years of Experience</h5>
+                        <div class="searchAdash">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <div class="lineSec"></div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="checkbox" checked="checked" name="30+">
+                            <label>30+</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="25+">
+                            <label>25+</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="20+">
+                            <label>20+</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="15+">
+                            <label>15+</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="10+">
+                            <label>10+</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="5+">
+                            <label>5+</label>
+                        </div>
+                    </div>
+                    <h6><a href="#">+ Show more</a></h6>
+                </div>
+            </aside>
+
+            <!-- Main Section -->
+
+            <section class="mainSection">
+                <div class="cards">
+                    <div class="info">
+                        <div class="docName">
+                            <div class="line"></div>
+                            <h4>Duke Sanson</h4>
+                        </div>
+                        <ul class="aboutThing">
+                            <li class="iconAtext">
+                                <i class="fas fa-certificate"></i>
+                                <h6>Neuro Surgeon</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="far fa-hospital"></i>
+                                <h6>Apollo Hospitals, Sydney</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-award"></i>
+                                <h6>Chain Department of Neurological Surgery</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h6>Sydney, Australia</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="far fa-clock"></i>
+                                <h6>8 Years of Experience</h6>
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="location=href='./appointment.html'" class="darkBlueBtnBig">Book an
+                        Appointment</button>
+                    <figure>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg"
+                            alt="Duke Sanson">
+                    </figure>
+                </div>
+                <div class="cards">
+                    <div class="info">
+                        <div class="docName">
+                            <div class="line"></div>
+                            <h4>Georgea Peter</h4>
+                        </div>
+                        <div class="aboutThing">
+                            <li class="iconAtext">
+                                <i class="fas fa-certificate"></i>
+                                <h6>Breast Cancer Surgeon</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="far fa-hospital"></i>
+                                <h6>Apollo Hospitals, London</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-award"></i>
+                                <h6>Director, UT</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h6>Southwest, London</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="far fa-clock"></i>
+                                <h6>15 Years of Experience</h6>
+                            </li>
+                        </div>
+                    </div>
+                    <button onclick="location=href='./appointment.html'" class="darkBlueBtnBig">Book an
+                        Appointment</button>
+                    <figure>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg"
+                            alt="Georgea Peter">
+                    </figure>
+                </div>
+                <div class="cards">
+                    <div class="info">
+                        <div class="docName">
+                            <div class="line"></div>
+                            <h4>Charlie Moon</h4>
+                        </div>
+                        <div class="aboutThing">
+                            <li class="iconAtext">
+                                <i class="fas fa-certificate"></i>
+                                <h6>Cardiac Surgeon</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="far fa-hospital"></i>
+                                <h6>Apollo Hospitals, India</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-award"></i>
+                                <h6>MBBS, MD, FRCP, MRCP, Fellowship</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h6>New Delhi, India</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="far fa-clock"></i>
+                                <h6>10 Years of Experience</h6>
+                            </li>
+                        </div>
+                    </div>
+                    <button onclick="location=href='./appointment.html'" class="darkBlueBtnBig">Book an
+                        Appointment</button>
+                    <figure>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg"
+                            alt="Charlie Moon">
+                    </figure>
+                </div>
+                <div class="cards">
+                    <div class="info">
+                        <div class="docName">
+                            <div class="line"></div>
+                            <h4>Rose Moon</h4>
+                        </div>
+                        <div class="aboutThing">
+                            <li class="iconAtext">
+                                <i class="fas fa-certificate"></i>
+                                <h6>Plastic Surgeon</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="far fa-hospital"></i>
+                                <h6>Apollo Hospitals, Dubia</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-award"></i>
+                                <h6>Dep. of Plastic and Reconstructive surgery</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h6>Abu Dabi, Dubai</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="far fa-clock"></i>
+                                <h6>7 Years of Experience</h6>
+                            </li>
+                        </div>
+                    </div>
+                    <button onclick="location=href='./appointment.html'" class="darkBlueBtnBig">Book an
+                        Appointment</button>
+                    <figure>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg"
+                            alt="Duke Sanson">
+                    </figure>
+                </div>
+                <div class="cards">
+                    <div class="info">
+                        <div class="docName">
+                            <div class="line"></div>
+                            <h4>Charlie Moon</h4>
+                        </div>
+                        <div class="aboutThing">
+                            <li class="iconAtext">
+                                <i class="fas fa-certificate"></i>
+                                <h6>Cardiac Surgeon</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="far fa-hospital"></i>
+                                <h6>Apollo Hospitals, India</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-award"></i>
+                                <h6>MBBS, MD, FRCP, MRCP, Fellowship</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h6>New Delhi, India</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="far fa-clock"></i>
+                                <h6>10 Years of Experience</h6>
+                            </li>
+                        </div>
+                    </div>
+                    <button onclick="location=href='./appointment.html'" class="darkBlueBtnBig">Book an
+                        Appointment</button>
+                    <figure>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg"
+                            alt="Charlie Moon">
+                    </figure>
+                </div>
+                <div class="cards">
+                    <div class="info">
+                        <div class="docName">
+                            <div class="line"></div>
+                            <h4>Duke Sanson</h4>
+                        </div>
+                        <div class="aboutThing">
+                            <li class="iconAtext">
+                                <i class="fas fa-certificate"></i>
+                                <h6>Neuro Surgeon</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="far fa-hospital"></i>
+                                <h6>Apollo Hospitals, Sydney</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-award"></i>
+                                <h6>Chain Department of Neurological Surgery</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h6>Sydney, Australia</h6>
+                            </li>
+                            <li class="iconAtext">
+                                <i class="far fa-clock"></i>
+                                <h6>8 Years of Experience</h6>
+                            </li>
+                        </div>
+                    </div>
+                    <button onclick="location=href='./appointment.html'" class="darkBlueBtnBig">Book an
+                        Appointment</button>
+                    <figure>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg"
+                            alt="Duke Sanson">
+                    </figure>
+                </div>
+            </section>
+
+        </section>
+
+        <!-- Need Help Section -->
+
+        <section class="container">
+            <h2>Need Help?</h2>
+            <p>Just let us know, we will happy to assist you</p>
+            <button class="greyishBlueBtn">Submit your enquiry</button>
+        </section>
+
+        <!-- Footer section -->
+
+        <footer>
+            <div class="innerfooter">
+                <figure><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png"
+                        alt="logo">
+                </figure>
+                <ul class="navlist">
+                    <a href="#">
+                        <li>
+                    </a>Doctor</li></a>
+                    <a href="#">
+                        <li>Hospital</li>
+                    </a>
+                    <a href="#">
+                        <li>Treatment</li>
+                    </a>
+                    <a href="#">
+                        <li>Other Services</li>
+                    </a>
+                    <a href="#">
+                        <li>FAQs</li>
+                    </a>
+                </ul>
+                <ul class="socialLogos">
+                    <a href="#">
+                        <li><i class="fab fa-facebook-f"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-pinterest-p"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-twitter"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-google-plus-g"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-instagram"></i></li>
+                    </a>
+                </ul>
+                <p class="rights">All Rights Reserved. &copy; tvastra 2018</p>
+            </div>
+        </footer>
+
+    </div>
 </body>
 
 </html>

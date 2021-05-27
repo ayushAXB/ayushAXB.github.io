@@ -17,9 +17,9 @@
   --blue: #3792f3;
   --lightLime: #f3f3f3;
   --greyishBlue: #0173b2;
+  --darkGreyishBlue: #005e91;
   --lightGreyishBlue: #7ab0d4;
   --white: #fff;
-  --blueishWhite: rgb(223, 231, 248);
   --black: #000;
   --selectCol: #d3d3d3;
   --minSize: 30rem;
@@ -32,10 +32,7 @@
 }
 
 body {
-  background-color: var(--blueishWhite);
-  width: min-content;
-  height: max-content;
-  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 h1,
@@ -107,12 +104,17 @@ button {
   font-family: "Nexa-light";
 }
 
+td {
+  font-family: "Nexa-bold";
+  font-size: 0.9rem;
+}
+
 input[type="text"],
 input[type="password"],
 input[type="date"] {
   outline: none;
   border: none;
-  padding: 0.9rem 1rem;
+  padding: 1rem;
   width: 100%;
   font-size: 1rem;
   font-family: "Nexa-light";
@@ -121,13 +123,15 @@ input[type="date"] {
 
 input[type="date"] {
   color: var(--lightGrey);
+  padding: 0.9rem 1rem;
 }
 
 input[type="text"] input::placeholder {
   color: var(--lightGrey);
 }
 
-img {
+img,
+video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -303,7 +307,7 @@ textarea::placeholder {
   }
 
   li {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.2rem;
   }
 }
