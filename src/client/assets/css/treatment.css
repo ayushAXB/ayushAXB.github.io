@@ -38,35 +38,27 @@ nav {
 /* Mobile view header section  */
 
 .header {
+  position: absolute;
+  top: 4rem;
   padding: var(--overallpadding);
   min-width: var(--minSize);
-  background: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/dentist_hero_image.jpg)
-    no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: var(--white);
   height: 18rem;
-  position: relative;
+  background: linear-gradient(to right,rgba(1, 115, 178,.9),transparent);
 }
 
-.header ::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  box-shadow: inset 130px 0px 120px var(--greyishBlue),
-    inset -0px 0px var(--greyishBlue);
-  opacity: 0.8;
+.bgImg {
+  width: 100%;
+  height: 18rem;
 }
 
 .header h3,
 .header h5 {
   color: var(--white);
-  z-index: 10;
 }
 
 .header h5 {
@@ -375,6 +367,10 @@ footer p {
     height: 20rem;
   }
 
+  .bgImg {
+    height: 20rem;
+  }
+
   /* Tablet view main section */
 
   .mainSection {
@@ -590,6 +586,10 @@ footer p {
 
   .header {
     align-items: start;
+    height: 18rem;
+  }
+
+  .bgImg {
     height: 18rem;
   }
 

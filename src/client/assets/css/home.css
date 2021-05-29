@@ -65,7 +65,7 @@ header p {
   align-items: center;
   justify-content: start;
   background-color: var(--white);
-  width: 23rem;
+  width: 27rem;
   height: 3.3rem;
   padding: 0 0.8rem;
   margin-bottom: 0.8rem;
@@ -90,7 +90,7 @@ header p {
 }
 
 .box {
-  width: 24rem;
+  width: 27rem;
   height: 4rem;
   margin-bottom: 1rem;
   border-radius: 0.7rem;
@@ -183,10 +183,10 @@ header p {
 .doc-div {
   height: max-content;
   display: grid;
-  grid-template: repeat(4, 1fr) / 1fr;
+  grid-template: repeat(4, 1fr) 0px / 1fr;
   align-items: center;
   justify-items: center;
-  grid-gap: 25px;
+  grid-row-gap: 25px;
 }
 
 .docName1,
@@ -224,7 +224,7 @@ header p {
 }
 
 .doc-div figure {
-  width: 24rem;
+  width: 27rem;
   height: 28rem;
 }
 
@@ -235,7 +235,7 @@ header p {
   color: var(--blue);
   position: relative;
   left: 35px;
-  bottom: 13px;
+  bottom: 11px;
   display: inline;
 }
 
@@ -283,7 +283,7 @@ header p {
 .treatImgs4 figure,
 .treatImgs5 figure,
 .treatImgs6 figure {
-  width: 24rem;
+  width: 27rem;
   height: 28rem;
 }
 
@@ -332,7 +332,7 @@ header p {
   box-shadow: inset 0px -120px 80px var(--darkBlue);
   -moz-box-shadow: inset 0px -120px 80px var(--darkBlue);
   -webkit-box-shadow: inset 0px -120px 80px var(--darkBlue);
-  width: 24rem;
+  width: 27rem;
   height: 28rem;
   opacity: 0.9;
 }
@@ -346,8 +346,8 @@ header p {
   justify-self: start;
   align-self: end;
   position: relative;
-  left: 2.5rem;
-  bottom: 1rem;
+  left: 1.5rem;
+  bottom: 1.5rem;
 }
 
 .treatmentImgs h5 {
@@ -385,8 +385,8 @@ header p {
 .sI,
 .ambulance {
   background-color: var(--white);
-  width: 11rem;
-  height: 9rem;
+  width: 13rem;
+  height: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -908,7 +908,7 @@ footer p {
   }
 
   .boxUl {
-    margin-top: 1.8rem;
+    margin: 1rem 0;
   }
 
   .boxLi1 {
