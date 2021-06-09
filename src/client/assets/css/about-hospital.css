@@ -143,7 +143,7 @@ nav {
 }
 
 .info span {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 /* about section */
@@ -185,6 +185,10 @@ nav {
 
 .upDown i {
   font-size: 1rem;
+}
+
+.subParaNoDisplay {
+  display: none;
 }
 
 .subHeadInner {
@@ -318,12 +322,12 @@ footer p {
   }
 
   .info {
-      margin-right: 3rem;
-      margin-bottom: 0;
+    margin-right: 3rem;
+    margin-bottom: 0;
   }
 
   .info i {
-      margin-right: 1rem;
+    margin-right: 1rem;
   }
 
   /* about section */

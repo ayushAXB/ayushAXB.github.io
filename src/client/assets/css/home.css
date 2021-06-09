@@ -98,17 +98,7 @@ header p {
   display: flex;
   align-items: center;
   justify-content: start;
-}
-
-.boxSelected {
-  color: var(--darkBlue);
-  border: 1.5px solid var(--darkBlue);
-}
-
-.boxUnSelected {
-  border: 1.5px solid var(--lightGrey);
-  color: var(--lightGrey);
-  opacity: 0.5;
+  cursor: pointer;
 }
 
 .box span {
@@ -117,8 +107,19 @@ header p {
   font-size: 1.5rem;
 }
 
+.boxSelected {
+  color: var(--darkBlue);
+  border: 1.5px solid var(--darkBlue);
+}
+
 .boxSelected span {
   color: var(--greyishBlue);
+}
+
+.boxUnSelected {
+  border: 1.5px solid var(--lightGrey);
+  color: var(--lightGrey);
+  opacity: 0.5;
 }
 
 .boxUnSelected span {
@@ -129,27 +130,19 @@ header p {
   color: var(--lightGrey);
 }
 
-.boxContent1,
-.boxContent2,
-.boxContent3,
-.boxContent4,
-.boxContent5,
-.boxContent6,
-.boxContent7 {
+.boxContentDisplay {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.boxContent1 img,
-.boxContent2 img,
-.boxContent3 img,
-.boxContent4 img,
-.boxContent5 img,
-.boxContent6 img,
-.boxContent7 img {
+.boxContentDisplay img {
   object-fit: contain;
+}
+
+.boxContent {
+  display: none;
 }
 
 .box-img {
@@ -180,8 +173,9 @@ header p {
   color: var(--white);
 }
 
-.doc-div {
+.docSet {
   height: max-content;
+  width: 100%;
   display: grid;
   grid-template: repeat(4, 1fr) 0px / 1fr;
   align-items: center;
@@ -189,49 +183,39 @@ header p {
   grid-row-gap: 25px;
 }
 
-.docName1,
-.docName2,
-.docName3,
-.docName4 {
+.docDiv {
   box-shadow: 0px 4px 0px var(--skyBlue);
   background-color: var(--white);
   width: auto;
   height: 37rem;
 }
 
-.docName1,
-.docName1 ul,
-.docName1 h5 {
+.docSetNoDisplay {
+  display: none;
+}
+
+.docName0 {
   grid-area: 1/1/1/2;
 }
 
-.docName2,
-.docName2 ul,
-.docName2 h5 {
+.docName1 {
   grid-area: 2/1/2/2;
 }
 
-.docName3,
-.docName3 ul,
-.docName3 h5 {
+.docName2 {
   grid-area: 3/1/3/2;
 }
 
-.docName4,
-.docName4 ul,
-.docName4 h5 {
+.docName3 {
   grid-area: 4/1/4/2;
 }
 
-.doc-div figure {
+.docSet figure {
   width: 27rem;
   height: 28rem;
 }
 
-.docName1 h5,
-.docName2 h5,
-.docName3 h5,
-.docName4 h5 {
+.docDiv h5 {
   color: var(--blue);
   position: relative;
   left: 35px;
@@ -239,10 +223,7 @@ header p {
   display: inline;
 }
 
-.docName1 ul,
-.docName2 ul,
-.docName3 ul,
-.docName4 ul {
+.docDiv ul {
   flex-direction: column;
   align-items: start;
   margin-left: 35px;
@@ -267,7 +248,7 @@ header p {
   min-width: var(--minSize);
 }
 
-.treatmentImgs {
+.treatSet {
   display: grid;
   width: 100%;
   height: max-content;
@@ -337,12 +318,7 @@ header p {
   opacity: 0.9;
 }
 
-.s1,
-.s2,
-.s3,
-.s4,
-.s5,
-.s6 {
+.specialization {
   justify-self: start;
   align-self: end;
   position: relative;
@@ -350,11 +326,11 @@ header p {
   bottom: 1.5rem;
 }
 
-.treatmentImgs h5 {
+.treatSet h5 {
   color: var(--white);
 }
 
-.treatmentImgs h6 {
+.treatSet h6 {
   color: var(--white);
   font-family: serif;
   margin-top: 3px;
@@ -541,6 +517,7 @@ footer p {
     justify-items: center;
     grid-template: 1fr / 1fr 1fr;
     grid-gap: 1rem;
+    width: 100%;
   }
 
   .box {
@@ -577,65 +554,46 @@ footer p {
     margin-top: 30rem;
   }
 
-  .boxContent1,
-  .boxContent2,
-  .boxContent3,
-  .boxContent4,
-  .boxContent5,
-  .boxContent6,
-  .boxContent7 {
+  .boxPos {
     grid-area: 1/2/1/3;
   }
 
   /* Task 12 Tablet view Doctors section */
 
-  .doctorsPanel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .doc-div {
+  .docSet {
     grid-template: 1fr 1fr/ 1fr 1fr;
     grid-gap: 1rem;
   }
 
-  .docName1,
-  .docName2,
-  .docName3,
-  .docName4 {
+  .docDiv {
     height: 37.5rem;
   }
 
-  .docName1,
-  .docName1 h5,
-  .docName1 ul {
+  .docName0 {
     grid-area: 1/1/1/2;
   }
 
-  .docName2,
-  .docName2 h5,
-  .docName2 ul {
+  .docName1 {
     grid-area: 1/2/1/3;
   }
 
-  .docName3,
-  .docName3 h5,
-  .docName3 ul {
+  .docName2 {
     grid-area: 2/1/2/2;
   }
 
-  .docName4,
-  .docName4 h5,
-  .docName4 ul {
+  .docName3 {
     grid-area: 2/2/2/3;
   }
 
   /*  Task 13 Tablet view Featured medical treatment */
 
-  .treatmentImgs {
+  .treatSet {
     width: max-content;
     grid-template: 1fr 1fr/1fr 1fr;
+  }
+
+  .treatSetNoDisplay {
+    display: none;
   }
 
   .treatImgs1,
@@ -673,13 +631,7 @@ footer p {
   .s6 {
     grid-area: 3/2/3/3;
   }
-
-  .s1,
-  .s2,
-  .s3,
-  .s4,
-  .s5,
-  .s6 {
+  .specialization {
     left: 1rem;
     bottom: 1rem;
   }
@@ -948,51 +900,40 @@ footer p {
 
   /* Desktop View World Class Expert Doctors! Section */
 
-  .doc-div {
-    grid-template: 1fr 4rem / repeat(4, 1fr);
+  .docSet {
+    grid-template: 1fr / repeat(4, 1fr);
     grid-gap: 0 0.5rem;
     padding: 0;
     margin-top: 1rem;
   }
 
-  .docName1,
-  .docName1 h5,
-  .docName1 ul {
+  .docName0 {
     grid-area: 1/1/1/2;
   }
 
-  .docName2,
-  .docName2 h5,
-  .docName2 ul {
+  .docName1 {
     grid-area: 1/2/1/3;
   }
 
-  .docName3,
-  .docName3 h5,
-  .docName3 ul {
+  .docName2 {
     grid-area: 1/3/1/4;
   }
 
-  .docName4,
-  .docName4 h5,
-  .docName4 ul {
+  .docName3 {
     grid-area: 1/4/1/5;
   }
 
-  .docName1,
-  .docName2,
-  .docName3,
-  .docName4 {
+  .docDiv {
     width: 17.5rem;
     height: 25.5rem;
   }
 
-  .doc-div figure {
+  .docSet figure {
     width: 17.5rem;
     height: 18rem;
   }
 
-  .doc-div li {
+  .docSet li {
     font-size: 0.8rem;
     color: var(--darkBlue);
   }
@@ -1013,8 +954,8 @@ footer p {
 
   /* Desktop view treatment section */
 
-  .treatmentImgs {
-    grid-template: repeat(12, 3rem) 4rem / repeat(3, 1fr);
+  .treatSet {
+    grid-template: repeat(12, 3rem) / repeat(3, 1fr);
     margin-top: 1.8rem;
     grid-gap: 0.5rem;
     align-items: start;

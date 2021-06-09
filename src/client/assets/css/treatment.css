@@ -165,8 +165,8 @@ nav {
   color: var(--darkBlue);
 }
 
-.icons h6 {
-  margin: 0.5rem 0;
+.icons h5 {
+  margin: 0.8rem 0;
 }
 
 .icons p {
@@ -258,7 +258,7 @@ nav {
   color: var(--darkBlue);
 }
 
-.moreServiceHead h4 {
+.moreServiceHead h3 {
   color: var(--white);
   margin-bottom: 1rem;
 }
@@ -416,7 +416,7 @@ footer p {
     margin-bottom: 0rem;
   }
 
-  .icons h6 {
+  .icons h5 {
     margin: 1rem 0;
   }
 

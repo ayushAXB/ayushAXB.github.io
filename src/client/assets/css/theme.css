@@ -14,15 +14,18 @@
   --lighterSky: #e5f1f7;
   --darkBlue: #021433;
   --lightGrey: #636668;
+  --lighterGrey: #cccccc;
   --lime: #cccccc;
   --blue: #3792f3;
   --lightLime: #f3f3f3;
   --greyishBlue: #0173b2;
   --darkGreyishBlue: #005e91;
   --lightGreyishBlue: #7ab0d4;
+  --lighterGreyishBlue: #cce3f0;
   --white: #fff;
   --black: #000;
   --selectCol: #d3d3d3;
+  --green: #008000;
   --minSize: 30rem;
   --overallpadding: 2.5rem 1.5rem;
   --overallpaddingNoHeight: 0 1.5rem;
@@ -67,7 +70,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.4rem;
 }
 
@@ -103,6 +106,7 @@ input {
 
 button {
   font-family: "Nexa-light";
+  border: none;
 }
 
 td {
@@ -208,7 +212,7 @@ li {
   }
 
   h5 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 1.5rem;
   }
 
@@ -218,7 +222,7 @@ li {
   }
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--darkBlue);
     font-family: "Nexa-light";
     line-height: 1.5rem;
@@ -269,7 +273,7 @@ li {
   }
 
   h5 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.6rem;
   }
 
@@ -279,7 +283,7 @@ li {
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: var(--darkBlue);
     font-family: "Nexa-light";
     line-height: 1.6rem;

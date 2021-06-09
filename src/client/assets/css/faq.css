@@ -70,15 +70,19 @@ nav {
 /* about section */
 
 .about,
-.items {
+.faqItems {
   display: flex;
   flex-direction: column;
-  align-items:stretch;
+  align-items: stretch;
 }
 
-.items p {
+.faqItems p {
   background-color: var(--lighterSky);
   padding: 1rem 0.5rem;
+}
+
+.subParaNoDisplay {
+  display: none;
 }
 
 .subHead {

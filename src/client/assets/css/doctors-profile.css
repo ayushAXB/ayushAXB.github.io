@@ -122,7 +122,7 @@ nav {
 .title h4 {
   color: var(--greyishBlue);
   position: relative;
-  right: .5rem;
+  right: 0.5rem;
 }
 
 /* about section */
@@ -152,6 +152,10 @@ nav {
   font-size: 1.5rem;
   color: var(--greyishBlue);
   cursor: pointer;
+}
+
+.subParaNoDisplay {
+  display: none;
 }
 
 .upDown {
@@ -432,7 +436,7 @@ footer p {
   }
 
   .imgAndBtn button {
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
   /* text section */

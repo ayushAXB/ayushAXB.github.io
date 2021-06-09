@@ -12,6 +12,16 @@
   border: none;
 }
 
+.lighterGreyishBlueBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: var(--lighterGreyishBlue);
+  color: var(--greyishBlue);
+  font-size: 1rem;
+  font-family: "Nexa-bold";
+  border: none;
+}
+
 .greyishBlueBtn {
   padding: 0.95rem 2rem;
   background-color: var(--greyishBlue);
@@ -33,6 +43,14 @@
   border-radius: 0.2rem;
 }
 
+.greenBtn {
+  background-color: var(--green);
+  font-size: 1rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
+  color: var(--white);
+}
+
 .whiteBtn {
   background-color: var(--white);
   color: var(--darkBlue);
@@ -45,7 +63,8 @@
 
 .darkBlueBtnBig:hover,
 .darkBlueBtnSmall:hover,
-.whiteBtn:hover {
+.whiteBtn:hover,
+.lighterGreyishBlueBtn:hover {
   background-color: var(--darkGreyishBlue);
   color: var(--white);
 }
@@ -64,6 +83,7 @@
 
 .innerRadio input {
   visibility: hidden;
+  height: 0;
 }
 
 .customRadio {
