@@ -103,3 +103,17 @@ function tPlusTest(set) {
         }
     }
 }
+
+
+// function for treament page, more service section
+function moreServiceTreatment(set) {
+    const sets = document.getElementsByClassName('moreServiceImg');
+    for (i = 0; i < sets.length; i++) {
+        if (sets[i].classList.contains(set)) {
+            sets[i].classList.replace('imgSectionNoDisplay', 'imgSection');
+        }
+        else {
+            sets[i].classList.replace('imgSection', 'imgSectionNoDisplay');
+        }
+    }
+}

@@ -48,7 +48,7 @@ nav {
   justify-content: center;
   color: var(--white);
   height: 18rem;
-  background: linear-gradient(to right,rgba(1, 115, 178,.9),transparent);
+  background: linear-gradient(to right, rgba(1, 115, 178, 0.9), transparent);
 }
 
 .bgImg {
@@ -267,7 +267,7 @@ nav {
   background-color: var(--white);
   padding: 0.5rem 0.7rem;
   border-radius: 50px;
-  margin-right: 1rem;
+  cursor: pointer;
 }
 
 /* img section */
@@ -278,6 +278,10 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.imgSectionNoDisplay {
+  display: none;
 }
 
 .imgCards {

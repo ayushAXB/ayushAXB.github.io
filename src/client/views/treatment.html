@@ -196,18 +196,16 @@
             <div class="moreServiceHead">
                 <h3>More Services</h3>
                 <div class="leftRightIcons">
-                    <a href="#" class="moreServiceIconOuter">
+                    <div class="moreServiceIconOuter marginRight" onclick="moreServiceTreatment('imgSet-0')">
                         <i class="fas fa-chevron-left"></i>
-                    </a>
-                    <a href="#" class="moreServiceIconOuter">
+                    </div>
+                    <div class="moreServiceIconOuter" onclick="moreServiceTreatment('imgSet-1')">
                         <i class="fas fa-chevron-right"></i>
-                    </a>
+                    </div>
                 </div>
             </div>
-
-
-            <div class="imgSection">
-
+            <!-- img set 1 -->
+            <div class="imgSection fadeLeft moreServiceImg imgSet-0">
                 <div class="imgCards imgCardMarginBottom">
                     <figure>
                         <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg">
@@ -233,6 +231,37 @@
                     <div class="imgAbout">
                         <div class="line"></div>
                         <h5>Cardiology</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- img set 2 -->
+            <div class="imgSectionNoDisplay fadeRight moreServiceImg imgSet-1">
+                <div class="imgCards imgCardMarginBottom">
+                    <figure>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg">
+                    </figure>
+                    <div class="imgAbout">
+                        <div class="line"></div>
+                        <h5>Cancer</h5>
+                    </div>
+                </div>
+                <div class="imgCards">
+                    <figure>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg">
+                    </figure>
+                    <div class="imgAbout">
+                        <div class="line"></div>
+                        <h5>Cardiology</h5>
+                    </div>
+                </div>
+                <div class="imgCards imgCardMarginBottom">
+                    <figure>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg">
+                    </figure>
+                    <div class="imgAbout">
+                        <div class="line"></div>
+                        <h5>Orthopedic Surgery</h5>
                     </div>
                 </div>
             </div>
@@ -286,6 +315,9 @@
         </footer>
 
     </div>
+
+
+    <script src="../assets/scripts/script.js"></script>
 </body>
 
 </html>

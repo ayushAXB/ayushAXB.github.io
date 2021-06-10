@@ -96,6 +96,11 @@
   border-radius: 50%;
 }
 
+/* right margin of 1 rem common class */
+.marginRight {
+  margin-right: 1rem;
+}
+
 /* Main Heading and Main Paragraph aligning */
 
 .alignHead {
@@ -125,6 +130,94 @@
 .hap2P {
   grid-area: 3/1/3/2;
   visibility: hidden;
+}
+
+/* only Fading animation */
+.onlyFade {
+  -webkit-animation-name: onlyFade;
+  -webkit-animation-duration: 1s;
+  animation-name: onlyFade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes onlyFade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes onlyFade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fading and little movement from right animation */
+.fadeRight {
+  -webkit-animation-name: fadeRight;
+  -webkit-animation-duration: 1s;
+  animation-name: fadeRight;
+  animation-duration: 1s;
+  position: relative;
+}
+
+@-webkit-keyframes fadeRight {
+  from {
+    opacity: 0.4;
+    left: 2rem;
+  }
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0.4;
+    left: 2rem;
+  }
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+/* Fading and little movement from left animation */
+.fadeLeft {
+  -webkit-animation-name: fadeLeft;
+  -webkit-animation-duration: 1s;
+  animation-name: fadeLeft;
+  animation-duration: 1s;
+  position: relative;
+}
+
+@-webkit-keyframes fadeLeft {
+  from {
+    opacity: 0.4;
+    right: 2rem;
+  }
+  to {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0.4;
+    right: 2rem;
+  }
+  to {
+    opacity: 1;
+    right: 0;
+  }
 }
 
 @media only screen and (min-width: 1025px) {

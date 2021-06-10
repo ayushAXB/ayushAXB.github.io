@@ -258,6 +258,10 @@ header p {
   grid-gap: 1rem;
 }
 
+.treatSetNoDisplay {
+  display: none;
+}
+
 .treatImgs1 figure,
 .treatImgs2 figure,
 .treatImgs3 figure,
@@ -590,10 +594,6 @@ footer p {
   .treatSet {
     width: max-content;
     grid-template: 1fr 1fr/1fr 1fr;
-  }
-
-  .treatSetNoDisplay {
-    display: none;
   }
 
   .treatImgs1,

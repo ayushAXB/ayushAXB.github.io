@@ -952,7 +952,7 @@ footer p {
     align-items: start;
     justify-content: center;
     margin-bottom: 3rem;
-    grid-column-gap: 1rem;
+    grid-column-gap: 1.5rem;
     grid-template: 1fr /1fr 1fr;
   }
 
